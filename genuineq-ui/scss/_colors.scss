@@ -1,0 +1,29 @@
+/**************************** Colors **************************************************
+    Sass each loop for building classes for all the colors map array in variables.
+    For background the class it will be bg-name-of-the-key in colors map array.
+    For text the class it will be text-name-of-the-key in colors map array.
+    Thes classes will be created only if variable $enable-colors is set to true
+***************************************************************************************/
+@if $enable-colors {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @each $attribute, $name in (background-color: bg) {
+        @each $color, $value in $colors {
+          .#{$name}#{$infix}-#{$color} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+
+      @each $attribute, $name in (color: text) {
+        @each $color, $value in $colors {
+          .#{$name}#{$infix}-#{$color} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+    }
+  }
+}

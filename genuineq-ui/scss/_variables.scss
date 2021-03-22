@@ -1,0 +1,113 @@
+/***************************************************************************************
+******* General variables that will be used to calculate other variables ***************
+***************************************************************************************/
+$font-size-base: 1rem;
+$line-height-base: 1rem;
+$letter-spacing-base: 0.1rem;
+$font-family-heading: "";
+$font-family-base: "";
+$font-family-extra: "";
+$spacer: 1rem;
+$border: 1px;
+
+/***************************************************************************************
+*********** Breakpoints ****************************************************************
+***************************************************************************************/
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+/***************************************************************************************
+*********** Grid gutters ***************************************************************
+***************************************************************************************/
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+$grid-row-columns: 6;
+
+/**************************** Colors ***************************************
+You can add new colors in array like "name": value.
+For each color in array it will be generated clases for background and text
+All breakpoints: bg-color-name, text-color-name
+Specific breakpoints: bg-breakpoint-color-name, text-breakpoint-color-name
+****************************************************************************/
+$colors: ();
+$colors: map-merge(
+  (
+    "primary": #ff0001,
+    "secondary": #ff0002,
+    "danger": #ff0006,
+    "warning": #ff0003,
+    "success": #ff0004,
+    "black": #000000,
+    "white": #ffffff,
+    "gray": #ff0005,
+  ),
+  $colors
+);
+/**************************** Spacers ******************************************
+You can add new spacers in array like "name": value.
+For each spacer in array it will be generated clases for margin and padding
+All breakpoints:
+(m, mx, my, mt, mb, ml, mr)-name
+(p, px, py, pt, pb, pl, pr)-name
+Specific breakpoints:
+(m, mx, my, mt, mb, ml, mr)-breakpoint-name
+(p, px, py, pt, pb, pl, pr)-breakpoint-name
+********************************************************************************/
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: $spacer,
+    //all the spacers will be multiple of spacer
+  ),
+  $spacers
+);
+
+/********************************************************************************
+**************************** Border *********************************************
+********************************************************************************/
+$borders-styles: ();
+$borders-styles: map-merge(
+  (
+    "solid": solid,
+    "dotted": dotted,
+  ),
+  $borders-styles
+);
+
+$borders-square: ();
+$borders-square: map-merge(
+  (
+    0: 0,
+    1: 0.1rem,
+  ),
+  $borders-square
+);
+
+$borders-radius: ();
+$borders-radius: map-merge(
+  (
+    0: 0,
+    1: 0.3rem,
+  ),
+  $borders-radius
+);
+
+/********************************************************************************
+**************************** Buttons ********************************************
+********************************************************************************/

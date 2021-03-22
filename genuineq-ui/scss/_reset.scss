@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// html {
+//   font-family: sans-serif; // 2
+//   line-height: 1.15; // 3
+//   -webkit-text-size-adjust: 100%; // 4
+//   -webkit-tap-highlight-color: rgba($black, 0); // 5
+// }
+
+// Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers)
+// TODO: remove in v5
+// stylelint-disable-next-line selector-list-comma-newline-after
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+// Body
+//
+// 1. Remove the margin in all browsers.
+// 2. As a best practice, apply a default `background-color`.
+// 3. Set an explicit initial text-align value so that we can later use
+//    the `inherit` value on things like `<th>` elements.
+
+body {
+  margin: 0;
+//   font-family: $font-family-base;
+//   @include font-size($font-size-base);
+//   font-weight: $font-weight-base;
+//   line-height: $line-height-base;
+//   color: $body-color;
+//   text-align: left; // 3
+//   background-color: $body-bg; // 2
+}
+
+/********************************************************************************
+************************** Typography *******************************************
+********************************************************************************/
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}

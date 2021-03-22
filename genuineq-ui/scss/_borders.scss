@@ -1,0 +1,206 @@
+/** Boder style and color */
+@if ($enable-square-borders or $enable-rounded-borders) {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      /** Border style. */
+      @each $attribute, $name in (border-style: border) {
+        @each $border-style, $value in $borders-styles {
+          .#{$name}#{$infix}-#{$border-style} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+
+      /** Border color. */
+      @each $attribute, $name in (border-color: border) {
+        @each $color, $value in $colors {
+          .#{$name}#{$infix}-#{$color} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+    }
+  }
+}
+
+/** Square borders. */
+@if $enable-square-borders {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      /** Border width around. */
+      @each $name in (border) {
+        @each $border, $value in $borders-square {
+          .#{$name}#{$infix}-#{$border} {
+            border-width: $value;
+          }
+        }
+      }
+
+      /** Border width top. */
+      @each $attribute, $name in (border-top-width: border) {
+        @each $border, $value in $borders-square {
+          .#{$name}-top#{$infix}-#{$border} {
+            #{$attribute}: $value !important;
+            border-left-width: 0;
+            border-right-width: 0;
+            border-bottom-width: 0;
+          }
+        }
+      }
+
+      /** Border width bottom. */
+      @each $attribute, $name in (border-bottom-width: border) {
+        @each $border, $value in $borders-square {
+          .#{$name}-bottom#{$infix}-#{$border} {
+            #{$attribute}: $value !important;
+            border-left-width: 0;
+            border-right-width: 0;
+            border-top-width: 0;
+          }
+        }
+      }
+
+      /** Border width left. */
+      @each $attribute, $name in (border-left-width: border) {
+        @each $border, $value in $borders-square {
+          .#{$name}-left#{$infix}-#{$border} {
+            #{$attribute}: $value !important;
+            border-top-width: 0;
+            border-right-width: 0;
+            border-bottom-width: 0;
+          }
+        }
+      }
+
+      /** Border width right. */
+      @each $attribute, $name in (border-right-width: border) {
+        @each $border, $value in $borders-square {
+          .#{$name}-right#{$infix}-#{$border} {
+            #{$attribute}: $value !important;
+            border-left-width: 0;
+            border-top-width: 0;
+            border-bottom-width: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/** Rounded borders. */
+@if $enable-rounded-borders {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      /** Border radius around. */
+      @each $name in (rounded) {
+        @each $border, $value in $borders-radius {
+          .#{$name}#{$infix}-#{$border} {
+            border-radius: $value;
+          }
+        }
+      }
+
+      // /** Border radius top. */
+      @each $name in (rounded) {
+        @each $border, $value in $borders-radius {
+          .#{$name}-top#{$infix}-#{$border} {
+            border-top-left-radius: $value !important;
+            border-top-right-radius: $value !important;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+      }
+
+      // /** Border radius bottom. */
+      @each $name in (rounded) {
+        @each $border, $value in $borders-radius {
+          .#{$name}-bottom#{$infix}-#{$border} {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: $value !important;
+            border-bottom-left-radius: $value !important;
+          }
+        }
+      }
+
+      // /** Border radius left. */
+      @each $name in (rounded) {
+        @each $border, $value in $borders-radius {
+          .#{$name}-left#{$infix}-#{$border} {
+            border-top-left-radius: $value !important;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: $value !important;
+          }
+        }
+      }
+
+      /** Border radius right. */
+      @each $name in (rounded) {
+        @each $border, $value in $borders-radius {
+          .#{$name}-right#{$infix}-#{$border} {
+            border-top-left-radius: 0;
+            border-top-right-radius: $value !important;
+            border-bottom-right-radius: $value !important;
+            border-bottom-left-radius: 0;
+          }
+        }
+      }
+
+      /** Border radius top right. */
+      @each $name in (rounded) {
+        @each $border, $value in $borders-radius {
+          .#{$name}-top-right#{$infix}-#{$border} {
+            border-top-left-radius: 0;
+            border-top-right-radius: $value !important;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+      }
+
+      /** Border radius top left. */
+      @each $name in (rounded) {
+        @each $border, $value in $borders-radius {
+          .#{$name}-top-left#{$infix}-#{$border} {
+            border-top-left-radius: $value !important;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+      }
+
+      /** Border radius bottom left. */
+      @each $name in (rounded) {
+        @each $border, $value in $borders-radius {
+          .#{$name}-bottom-left#{$infix}-#{$border} {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: $value !important;
+          }
+        }
+      }
+
+      /** Border radius bototm right. */
+      @each $name in (rounded) {
+        @each $border, $value in $borders-radius {
+          .#{$name}-bottom-right#{$infix}-#{$border} {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: $value !important;
+            border-bottom-left-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}

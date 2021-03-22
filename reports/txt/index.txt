@@ -1,0 +1,4 @@
+C:\Users\florin\Desktop\genuineq_styles_library\index.html
+heading|issue|element|id|class|line|column|description
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_2.H25.2|<title>Gulp - file</title>|||7|4|Check that the title element describes the document.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="sss">sadfsdf</a>|||13|4|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
