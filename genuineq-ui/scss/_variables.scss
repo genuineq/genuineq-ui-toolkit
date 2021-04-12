@@ -48,8 +48,8 @@ $colors: ();
 $colors: map-merge(
   (
     "primary": #ff0001,
-    "secondary": #ff0002,
-    "danger": #ff0006,
+    "secondary": #0011ff,
+    "danger": #00ff0d,
     "warning": #ff0003,
     "success": #ff0004,
     "black": #000000,
@@ -109,5 +109,195 @@ $borders-radius: map-merge(
 );
 
 /********************************************************************************
+**************************** Fonts **********************************************
+********************************************************************************/
+$fonts-size: ();
+$fonts-size: map-merge(
+  (
+    0: 16px,
+    1: 20px,
+    2: 24px,
+  ),
+  $fonts-size
+);
+
+$fonts-weight: ();
+$fonts-weight: map-merge(
+  (
+    0: "200",
+    1: "400",
+    2: "500",
+  ),
+  $fonts-weight
+);
+
+$letter-spacing: ();
+$letter-spacing: map-merge(
+  (
+    0: 2px,
+    1: 4px,
+    2: 6px,
+  ),
+  $letter-spacing
+);
+
+$line-height: ();
+$line-height: map-merge(
+  (
+    1: 1,
+    1.6: 1.6,
+    2: 2,
+  ),
+  $line-height
+);
+
+$font-family: ();
+$font-family: map-merge(
+  (
+    "arial": "Arial",
+    "helvetica": "Helvetica",
+    "verdana": "Verdana",
+  ),
+  $font-family
+);
+
+/********************************************************************************
+**************************** Flex ***********************************************
+********************************************************************************/
+$flex-directions: ();
+$flex-directions: map-merge(
+  (
+    "row": row,
+    "row-reverse": row-reverse,
+    "column": column,
+    "column-reverse": column-reverse,
+  ),
+  $flex-directions
+);
+
+$flex-wrap: ();
+$flex-wrap: map-merge(
+  (
+    "nowrap": nowrap,
+    "wrap": wrap,
+    "wrap-reverse": wrap-reverse,
+  ),
+  $flex-wrap
+);
+
+$justify-content: ();
+$justify-content: map-merge(
+  (
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "center": center,
+    "space-around": space-around,
+    "space-between": space-between,
+  ),
+  $justify-content
+);
+
+$align-items: ();
+$align-items: map-merge(
+  (
+    "stretch": stretch,
+    "center": center,
+    "baseline": baseline,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+  ),
+  $align-items
+);
+
+$align-content: ();
+$align-content: map-merge(
+  (
+    "stretch": stretch,
+    "center": center,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "space-around": space-around,
+    "space-between": space-between,
+  ),
+  $align-content
+);
+
+/********************************************************************************
 **************************** Buttons ********************************************
+********************************************************************************/
+$btn-hover: false;
+$btn-hover-percent: 5%;
+$btn-cursor: pointer;
+$btn-font-family: sans-serif;
+
+$btn-padding-y: $spacer;
+$btn-padding-x: $spacer;
+$btn-font-size: 16px;
+$btn-border-radius: 5px;
+$btn-line-height: 1;
+$btn-border: none;
+
+$btn-padding-y-sm: $spacer/2;
+$btn-padding-x-sm: $spacer/2;
+$btn-font-size-sm: 12px;
+$btn-border-radius-sm: 4px;
+$btn-line-height-sm: 1;
+$btn-border-sm: none;
+
+$btn-padding-y-lg: $spacer * 1.5;
+$btn-padding-x-lg: $spacer * 1.5;
+$btn-font-size-lg: 24px;
+$btn-border-radius-lg: 6px;
+$btn-line-height-lg: 1;
+$btn-border-lg: none;
+
+$btn-outile-background-color: white;
+
+$buttons: ();
+$buttons: map-merge($colors, $buttons);
+
+/********************************************************************************
+**************************** Width **********************************************
+********************************************************************************/
+
+$widths: ();
+$widths: map-merge(
+  (
+    0: 50xp,
+    1: 100px,
+    2: 200px,
+  ),
+  $widths
+);
+
+/********************************************************************************
+**************************** Shadows ********************************************
+********************************************************************************/
+
+$box-shadows: ();
+$box-shadows: map-merge(
+  (
+    0: 10px 10px 10px 2px black,
+  ),
+  $box-shadows
+);
+
+$drop-shadows: ();
+$drop-shadows: map-merge(
+  (
+    0: 10px 10px 2px black,
+  ),
+  $drop-shadows
+);
+
+$inset-shadows: ();
+$inset-shadows: map-merge(
+  (
+    0: 0px 0px 10px 10px black,
+  ),
+  $inset-shadows
+);
+
+/********************************************************************************
+**************************** Shadows ********************************************
 ********************************************************************************/
