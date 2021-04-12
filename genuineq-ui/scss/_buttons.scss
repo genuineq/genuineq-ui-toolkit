@@ -1,0 +1,95 @@
+@if $enable-buttons {
+  @each $attribute, $name in (background-color: btn) {
+    @each $key, $color in $buttons {
+      .#{$name}-#{$key} {
+        #{$attribute}: $color;
+        border-radius: $btn-border-radius;
+        border: $btn-border;
+        cursor: $btn-cursor;
+        padding: $btn-padding-x $btn-padding-y;
+        outline: none;
+        font-family: $btn-font-family;
+        font-size: $btn-font-size;
+        line-height: $btn-line-height;
+        &:hover {
+          @if ($btn-hover) {
+            background-color: lighten($color, $btn-hover-percent);
+          } @else {
+            background-color: darken($color, $btn-hover-percent);
+          }
+        }
+      }
+    }
+  }
+  @each $attribute, $name in (background-color: btn-sm) {
+    @each $key, $color in $buttons {
+      .#{$name}-#{$key} {
+        #{$attribute}: $color;
+        border-radius: $btn-border-radius-sm;
+        border: $btn-border-sm;
+        cursor: $btn-cursor;
+        padding: $btn-padding-x-sm $btn-padding-y-sm;
+        outline: none;
+        font-family: $btn-font-family;
+        font-size: $btn-font-size-sm;
+        line-height: $btn-line-height-sm;
+        &:hover {
+          @if ($btn-hover) {
+            background-color: lighten($color, $btn-hover-percent);
+          } @else {
+            background-color: darken($color, $btn-hover-percent);
+          }
+        }
+      }
+    }
+  }
+  @each $attribute, $name in (background-color: btn-lg) {
+    @each $key, $color in $buttons {
+      .#{$name}-#{$key} {
+        #{$attribute}: $color;
+        border-radius: $btn-border-radius-lg;
+        border: $btn-border-lg;
+        cursor: $btn-cursor;
+        padding: $btn-padding-x-lg $btn-padding-y-lg;
+        outline: none;
+        font-family: $btn-font-family;
+        font-size: $btn-font-size-lg;
+        line-height: $btn-line-height-lg;
+        &:hover {
+          @if ($btn-hover) {
+            background-color: lighten($color, $btn-hover-percent);
+          } @else {
+            background-color: darken($color, $btn-hover-percent);
+          }
+        }
+      }
+    }
+  }
+  @each $attribute, $name in (border-color: btn-outline) {
+    @each $key, $color in $buttons {
+      .#{$name}-#{$key} {
+        #{$attribute}: $color;
+        border-radius: $btn-border-radius;
+        cursor: $btn-cursor;
+        padding: $btn-padding-x $btn-padding-y;
+        outline: none;
+        font-family: $btn-font-family;
+        font-size: $btn-font-size;
+        line-height: $btn-line-height;
+        &:hover {
+          @if ($btn-hover) {
+            background-color: lighten(
+              $btn-outile-background-color,
+              $btn-hover-percent
+            );
+          } @else {
+            background-color: darken(
+              $btn-outile-background-color,
+              $btn-hover-percent
+            );
+          }
+        }
+      }
+    }
+  }
+}
