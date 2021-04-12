@@ -2,7 +2,7 @@
   @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
       $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-      // display flex
+      /** Display Flex class. */
       .d#{$infix}-flex {
         display: flex;
       }

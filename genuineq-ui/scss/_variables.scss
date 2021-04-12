@@ -225,6 +225,7 @@ $align-content: map-merge(
 /********************************************************************************
 **************************** Buttons ********************************************
 ********************************************************************************/
+/** $btn-hover: true = lighten($color, $btn-hover-percent) - $btn-hover: false = darken($color, $btn-hover-percent) */
 $btn-hover: false;
 $btn-hover-percent: 5%;
 $btn-cursor: pointer;
