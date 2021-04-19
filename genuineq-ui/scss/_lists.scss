@@ -1,0 +1,26 @@
+@if ($enable-lists) {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      /** Class for Lists */
+      .list {
+        list-style: none;
+        font-size: $list-font-size;
+        line-height: $list-line-height;
+        letter-spacing: $list-letter-spacing;
+        font-family: $list-font-family;
+      }
+      /** Class for Lists with custom bullets */
+      .list-bullet {
+        list-style: none;
+        font-size: $list-font-size;
+        line-height: $list-line-height;
+        letter-spacing: $list-letter-spacing;
+        font-family: $list-font-family;
+        /** Every li in the list is getting a custom bullet */
+        & > li::before {
+          content: $list-bullet-content;
+        }
+      }
+    }
+  }
+}

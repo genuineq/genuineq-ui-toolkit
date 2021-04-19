@@ -5,7 +5,7 @@ $font-size-base: 1rem;
 $line-height-base: 1rem;
 $letter-spacing-base: 0.1rem;
 $font-family-heading: "";
-$font-family-base: "";
+$font-family-base: "sans-serif";
 $font-family-extra: "";
 $spacer: 1rem;
 $border: 1px;
@@ -229,27 +229,27 @@ $align-content: map-merge(
 $btn-hover: false;
 $btn-hover-percent: 5%;
 $btn-cursor: pointer;
-$btn-font-family: sans-serif;
+$btn-font-family: $font-family-base;
 
 $btn-padding-y: $spacer;
 $btn-padding-x: $spacer;
-$btn-font-size: 16px;
+$btn-font-size: $font-size-base;
 $btn-border-radius: 5px;
-$btn-line-height: 1;
+$btn-line-height: $line-height-base;
 $btn-border: none;
 
 $btn-padding-y-sm: $spacer/2;
 $btn-padding-x-sm: $spacer/2;
-$btn-font-size-sm: 12px;
+$btn-font-size-sm: $font-size-base/2;
 $btn-border-radius-sm: 4px;
-$btn-line-height-sm: 1;
+$btn-line-height-sm: $line-height-base;
 $btn-border-sm: none;
 
 $btn-padding-y-lg: $spacer * 1.5;
 $btn-padding-x-lg: $spacer * 1.5;
-$btn-font-size-lg: 24px;
+$btn-font-size-lg: $font-size-base * 1.5;
 $btn-border-radius-lg: 6px;
-$btn-line-height-lg: 1;
+$btn-line-height-lg: $line-height-base;
 $btn-border-lg: none;
 
 $btn-outile-background-color: white;
@@ -300,5 +300,47 @@ $inset-shadows: map-merge(
 );
 
 /********************************************************************************
-**************************** Shadows ********************************************
+**************************** Dropdown *******************************************
+********************************************************************************/
+/** Dropdown Main Parent */
+$dropdown-main-witdh: 550px;
+
+/** Dropdown Button variables */
+$dropdonwn-btn-border: none;
+$dropdonwn-btn-cursor: pointer;
+$dropdown-btn-bg: blue;
+$dropdonwn-btn-border-radius: 5px;
+$dropdonwn-btn-padding-x: $spacer/2;
+$dropdonwn-btn-padding-y: $spacer;
+$dropdonwn-btn-font-family: $font-family-base;
+$dropdonwn-btn-font-size: $font-size-base;
+$dropdonwn-btn-line-height: $line-height-base;
+$dropdown-btn-letter-spacing: $letter-spacing-base;
+
+/** Dropdown Menu */
+$dropdown-menu-bg: gray;
+$dropdown-menu-border: solid 1px black;
+$dropdown-menu-border-radius: 6px;
+
+/** Dropdown Link variables */
+$dropdown-link-size: $font-size-base;
+$dropdown-link-height: $line-height-base;
+$dropdown-link-spacing: 2px;
+$dropdown-link-font-family: $font-family-base;
+$dropdown-link-padding-x: 6px;
+$dropdown-link-padding-y: 6px;
+
+/********************************************************************************
+**************************** Lists **********************************************
+********************************************************************************/
+
+$list-font-size: $font-size-base;
+$list-line-height: $line-height-base;
+$list-letter-spacing: $letter-spacing-base;
+$list-font-family: $font-family-base;
+
+$list-bullet-content: "";
+
+/********************************************************************************
+**************************** Tables *********************************************
 ********************************************************************************/
