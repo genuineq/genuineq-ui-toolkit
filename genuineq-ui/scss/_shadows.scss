@@ -2,6 +2,7 @@
   @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
       $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+      /** Box Shadows class. */
       @each $attribute, $name in (box-shadow: box-s) {
         @each $key, $value in $box-shadows {
           .#{$name}#{$infix}-#{$key} {
@@ -9,6 +10,7 @@
           }
         }
       }
+      /** Drop Shadows class. */
       @each $attribute, $name in (filter: drop-s) {
         @each $key, $value in $drop-shadows {
           .#{$name}#{$infix}-#{$key} {
@@ -16,6 +18,7 @@
           }
         }
       }
+      /** Inset shadows class. */
       @each $attribute, $name in (box-shadow: inset-s) {
         @each $key, $value in $inset-shadows {
           .#{$name}#{$infix}-#{$key} {

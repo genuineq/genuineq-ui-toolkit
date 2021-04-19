@@ -2,6 +2,7 @@
   @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
       $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+      /** Width class. */
       @each $attribute, $name in (width: width) {
         @each $key, $value in $widths {
           .#{$name}#{$infix}-#{$key} {

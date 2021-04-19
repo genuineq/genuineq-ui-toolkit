@@ -16,6 +16,7 @@ const sourcemaps = require('gulp-sourcemaps')
 const livereload = require('gulp-livereload')
 const autoprefixer = require('gulp-autoprefixer')
 const accessibility = require('gulp-accessibility')
+const bro = require('gulp-bro')
 
 /**********************************************
 *********** GULP CUSTOM CONFIGURATION *********
@@ -82,10 +83,25 @@ gulp.task("styles", async () => {
 /*************************************************
 ***************** JAVASCRIPT *********************
 *************************************************/
+// gulp.task('javascript', () =>
+//     gulp.src(`${paths.src.js}/*.js`)
+//         .pipe(plumber({ errorHandler: onError }))
+//         .pipe(babel({ presets: ['@babel/env'] }))
+//         .pipe(uglify())
+//         .pipe(size({ title: 'javascript' }))
+//         .pipe(gulp.dest(paths.development.js))
+//         .pipe(livereload({ start: true }))
+// );
 gulp.task('javascript', () =>
     gulp.src(`${paths.src.js}/*.js`)
         .pipe(plumber({ errorHandler: onError }))
-        .pipe(babel({ presets: ['@babel/env'] }))
+        .pipe(bro({
+            error: 'emit',
+            transform: [
+                ['babelify', { presets: ['@babel/preset-env'], plugins: ['transform-class-properties'] }],
+                ['browserify-shim', { global: true }]
+            ]
+        }))
         .pipe(uglify())
         .pipe(size({ title: 'javascript' }))
         .pipe(gulp.dest(paths.development.js))
