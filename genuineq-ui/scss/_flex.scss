@@ -1,0 +1,51 @@
+@if ($enable-flex) {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+      /** Display Flex class. */
+      .d#{$infix}-flex {
+        display: flex;
+      }
+      /** Flex Direction class. */
+      @each $attribute, $name in (flex-direction: flex-direction) {
+        @each $key, $value in $flex-directions {
+          .#{$name}#{$infix}-#{$key} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+      /** Flex Wrap class. */
+      @each $attribute, $name in (flex-wrap: flex-wrap) {
+        @each $key, $value in $flex-wrap {
+          .#{$name}#{$infix}-#{$key} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+      /** Justify Content class. */
+      @each $attribute, $name in (justify-content: justify-content) {
+        @each $key, $value in $justify-content {
+          .#{$name}#{$infix}-#{$key} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+      /** Align Items  class. */
+      @each $attribute, $name in (align-items: align-items) {
+        @each $key, $value in $align-items {
+          .#{$name}#{$infix}-#{$key} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+      /** Align Content class. */
+      @each $attribute, $name in (align-content: align-content) {
+        @each $key, $value in $align-content {
+          .#{$name}#{$infix}-#{$key} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+    }
+  }
+}

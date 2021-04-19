@@ -1,0 +1,47 @@
+@if $enable-fonts {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+      /** Font Size class. */
+      @each $attribute, $name in (font-size: font-size) {
+        @each $size, $value in $fonts-size {
+          .#{$name}#{$infix}-#{$size} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+      /** Font Weight class. */
+      @each $attribute, $name in (font-weight: font-weight) {
+        @each $size, $value in $fonts-weight {
+          .#{$name}#{$infix}-#{$size} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+      /** Line Height class. */
+      @each $attribute, $name in (line-height: line-height) {
+        @each $size, $value in $line-height {
+          .#{$name}#{$infix}-#{$size} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+      /** Letter Spacing class. */
+      @each $attribute, $name in (letter-spacing: letter-spacing) {
+        @each $size, $value in $letter-spacing {
+          .#{$name}#{$infix}-#{$size} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+      /** Line Family class. */
+      @each $attribute, $name in (font-family: font-family) {
+        @each $size, $value in $font-family {
+          .#{$name}#{$infix}-#{$size} {
+            #{$attribute}: $value;
+          }
+        }
+      }
+    }
+  }
+}
