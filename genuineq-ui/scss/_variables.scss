@@ -303,7 +303,7 @@ $inset-shadows: map-merge(
 **************************** Dropdown *******************************************
 ********************************************************************************/
 /** Dropdown Main Parent */
-$dropdown-main-witdh: 550px;
+$dropdown-main-witdh: 150px;
 
 /** Dropdown Button variables */
 $dropdonwn-btn-border: none;
@@ -344,3 +344,182 @@ $list-bullet-content: "";
 /********************************************************************************
 **************************** Tables *********************************************
 ********************************************************************************/
+
+/** Table variables */
+$table-width: 100%;
+$table-font-family: $font-family-base;
+$table-margins: 0 auto;
+$table-bg: white;
+
+/** Header and Footer variables */
+$table-thead-tfoot-font-weight: bold;
+
+$table-thead-padding: 2px 2px;
+$table-thead-bottom-border: 1px solid #111;
+$table-thead-outile: none;
+$table-thead-cursor: pointer;
+
+$table-tfoot-padding: 10px 18px 6px 18px;
+$table-tfoot-top-border: 1px solid #111;
+
+/** Header and Footer variables */
+$table-tbody-padding: 8px 10px;
+$table-tbody-top-border: 1px solid #ccc;
+$table-tbody-odd-bg: #f9f9f9;
+$table-tbody-hover: #f6f6f6;
+
+$table-tbody-thtd-border-top: "";
+$table-tbody-thtd-border-right: "";
+$table-tbody-thtd-first-child-border-left: "";
+
+/** Selected */
+$table-tbody-selected-tr-bg-color: "";
+$table-tbody-selected-tr-odd-bg-color: "";
+$table-tbody-selected-tr-hover-bg-color: "";
+$table-tbody-selected-sorting-tr-bg-color: "";
+$table-tbody-sorting-tr-bg-color: "";
+
+/** Sorting 1 */
+$table-tbody-sorting1-odd: #f1f1f1;
+$table-tbody-sorting1-even: #fafafa;
+$table-tbody-sorting1-hover: #eaeaea;
+$table-tbody-sorting1-odd-selected: "";
+$table-tbody-sorting1-even-selected: "";
+$table-tbody-sorting1-hover-selected: "";
+
+/** Sorting 1 */
+$table-tbody-sorting2-odd: #f1f1f1;
+$table-tbody-sorting2-even: #fafafa;
+$table-tbody-sorting2-hover: #eaeaea;
+$table-tbody-sorting2-odd-selected: "";
+$table-tbody-sorting2-even-selected: "";
+$table-tbody-sorting2-hover-selected: "";
+
+/** Sorting 1 */
+$table-tbody-sorting3-odd: #f1f1f1;
+$table-tbody-sorting3-even: #fafafa;
+$table-tbody-sorting3-hover: #eaeaea;
+$table-tbody-sorting3-odd-selected: "";
+$table-tbody-sorting3-even-selected: "";
+$table-tbody-sorting3-hover-selected: "";
+
+/** Control features */
+
+/** Show x entries */
+$table-controls-entries-float: left;
+$table-controls-entries-border: 1px solid #aaa;
+$table-controls-entries-border-radius: 3px;
+$table-controls-entries-padding: 5px;
+$table-controls-entries-bg: transparent;
+
+/** Search bar */
+$table-controls-search-float: right;
+$table-controls-search-text-align: right;
+$table-controls-search-border: 1px solid #aaa;
+$table-controls-search-border-radius: 3px;
+$table-controls-search-padding: 5px;
+$table-controls-search-bg: transparent;
+$table-controls-search-margin-left: 3px;
+
+/** Table info in bottom left */
+$table-controls-info-clear: both;
+$table-controls-info-float: left;
+$table-controls-info-padding-top: 0.755em;
+
+/** Pagination in bottom right */
+/** Positioning */
+$table-controls-pagination-float: right;
+$table-controls-pagination-text-align: right;
+$table-controls-pagination-padding-top: 0.25em;
+
+/** Button */
+$table-controls-pagination-btn-box-sizing: border-box;
+$table-controls-pagination-btn-display: inline-block;
+$table-controls-pagination-btn-min-width: 1.5em;
+$table-controls-pagination-btn-padding: 0.5em 1em;
+$table-controls-pagination-btn-margin-left: 2px;
+$table-controls-pagination-btn-text-align: center;
+$table-controls-pagination-btn-cursor: pointer;
+$table-controls-pagination-btn-color: #333;
+$table-controls-pagination-btn-border: 1px solid transparent;
+$table-controls-pagination-btn-border-radius: 2px;
+
+/** Button Active */
+$table-controls-pagination-btn-active-color: #333;
+$table-controls-pagination-btn-active-border: 1px solid #979797;
+$table-controls-pagination-btn-active-bg-color: white;
+$table-controls-pagination-btn-active-gradient-color1: white;
+$table-controls-pagination-btn-active-gradient-color2: #979797;
+
+/** Button Disabled */
+$table-controls-pagination-btn-disabled-cursor: default;
+$table-controls-pagination-btn-disabled-color: #666;
+$table-controls-pagination-btn-disabled-border: 1px solid transparent;
+$table-controls-pagination-btn-disabled-bg: tranparent;
+$table-controls-pagination-btn-disabled-box-shadow: none;
+
+/** Button Hover */
+$table-controls-pagination-btn-hover-color: white;
+$table-controls-pagination-btn-hover-border: 1px solid #111;
+$table-controls-pagination-btn-hover-bg-color: #585858;
+$table-controls-pagination-btn-hover-gradient-color1: #585858;
+$table-controls-pagination-btn-hover-gradient-color2: #111;
+
+/********************************************************************************
+**************************** Images *********************************************
+********************************************************************************/
+
+/** image-thubmnail variables */
+$image-thumbnail-width: 200px;
+$image-thumbnail-height: auto;
+$image-thumbnail-padding: 0;
+$image-thumbnail-bg: "";
+$image-thumbnail-border: 5px solid gray;
+$image-thumbnail-border-radius: 5px;
+$image-thumbnail-box-shadow: 10px 10px 10px 2px white;
+
+/** Object-fit array*/
+$object-fit-attributes: ();
+$object-fit-attributes: map-merge(
+  (
+    "fill": fill,
+    "contain": contain,
+    "cover": cover,
+    "none": none,
+    "scale-down": scale-down,
+  ),
+  $object-fit-attributes
+);
+
+/********************************************************************************
+**************************** Forms **********************************************
+********************************************************************************/
+
+/** Form Container variables*/
+
+/** Form Field Label variables*/
+$form-field-label-margin-top: 15px;
+$form-field-label-font-family: $font-family-base;
+$form-field-label-font-size: $font-size-base;
+$form-field-label-color: black;
+$form-field-label-font-weight: null;
+$form-field-label-line-height: $line-height-base;
+$form-filed-label-letter-spacing: $letter-spacing-base;
+
+$form-field-label-padding-left: 5px;
+
+/** Form Field Control variables*/
+$form-field-control-margin-top: 5px;
+$form-field-control-font-family: $font-family-base;
+$form-field-control-font-size: $font-size-base;
+$form-field-control-color: black;
+$form-field-control-font-weight: null;
+$form-field-control-line-height: $line-height-base;
+$form-filed-control-letter-spacing: $letter-spacing-base;
+
+/** Form Field Control File Choose variables */
+$form-field-control-file-border: 1px solid black;
+$form-field-control-file-border-radius: 5px;
+$form-field-control-file-padding-x: 5px;
+$form-field-control-file-padding-y: 10px;
+$form-field-control-file-bg-color: gray;
