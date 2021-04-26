@@ -523,3 +523,44 @@ $form-field-control-file-border-radius: 5px;
 $form-field-control-file-padding-x: 5px;
 $form-field-control-file-padding-y: 10px;
 $form-field-control-file-bg-color: gray;
+
+/********************************************************************************
+**************************** Accordions *****************************************
+********************************************************************************/
+
+/** Accordion Container variables */
+$accordion-container-width: 50%;
+$accordion-container-border: 1px solid black;
+$accordion-container-border-radius-top: 4px 4px 0 0;
+$accordion-container-border-radius-bottom: 0 0 4px 4px;
+
+/** Accordion Element variables */
+
+/** Accordion Button variables */
+$accordion-btn-bg-color: blue;
+$accordion-btn-color: white;
+$accordion-btn-border: $accordion-container-border;
+$accordion-btn-cursor: pointer;
+$accordion-btn-padding-x: 10px;
+$accordion-btn-padding-y: 20px;
+$accordion-btn-font-family: $font-family-base;
+$accordion-btn-font-size: $font-size-base;
+$accordion-btn-line-height: $line-height-base;
+$accordion-btn-letter-spacing: $letter-spacing-base;
+
+$accordion-btn-focus-color: red;
+$accordion-btn-focus-border: 2px solid black;
+
+/** Accordion Info variables */
+$accordion-info-bg-color: white;
+$accordion-info-border: $accordion-container-border;
+$accordion-info-padding-x: 10px;
+$accordion-info-padding-y: 20px;
+$accordion-info-font-family: $font-family-base;
+$accordion-info-font-size: 14px;
+$accordion-info-line-height: $line-height-base;
+$accordion-info-letter-spacing: $letter-spacing-base;
+
+/** Accordion First Button variables */
+
+/** Accordion Last Button variables */
