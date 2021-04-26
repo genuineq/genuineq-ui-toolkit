@@ -2151,6 +2151,13 @@
     "whatwg-mimetype" "^2.2.0"
     "whatwg-url" "^7.0.0"
 
+"datatables.net@^1.10.24":
+  "integrity" "sha512-CwXixvOdinvBCLXvcTloDinWiEM7Geaz+GwyjPrZL+MXIGPcLv4Op1bbWn8ErsI1JWMIWC8Cuf1rnDU2RrFV5w=="
+  "resolved" "https://registry.npmjs.org/datatables.net/-/datatables.net-1.10.24.tgz"
+  "version" "1.10.24"
+  dependencies:
+    "jquery" ">=1.7"
+
 "dateformat@^2.0.0":
   "integrity" "sha1-QGXiATz5+5Ft39gu+1Bq1MZ2kGI="
   "resolved" "https://registry.npmjs.org/dateformat/-/dateformat-2.2.0.tgz"
@@ -4324,7 +4331,7 @@
     "has-to-string-tag-x" "^1.2.0"
     "is-object" "^1.0.1"
 
-"jquery@^3.6.0":
+"jquery@^3.6.0", "jquery@>=1.7":
   "integrity" "sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw=="
   "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.6.0.tgz"
   "version" "3.6.0"

@@ -1,0 +1,25 @@
+@if $enable-images {
+  /** Class for fluid image (width: 100%) */
+  .image-fluid {
+    width: 100%;
+    height: auto;
+  }
+  /** Class for thumbnail image */
+  .image-thumbnail {
+    width: $image-thumbnail-width;
+    height: $image-thumbnail-height;
+    padding: $image-thumbnail-padding;
+    background: $image-thumbnail-bg;
+    border: $image-thumbnail-border;
+    border-radius: $image-thumbnail-border-radius;
+    box-shadow: $image-thumbnail-box-shadow;
+  }
+  /** Creating classes for all the proprieties of object-fit */
+  @each $attribute, $name in (object-fit: object-fit) {
+    @each $key, $value in $object-fit-attributes {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+}

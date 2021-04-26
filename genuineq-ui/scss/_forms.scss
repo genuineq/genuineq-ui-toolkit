@@ -1,0 +1,49 @@
+@if $enable-forms {
+  .form-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /** Form Container for Checkboxes*/
+    &-checkbox {
+      width: 100%;
+    }
+  }
+
+  /** Class for Labels */
+  .form-field-label {
+    margin-top: $form-field-label-margin-top;
+    font-family: $form-field-label-font-family;
+    font-size: $form-field-label-font-size;
+    color: $form-field-label-color;
+    font-weight: $form-field-label-font-weight;
+    line-height: $form-field-label-line-height;
+    letter-spacing: $form-filed-label-letter-spacing;
+
+    /** Uncommon attributes between label and control */
+    padding-left: $form-field-label-padding-left;
+  }
+
+  /** Class for <input>, <textarea> */
+  .form-field-control {
+    width: 100%;
+    text-decoration: none;
+    margin-top: $form-field-control-margin-top;
+    font-family: $form-field-control-font-family;
+    font-size: $form-field-control-font-size;
+    color: $form-field-control-color;
+    font-weight: $form-field-control-font-weight;
+    line-height: $form-field-control-line-height;
+    letter-spacing: $form-filed-control-letter-spacing;
+    /** For text area */
+    resize: none;
+    &-file {
+      @extend.form-field-control;
+      border: $form-field-control-file-border;
+      border-radius: $form-field-control-file-border-radius;
+      padding: $form-field-control-file-padding-x
+        $form-field-control-file-padding-y;
+      background-color: $form-field-control-file-bg-color;
+    }
+  }
+}
