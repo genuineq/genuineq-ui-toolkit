@@ -1,0 +1,1959 @@
+@if $enable-attributes {
+  @each $attribute, $name in (all: all) {
+    @each $key, $value in $all {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (animation-name: animation-name) {
+    @each $key, $value in $animation-name {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (animation-duration: animation-duration) {
+    @each $key, $value in $animation-duration {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute,
+    $name in (animation-timing-function: animation-timing-function)
+  {
+    @each $key, $value in $animation-timing-function {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (animation-delay: animation-delay) {
+    @each $key, $value in $animation-delay {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (animation-direction: animation-direction) {
+    @each $key, $value in $animation-direction {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute,
+    $name in (animation-iteration-count: animation-iteration-count)
+  {
+    @each $key, $value in $animation-iteration-count {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (animation-fill-mode: animation-fill-mode) {
+    @each $key, $value in $animation-fill-mode {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (animation-play-state: animation-play-state) {
+    @each $key, $value in $animation-play-state {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (aspect-ratio: aspect-ratio) {
+    @each $key, $value in $aspect-ratio {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (backdrop-filter: backdrop-filter) {
+    @each $key, $value in $backdrop-filter {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (backface-visibility: backface-visibility) {
+    @each $key, $value in $backface-visibility {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (background-attachment: background-attachment) {
+    @each $key, $value in $background-attachment {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (background-blend-mode: background-blend-mode) {
+    @each $key, $value in $background-blend-mode {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (background-clip: background-clip) {
+    @each $key, $value in $background-clip {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (background-color: background-color) {
+    @each $key, $value in $colors {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (background-image: background-image) {
+    @each $key, $value in $background-image {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (background-origin: background-origin) {
+    @each $key, $value in $background-origin {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (background-position: background-position) {
+    @each $key, $value in $background-position {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (background-repeat: background-repeat) {
+    @each $key, $value in $background-repeat {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (background-size: background-size) {
+    @each $key, $value in $background-size {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (bleed: bleed) {
+    @each $key, $value in $bleed {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (block-overflow: block-overflow) {
+    @each $key, $value in $block-overflow {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (border-width: border-width) {
+    @each $key, $value in $borders-width {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (border-style: border-style) {
+    @each $key, $value in $borders-styles {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (border-color: border-color) {
+    @each $key, $value in $colors {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (border-square: border-square) {
+    @each $key, $value in $borders-square {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (border-radius: border-radius) {
+    @each $key, $value in $borders-radius {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (border-colapse: border-colapse) {
+    @each $key, $value in $borders-colapse {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (border-spacing: border-spacing) {
+    @each $key, $value in $borders-spacing {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (border-boundary: border-boundary) {
+    @each $key, $value in $borders-boundary {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (border-image-source: border-image-source) {
+    @each $key, $value in $borders-image-source {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (border-image-slice: border-image-slice) {
+    @each $key, $value in $borders-image-slice {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (border-image-width: border-image-width) {
+    @each $key, $value in $borders-image-width {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (box-decoration-break: box-decoration-break) {
+    @each $key, $value in $box-decoration-break {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (box-shadow: box-shadow) {
+    @each $key, $value in $box-shadows {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (box-sizing: box-sizing) {
+    @each $key, $value in $box-sizing {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (break-inside: break-inside) {
+    @each $key, $value in $break-inside {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (caption-side: caption-side) {
+    @each $key, $value in $caption-side {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (caret-color: caret-color) {
+    @each $key, $value in $colors {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (caret-shape: caret-shape) {
+    @each $key, $value in $caret-shape {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (clear: clear) {
+    @each $key, $value in $clear {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (clip-path: clip-path) {
+    @each $key, $value in $clip-path {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (color: color) {
+    @each $key, $value in $colors {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (color-adjust: color-adjust) {
+    @each $key, $value in $color-adjust {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (column-count: column-count) {
+    @each $key, $value in $column-count {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (column-fill: column-fill) {
+    @each $key, $value in $column-fill {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (column-gap: column-gap) {
+    @each $key, $value in $column-gap {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (column-rule-width: column-rule-width) {
+    @each $key, $value in $column-rule-width {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (column-rule-style: column-rule-style) {
+    @each $key, $value in $column-rule-style {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (column-rule-color: column-rule-color) {
+    @each $key, $value in $colors {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (column-span: column-span) {
+    @each $key, $value in $column-span {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (column-width: column-width) {
+    @each $key, $value in $column-width {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (contain: contain) {
+    @each $key, $value in $contain {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (content: content) {
+    @each $key, $value in $content {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (counter-increment: counter-increment) {
+    @each $key, $value in $counter-increment {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (counter-reset: counter-reset) {
+    @each $key, $value in $counter-reset {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (counter-set: counter-set) {
+    @each $key, $value in $counter-set {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (cursors: cursors) {
+    @each $key, $value in $cursors {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (direction: direction) {
+    @each $key, $value in $direction {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (display: display) {
+    @each $key, $value in $display {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (empty-cells: empty-cells) {
+    @each $key, $value in $empty-cells {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (fill: fill) {
+    @each $key, $value in $colors {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (filter: filter) {
+    @each $key, $value in $filter {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (flex-directions: flex-directions) {
+    @each $key, $value in $flex-directions {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (flex-wrap: flex-wrap) {
+    @each $key, $value in $flex-wrap {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (justify-content: justify-content) {
+    @each $key, $value in $justify-content {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (justify-items: justify-items) {
+    @each $key, $value in $justify-items {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (justify-self: justify-self) {
+    @each $key, $value in $justify-self {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (align-items: align-items) {
+    @each $key, $value in $align-items {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (align-content: align-content) {
+    @each $key, $value in $all {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (align-self: align-self) {
+    @each $key, $value in $align-self {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (flex-basis: flex-basis) {
+    @each $key, $value in $all {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (flex-grow: flex-grow) {
+    @each $key, $value in $flex-grow {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (flex-shrink: flex-shrink) {
+    @each $key, $value in $flex-shrink {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (float: float) {
+    @each $key, $value in $float {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (font-display: font-display) {
+    @each $key, $value in $font-display {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (font-family: font-family) {
+    @each $key, $value in $font-family {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (font-feature-settings: font-feature-settings) {
+    @each $key, $value in $font-feature-settings {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (font-kerning: font-kerning) {
+    @each $key, $value in $font-kerning {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (font-optical-sizing: font-optical-sizing) {
+    @each $key, $value in $font-optical-sizing {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (fonts-size: fonts-size) {
+    @each $key, $value in $fonts-size {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (font-size-adjust: font-size-adjust) {
+    @each $key, $value in $font-size-adjust {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (font-stretch: font-stretch) {
+    @each $key, $value in $font-stretch {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (font-style: font-style) {
+    @each $key, $value in $font-style {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (font-systhesis: font-systhesis) {
+    @each $key, $value in $font-systhesis {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (font-variant: font-variant) {
+    @each $key, $value in $font-variant {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (font-variant-numeric: font-variant-numeric) {
+    @each $key, $value in $font-variant-numeric {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (fonts-weight: fonts-weight) {
+    @each $key, $value in $fonts-weight {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (gap: gap) {
+    @each $key, $value in $gap {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (grid-row: grid-row) {
+    @each $key, $value in $grid-row {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (grid-column: grid-column) {
+    @each $key, $value in $grid-column {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (grid-template-rows: grid-template-rows) {
+    @each $key, $value in $grid-template-rows {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (grid-template-columns: grid-template-columns) {
+    @each $key, $value in $grid-template-columns {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (hanging-punctuation: hanging-punctuation) {
+    @each $key, $value in $hanging-punctuation {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (height: height) {
+    @each $key, $value in $heights {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (hyphens: hyphens) {
+    @each $key, $value in $hyphens {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (image-rendering: image-rendering) {
+    @each $key, $value in $image-rendering {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (initial-letter: initial-letter) {
+    @each $key, $value in $initial-letter {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (initial-size: initial-size) {
+    @each $key, $value in $initial-size {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (inset: inset) {
+    @each $key, $value in $inset {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (inset-block: inset-block) {
+    @each $key, $value in $inset-block {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (inset-block-end: inset-block-end) {
+    @each $key, $value in $inset-block-end {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (inset-block-start: inset-block-start) {
+    @each $key, $value in $inset-block-start {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (inset-inline: inset-inline) {
+    @each $key, $value in $inset-inline {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (inset-inline-end: inset-inline-end) {
+    @each $key, $value in $inset-inline-end {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (inset-inline-start: inset-inline-start) {
+    @each $key, $value in $inset-inline-start {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (isolation: isolation) {
+    @each $key, $value in $isolation {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (letter-spacing: letter-spacing) {
+    @each $key, $value in $letter-spacing {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (line-break: line-break) {
+    @each $key, $value in $line-break {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (line-clamp: line-clamp) {
+    @each $key, $value in $line-clamp {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (line-height: line-height) {
+    @each $key, $value in $line-height {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (list-style-type: list-style-type) {
+    @each $key, $value in $list-style-type {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (list-style-position: list-style-position) {
+    @each $key, $value in $list-style-position {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (list-style-image: list-style-image) {
+    @each $key, $value in $list-style-image {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (margin-block: margin-block) {
+    @each $key, $value in $margin-block {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (margin-block-end: margin-block-end) {
+    @each $key, $value in $margin-block-end {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (margin-block-start: margin-block-start) {
+    @each $key, $value in $margin-block-start {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (margin-inline: margin-inline) {
+    @each $key, $value in $margin-inline {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (margin-inline-end: margin-inline-end) {
+    @each $key, $value in $margin-inline-end {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (margin-inline-start: margin-inline-start) {
+    @each $key, $value in $margin-inline-start {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (mask-clip: mask-clip) {
+    @each $key, $value in $mask-clip {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (mask-composite: mask-composite) {
+    @each $key, $value in $mask-composite {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (mask-image: mask-image) {
+    @each $key, $value in $mask-image {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (mask-mode: mask-mode) {
+    @each $key, $value in $mask-mode {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (mask-origin: mask-origin) {
+    @each $key, $value in $mask-origin {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (mask-position: mask-position) {
+    @each $key, $value in $mask-position {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (mask-position: mask-position) {
+    @each $key, $value in $mask-position {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (mask-repeat: mask-repeat) {
+    @each $key, $value in $mask-repeat {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (mask-size: mask-size) {
+    @each $key, $value in $mask-size {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (mask-style: mask-style) {
+    @each $key, $value in $mask-style {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (max-height: max-height) {
+    @each $key, $value in $max-height {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (max-inline-size: max-inline-size) {
+    @each $key, $value in $max-inline-size {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+  @each $attribute, $name in (max-width: max-width) {
+    @each $key, $value in $max-width {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (min-height: min-height) {
+    @each $key, $value in $min-height {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (min-width: min-width) {
+    @each $key, $value in $min-width {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (mix-blend-mode: mix-blend-mode) {
+    @each $key, $value in $mix-blend-mode {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (object-fit: object-fit) {
+    @each $key, $value in $object-fit {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (object-position: object-position) {
+    @each $key, $value in $object-position {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (object-position: object-position) {
+    @each $key, $value in $object-position {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (offset-anchor: offset-anchor) {
+    @each $key, $value in $offset-anchor {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (offset-distance: offset-distance) {
+    @each $key, $value in $offset-distance {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (offset-path: offset-path) {
+    @each $key, $value in $offset-path {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (offset-rotate: offset-rotate) {
+    @each $key, $value in $offset-rotate {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (opacity: opacity) {
+    @each $key, $value in $opacity {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (order: order) {
+    @each $key, $value in $order {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (orphans: orphans) {
+    @each $key, $value in $orphans {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (outline-width: outline-width) {
+    @each $key, $value in $outline-width {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (outline-style: outline-style) {
+    @each $key, $value in $outline-style {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (outline-color: outline-color) {
+    @each $key, $value in $colors {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (outline-offset: outline-offset) {
+    @each $key, $value in $outline-offset {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (overflow: overflow) {
+    @each $key, $value in $overflow {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (overflow-anchor: overflow-anchor) {
+    @each $key, $value in $overflow-anchor {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (overflow-wrap: overflow-wrap) {
+    @each $key, $value in $overflow-wrap {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (overscroll-behavior: overscroll-behavior) {
+    @each $key, $value in $overscroll-behavior {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+  @each $attribute, $name in (page-break-after: page-break-after) {
+    @each $key, $value in $page-break-after {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (page-break-before: page-break-before) {
+    @each $key, $value in $page-break-before {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (page-break-inside: page-break-inside) {
+    @each $key, $value in $page-break-inside {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (paint-order: paint-order) {
+    @each $key, $value in $paint-order {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (perspective: perspective) {
+    @each $key, $value in $perspective {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (perspective-origin: perspective-origin) {
+    @each $key, $value in $perspective-origin {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (place-items: place-items) {
+    @each $key, $value in $place-items {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (place-self: place-self) {
+    @each $key, $value in $place-self {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (pointer-events: pointer-events) {
+    @each $key, $value in $pointer-events {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (position: position) {
+    @each $key, $value in $position {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (quotes: quotes) {
+    @each $key, $value in $quotes {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (resize: resize) {
+    @each $key, $value in $resize {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (row-gap: row-gap) {
+    @each $key, $value in $row-gap {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scroll-behaviour: scroll-behaviour) {
+    @each $key, $value in $scroll-behaviour {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scroll-margin-top: scroll-margin-top) {
+    @each $key, $value in $scroll-margin-top {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scroll-margin-right: scroll-margin-right) {
+    @each $key, $value in $scroll-margin-right {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scroll-margin-bottom: scroll-margin-bottom) {
+    @each $key, $value in $scroll-margin-bottom {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scroll-margin-left: scroll-margin-left) {
+    @each $key, $value in $scroll-margin-left {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scroll-padding-top: scroll-padding-top) {
+    @each $key, $value in $scroll-padding-top {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scroll-padding-right: scroll-padding-right) {
+    @each $key, $value in $scroll-padding-right {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scroll-padding-bottom: scroll-padding-bottom) {
+    @each $key, $value in $scroll-padding-bottom {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scroll-padding-left: scroll-padding-left) {
+    @each $key, $value in $scroll-padding-left {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+  @each $attribute, $name in (scroll-snap-align: scroll-snap-align) {
+    @each $key, $value in $scroll-snap-align {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scroll-snap-stop: scroll-snap-stop) {
+    @each $key, $value in $scroll-snap-stop {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scroll-snap-type: scroll-snap-type) {
+    @each $key, $value in $scroll-snap-type {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scrollbar-color: scrollbar-color) {
+    @each $key, $value in $scrollbar-color {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scrollbar-gutter: scrollbar-gutter) {
+    @each $key, $value in $scrollbar-gutter {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (scrollbar-width: scrollbar-width) {
+    @each $key, $value in $scrollbar-width {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (shape-image-treshold: shape-image-treshold) {
+    @each $key, $value in $shape-image-treshold {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (shape-margin: shape-margin) {
+    @each $key, $value in $shape-margin {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (shape-outside: shape-outside) {
+    @each $key, $value in $shape-outside {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (speak: speak) {
+    @each $key, $value in $speak {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (speak-as: speak-as) {
+    @each $key, $value in $speak-as {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (stroke: stroke) {
+    @each $key, $value in $stroke {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (stroke-dasharray: stroke-dasharray) {
+    @each $key, $value in $stroke-dasharray {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (stroke-dashoffset: stroke-dashoffset) {
+    @each $key, $value in $stroke-dashoffset {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (stroke-linecap: stroke-linecap) {
+    @each $key, $value in $stroke-linecap {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (stroke-linejoin: stroke-linejoin) {
+    @each $key, $value in $stroke-linejoin {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (stroke-width: stroke-width) {
+    @each $key, $value in $stroke-width {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (tab-size: tab-size) {
+    @each $key, $value in $tab-size {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (table-layout: table-layout) {
+    @each $key, $value in $table-layout {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-align: text-align) {
+    @each $key, $value in $text-align {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-align-last: text-align-last) {
+    @each $key, $value in $text-align-last {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-combine-upright: text-combine-upright) {
+    @each $key, $value in $text-combine-upright {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+  @each $attribute, $name in (text-decoration: text-decoration) {
+    @each $key, $value in $text-decoration {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-decoration-color: text-decoration-color) {
+    @each $key, $value in $colors {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-decoration-line: text-decoration-line) {
+    @each $key, $value in $text-decoration-line {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-decoration-skip: text-decoration-skip) {
+    @each $key, $value in $text-decoration-skip {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute,
+    $name in (text-decoration-skip-ink: text-decoration-skip-ink)
+  {
+    @each $key, $value in $text-decoration-skip-ink {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-decoration-style: text-decoration-style) {
+    @each $key, $value in $text-decoration-style {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute,
+    $name in (text-decoration-thickness: text-decoration-thickness)
+  {
+    @each $key, $value in $text-decoration-thickness {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-indent: text-indent) {
+    @each $key, $value in $text-indent {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-justify: text-justify) {
+    @each $key, $value in $text-justify {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-orientation: text-orientation) {
+    @each $key, $value in $text-orientation {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-overflow: text-overflow) {
+    @each $key, $value in $text-overflow {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-rendering: text-rendering) {
+    @each $key, $value in $text-rendering {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-shadow: text-shadow) {
+    @each $key, $value in $text-shadow {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-stroke-width: text-stroke-width) {
+    @each $key, $value in $text-stroke-width {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-stroke-color: text-stroke-color) {
+    @each $key, $value in $colors {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-transform: text-transform) {
+    @each $key, $value in $text-transform {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-underline-offset: text-underline-offset) {
+    @each $key, $value in $text-underline-offset {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-underline-position: text-underline-position)
+  {
+    @each $key, $value in $text-underline-position {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (touch-action: touch-action) {
+    @each $key, $value in $touch-action {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (transform: transform) {
+    @each $key, $value in $transform {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (transform-origin: transform-origin) {
+    @each $key, $value in $transform-origin {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (transform-style: transform-style) {
+    @each $key, $value in $transform-style {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+  @each $attribute, $name in (transition: transition) {
+    @each $key, $value in $transition {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (transition-delay: transition-delay) {
+    @each $key, $value in $transition-delay {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (transition-duration: transition-duration) {
+    @each $key, $value in $transition-duration {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (transition-property: transition-property) {
+    @each $key, $value in $transition-property {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute,
+    $name in (transition-timing-function: transition-timing-function)
+  {
+    @each $key, $value in $transition-timing-function {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (unicode-bidi: unicode-bidi) {
+    @each $key, $value in $unicode-bidi {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (unicode-range: unicode-range) {
+    @each $key, $value in $unicode-range {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (user-select: user-select) {
+    @each $key, $value in $user-select {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (vertical-align: vertical-align) {
+    @each $key, $value in $vertical-align {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (visibility: visibility) {
+    @each $key, $value in $visibility {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (whitespace: whitespace) {
+    @each $key, $value in $whitespace {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (widows: widows) {
+    @each $key, $value in $widows {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (width: width) {
+    @each $key, $value in $widths {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (will-change: will-change) {
+    @each $key, $value in $will-change {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (word-break: word-break) {
+    @each $key, $value in $word-break {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (word-spacing: word-spacing) {
+    @each $key, $value in $word-spacing {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (writing-mode: writing-mode) {
+    @each $key, $value in $writing-mode {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (z-index: z-index) {
+    @each $key, $value in $z-index {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (zoom: zoom) {
+    @each $key, $value in $all {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (top: top) {
+    @each $key, $value in $top {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (bottom: bottom) {
+    @each $key, $value in $bottom {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (right: right) {
+    @each $key, $value in $right {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (left: left) {
+    @each $key, $value in $left {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+}

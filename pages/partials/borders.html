@@ -1,0 +1,146 @@
+<h2 class="page-title">Borders</h2>
+              <div class="example-container d-flex justify-content-space-around align-items-space-around flex-wrap-wrap">
+                <div class="height-2 width-1 border-width-1 border-style-solid border-color-warning text-align-center pt-6 m-3">border-style-solid</div>
+                <div class="height-2 width-1 border-width-1 border-style-dotted border-color-warning text-align-center pt-6 m-3">border-style-dotted</div>
+                <div class="height-2 width-1 border-width-1 border-style-dashed border-color-warning text-align-center pt-6 m-3">border-style-dashed</div>
+                <div class="height-2 width-1 border-width-1 border-style-groove border-color-warning text-align-center pt-6 m-3">border-style-groove</div>
+                <div class="height-2 width-1 border-width-1 border-style-inset border-color-warning text-align-center pt-6 m-3">border-style-inset</div>
+                <div class="height-2 width-1 border-width-4 border-style-solid border-color-warning text-align-center pt-6 m-3">border-width: 5px</div>  
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="height-2 width-1 border-width-1 border-style-solid border-color-warning text-align-center pt-6">border-style-solid&lt;/div>
+&lt;div class="height-2 width-1 border-width-1 border-style-dotted border-color-warning text-align-center pt-6">border-style-dotted&lt;/div>
+&lt;div class="height-2 width-1 border-width-1 border-style-dashed border-color-warning text-align-center pt-6">border-style-dashed&lt;/div>
+&lt;div class="height-2 width-1 border-width-1 border-style-groove border-color-warning text-align-center pt-6">border-style-groove&lt;/div>
+&lt;div class="height-2 width-1 border-width-1 border-style-inset border-color-warning text-align-center pt-6">border-style-inset&lt;/div>
+&lt;div class="height-2 width-1 border-width-4 border-style-solid border-color-warning text-align-center pt-6">border-width: 5px&lt;/div>  
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$borders-width: ();
+$borders-width: map-merge(
+  (
+    0: 1px,
+    1: 2px,
+    2: 3px,
+    3: 4px,
+    4: 5px,
+  ),
+  $borders-width
+);
+
+$borders-styles: ();
+$borders-styles: map-merge(
+  (
+    "solid": solid,
+    "dotted": dotted,
+    "dashed": dashed,
+    "double": double,
+    "groove": groove,
+    "ridge": ridge,
+    "inset": inset,
+    "outset": outset,
+    "none": none,
+  ),
+  $borders-styles
+);
+
+$borders-square: ();
+$borders-square: map-merge(
+  (
+    0: 0,
+    1: 0.1rem,
+  ),
+  $borders-square
+);
+
+$borders-radius: ();
+$borders-radius: map-merge(
+  (
+    0: 0,
+    1: 2px,
+    2: 4px,
+    3: 5px,
+    4: 6px,
+    5: 8px,
+  ),
+  $borders-radius
+);
+
+$borders-colapse: ();
+$borders-colapse: map-merge(
+  (
+    "separate": separate,
+  ),
+  $borders-colapse
+);
+
+$borders-spacing: ();
+$borders-spacing: map-merge(
+  (
+    0: 0,
+  ),
+  $borders-spacing
+);
+
+$borders-boundary: ();
+$borders-boundary: map-merge(
+  (
+    "none": none,
+    "parent": parent,
+    "display": display,
+  ),
+  $borders-boundary
+);
+
+$borders-image-source: ();
+$borders-image-source: map-merge(
+  (
+    0: url(""),
+  ),
+  $borders-image-source
+);
+
+$borders-image-slice: ();
+$borders-image-slice: map-merge(
+  (
+    20: 20,
+  ),
+  $borders-image-slice
+);
+
+$borders-image-width: ();
+$borders-image-width: map-merge(
+  (
+    1: 100%,
+  ),
+  $borders-image-width
+);
+</pre>
+              </div>
+              <h2 class="page-title">Box-Decoration-Break</h2>
+              <p class="info">The box-decoration-break property lets you control how box decorations are drawn across the fragments of a “broken” element. An element can break into fragments at the end of a line, over columns, or at page breaks.</p>
+              <p class="info">The box decoration properties controlled by box-decoration-break are: background (and its sub-properties), border, border-radius, border-image, box-shadow, margin, and padding.</p>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="box-decoration-break-clone">&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$box-decoration-break: ();
+$box-decoration-break: map-merge(
+  (
+    "clone": clone,
+    "slice": slice,
+  ),
+  $box-decoration-break
+);
+</pre>
+              </div>

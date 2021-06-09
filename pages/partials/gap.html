@@ -1,0 +1,36 @@
+<h2 class="page-title">Gap</h2>
+              <p class="info">The gap property in CSS is a shorthand for row-gap and column-gap, specifying the size of gutters, which is the space between rows and columns within grid, flex, and multi-column layouts.</p>
+              <div class="example-container display-grid gap-20px grid-template-columns-example">
+                <div class="width-1 height-2 background-color-info"></div>
+                <div class="width-1 height-2 background-color-info"></div>
+                <div class="width-1 height-2 background-color-info"></div>
+                <div class="width-1 height-2 background-color-info"></div>
+                <div class="width-1 height-2 background-color-info"></div>
+                <div class="width-1 height-2 background-color-info"></div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="example-container display-grid gap-20px grid-template-columns-example">
+  &lt;div class="width-1 height-2 background-color-info">&lt;/div>
+  &lt;div class="width-1 height-2 background-color-info">&lt;/div>
+  &lt;div class="width-1 height-2 background-color-info">&lt;/div>
+  &lt;div class="width-1 height-2 background-color-info">&lt;/div>
+  &lt;div class="width-1 height-2 background-color-info">&lt;/div>
+  &lt;div class="width-1 height-2 background-color-info">&lt;/div>
+&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$gap: ();
+$gap: map-merge(
+  (
+    "20px": 20px,
+    "1rem": 1rem,
+  ),
+  $gap
+);
+</pre>
+              </div>

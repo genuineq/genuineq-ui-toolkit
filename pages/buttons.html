@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components - Buttons</title>
+    <link rel="stylesheet" href="..\themes\project name\assets\css\app.css"/>
+    <link rel="stylesheet" href="website.css">
+  </head>
+  <body class="font-family-sans-serif">
+      <div class="container">
+        <div class="row lightgray">
+          <div class="col-4">
+            <nav class="sidebar">
+              <ul class="sidebar-items">
+              <!-- Basic Classes -->
+                <li class="sidebar-title">
+                  Basic Classes
+                </li>
+                <li class="sidebar-item">
+                  <a href="borders.html" class="sidebar-link">Borders</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="colors.html" class="sidebar-link">Colors</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="flex.html" class="sidebar-link">Flex</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="fonts.html" class="sidebar-link">Fonts</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="images.html" class="sidebar-link">Images</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="lists.html" class="sidebar-link">Lists</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="shadows.html" class="sidebar-link">Shadows</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="spacers.html" class="sidebar-link">Spacers</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="width.html" class="sidebar-link">Width</a>
+                </li>
+
+                <!-- COMPONENTS -->
+                <li class="sidebar-title">
+                  Components
+                </li>
+                <li class="sidebar-item">
+                  <a href="accordion.html" class="sidebar-link">Accordion</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="buttons.html" class="sidebar-link active-link">Buttons</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="carousel.html" class="sidebar-link">Crousel</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="dropdown.html" class="sidebar-link">Dropdown</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="forms.html" class="sidebar-link">Forms</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="navbar.html" class="sidebar-link">Navbar</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="sidebar.html" class="sidebar-link">Sidebar</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="datatable.html" class="sidebar-link">DataTable</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-8 border-left">
+            <h1 class="page-header">Buttons</h1>
+            <h2 class="page-title">Example</h2>
+            <div class="example-container d-flex justify-content-space-around flex-wrap-wrap">
+              <button class="btn-primary">Primary</button>
+              <button class="btn-secondary">Secondary</button>
+              <button class="btn-danger">Danger</button>
+              <button class="btn-warning">Warning</button>
+              <button class="btn-succes">Succes</button>
+              <button class="btn-info">Info</button>
+              <button class="btn-black">Black</button>
+            </div>
+            <h2 class="page-title">HTML</h2>
+            <div class="example-container">
+<pre class="text-example">
+&lt;button class="btn-primary">Primary&lt;button>
+&lt;button class="btn-secondary">Secondary&lt;button>
+&lt;button class="btn-danger">Danger&lt;button>
+&lt;button class="btn-warning">Warning&lt;button>
+&lt;button class="btn-succes">Succes&lt;button>
+&lt;button class="btn-info">Info&lt;button>
+&lt;button class="btn-black">Black&lt;button>
+</pre>
+            </div>
+            <h2 class="page-title">Sizes</h2>
+            <div class="example-container">
+              <button class="btn-sm-primary">Primary</button>
+              <button class="btn-secondary">Secondary</button>
+              <button class="btn-lg-danger">Danger</button>
+            </div>
+            <h2 class="page-title">HTML</h2>
+            <div class="example-container">
+<pre class="text-example">
+&lt;button class="btn-sm-primary">Primary&lt;button>
+&lt;button class="btn-secondary">Secondary&lt;button>
+&lt;button class="btn-lg-danger">Danger&lt;button>
+</pre>
+            </div>
+            <h2 class="page-title">Outline</h2>
+            <div class="example-container">
+              <button class="btn-outline-primary">Primary</button>
+              <button class="btn-outline-secondary">Secondary</button>
+              <button class="btn-outline-danger">Danger</button>
+            </div>
+            <h2 class="page-title">HTML</h2>
+            <div class="example-container">
+<pre class="text-example">
+&lt;button class="btn-outline-primary">Primary&lt;button>
+&lt;button class="btn-outline-secondary">Secondary&lt;button>
+&lt;button class="btn-outline-danger">Danger&lt;button>
+</pre>
+            </div>
+            <h2 class="page-title">Sass Variables</h2>
+            <div class="example-container">
+<pre class="text-example">
+$btn-hover:
+  -> true = lighten($color, $btn-hover-percent)
+  -> false = darken($color, $btn-hover-percent)
+$btn-hover: false;
+$btn-hover-percent: 5%;
+$btn-cursor: pointer;
+$btn-font-family: $font-family-base;
+$btn-color: white;
+
+$btn-padding-y: $spacer;
+$btn-padding-x: $spacer;
+$btn-font-size: $font-size-base;
+$btn-border-radius: 5px;
+$btn-line-height: $line-height-base;
+$btn-border: none;
+
+$btn-color-sm: white;
+$btn-padding-y-sm: $spacer/2;
+$btn-padding-x-sm: $spacer/2;
+$btn-font-size-sm: $font-size-base/2;
+$btn-border-radius-sm: 4px;
+$btn-line-height-sm: $line-height-base;
+$btn-border-sm: none;
+
+$btn-color-lg: white;
+$btn-padding-y-lg: $spacer * 1.5;
+$btn-padding-x-lg: $spacer * 1.5;
+$btn-font-size-lg: $font-size-base * 1.5;
+$btn-border-radius-lg: 6px;
+$btn-line-height-lg: $line-height-base;
+$btn-border-lg: none;
+
+$btn-outile-background-color: $white;
+
+$buttons: ();
+$buttons: map-merge($colors, $buttons);
+</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

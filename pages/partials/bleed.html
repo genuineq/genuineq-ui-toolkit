@@ -1,0 +1,16 @@
+<h2 class="page-title">Bleed</h2>
+              <p class="info">The bleed property in CSS is for specifying space outside of the page box boundary when determining the size of a printed page.</p>
+              <p class="info">Note that bleed is part of the Paged Media Module Level 3 spec, which is currently a draft in progress. In fact, bleed is more accurately described as an at-rule descriptor rather than a property since it belongs to the @page at-rule.</p>
+              <p class="info"> The term bleed comes from printing. It is used to describe space that is designed beyond edge of the paper, so that when the paper is trimmed, the color goes all the way to the edge.</p>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$bleed: ();
+$bleed: map-merge(
+  (
+    "auto": auto,
+  ),
+  $bleed
+);
+</pre>
+              </div>

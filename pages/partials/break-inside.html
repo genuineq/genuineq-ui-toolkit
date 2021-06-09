@@ -1,0 +1,32 @@
+<h2 class="page-title">Break-Inside</h2>
+              <p class="info">Columns do a great job of flowing and balancing content. Unfortunately, not all elements flow gracefully. Sometimes elements get stuck between columns. Fortunately, you can tell the browser to keep specific elements together with break-inside.</p>
+              <div class="example-container">
+                <ul class="list-style-type-none">
+                  <li class="break-inside-avoid background-color-info mb-3">This is an element in the list.</li>
+                  <li class="break-inside-avoid background-color-info mb-3">This is an element in the list.</li>
+                  <li class="break-inside-avoid background-color-info">This is an element in the list.</li>
+                </ul>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;ul class="list-style-type-none">
+  &lt;li class="break-inside-avoid background-color-info">This is an element in the list.&lt;/li>
+  &lt;li class="break-inside-avoid background-color-info">This is an element in the list.&lt;/li>
+  &lt;li class="break-inside-avoid background-color-info">This is an element in the list.&lt;/li>
+&lt;/ul>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$break-inside: ();
+$break-inside: map-merge(
+  (
+    "avoid": avoid,
+  ),
+  $break-inside
+);
+
+</pre>
+              </div>

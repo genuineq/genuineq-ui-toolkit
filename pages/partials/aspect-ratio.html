@@ -1,0 +1,24 @@
+<h2 class="page-title">Aspect-Ratio</h2>
+              <p class="info">The CSS property aspect-ratio lets you create boxes that maintain proportional dimensions where the height and width of a box are calculated automatically as a ratio. It’s a little math-y, but the idea is that you can divide one value by another on this property and the calculated value ensures a box stays in that proportion.</p>
+              <div class="example-container d-flex justify-content-center">
+                <img src="https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697" alt="#" class="aspect-ratio-16 height-2 border-style-solid border-color-black border-width-1">
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;img src="photo.png" class="aspect-ratio-16 height-2">
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$aspect-ratio: ();
+$aspect-ratio: map-merge(
+  (
+    1: 1/1,
+    16: 16/9,
+  ),
+  $aspect-ratio
+);
+</pre>
+              </div>

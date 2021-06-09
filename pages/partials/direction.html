@@ -1,0 +1,27 @@
+<h2 class="page-title">Direction</h2>
+              <p class="info">The direction property in CSS sets the direction of of content flow within a block-level element. This applies to text, inline, and inline-block elements. It also sets the default alignment of text and the direction that table cells flow within a table row.</p>
+              <div class="example-container">
+                <p class="direction-rtl background-color-primary color-white p-3 mb-3">Direction: rtl</p>
+                <p class="direction-ltr background-color-primary color-white p-3">Direction: ltr</p>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;p class="direction-rtl background-color-primary color-white p-3 mb-3">Direction: rtl&lt;/p>
+&lt;p class="direction-ltr background-color-primary color-white p-3">Direction: ltr&lt;/p>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$direction: ();
+$direction: map-merge(
+  (
+    "ltr": ltr,
+    "rtl": rtl,
+    "inherit": inherit,
+  ),
+  $direction
+);
+</pre>
+              </div>

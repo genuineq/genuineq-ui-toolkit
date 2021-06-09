@@ -1,0 +1,191 @@
+ <h2 class="page-title">Font</h2>
+              <p class="info">The font property in CSS is a shorthand property that combines all the following sub-properties in a single declaration.</p>
+              <div class="example-container d-flex justify-content-space-around align-items-center">
+                <p class="font-size-3">Font-size: 28px</p>
+                <p class="font-family-verdana">Font-family: verdana</p>
+                <p class="font-weight-3">Font-weight: 700</p>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;p class="font-size-3">Font-size: 28px&lt;/p>
+&lt;p class="font-family-verdana">Font-family: verdana&lt;/p>
+&lt;p class="font-weight-3">Font-weight: 700&lt;/p>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$font-display: ();
+$font-display: map-merge(
+  (
+    "auto": auto,
+    "block": block,
+    "swap": swap,
+    "fallback": fallback,
+    "optional": optional,
+  ),
+  $font-display
+);
+
+$font-family: ();
+$font-family: map-merge(
+  (
+    "arial": arial,
+    "helvetica": helvetica,
+    "verdana": verdana,
+    "sans-serif": sans-serif,
+    "times-new-roman": times-new-roman,
+  ),
+  $font-family
+);
+
+$font-feature-settings: ();
+$font-feature-settings: map-merge(
+  (
+    "smcp": smcp 1,
+  ),
+  $font-feature-settings
+);
+
+$font-kerning: ();
+$font-kerning: map-merge(
+  (
+    "auto": auto,
+    "none": none,
+    "normal": normal,
+  ),
+  $font-kerning
+);
+
+$font-optical-sizing: ();
+$font-optical-sizing: map-merge(
+  (
+    "auto": auto,
+    "none": none,
+    "initial": initial,
+    "inherit": inherit,
+    "unset": unset,
+  ),
+  $font-optical-sizing
+);
+
+$fonts-size: ();
+$fonts-size: map-merge(
+  (
+    12: 12px,
+    0: 16px,
+    1: 18px,
+    2: 24px,
+    3: 28px,
+  ),
+  $fonts-size
+);
+
+$font-size-adjust: ();
+$font-size-adjust: map-merge(
+  (
+    0: 0,
+    0.5: 0.5,
+    1: 1,
+  ),
+  $font-size-adjust
+);
+
+$font-stretch: ();
+$font-stretch: map-merge(
+  (
+    "ultra-condensed": ultra-condensed,
+    "extra-condensed": extra-condensed,
+    "condensed": condensed,
+    "semi-condensed": semi-condensed,
+    "normal": normal,
+    "semi-expanded": semi-expanded,
+    "expanded": expanded,
+    "extra-expanded": extra-expanded,
+    "ultra-expanded": ultra-expanded,
+  ),
+  $font-stretch
+);
+
+$font-style: ();
+$font-style: map-merge(
+  (
+    "italic": italic,
+    "oblique": oblique,
+    "normal": normal,
+  ),
+  $font-style
+);
+
+$font-systhesis: ();
+$font-systhesis: map-merge(
+  (
+    100: 100,
+    500: 500,
+    700: 700,
+  ),
+  $font-systhesis
+);
+
+$font-variant: ();
+$font-variant: map-merge(
+  (
+    "small-caps": small-caps,
+    "normal": normal,
+  ),
+  $font-variant
+);
+
+$font-variant-numeric: ();
+$font-variant-numeric: map-merge(
+  (
+    "normal": normal,
+    "ordinal": ordinal,
+    "slashed-zero": slashed-zero,
+  ),
+  $font-variant-numeric
+);
+
+$fonts-weight: ();
+$fonts-weight: map-merge(
+  (
+    0: "200",
+    1: "400",
+    2: "500",
+  ),
+  $fonts-weight
+);
+
+$line-break: ();
+$line-break: map-merge(
+  (
+    "auto": auto,
+    "loose": loose,
+    "normal": normal,
+    "strict": strict,
+    "anywhere": anywhere,
+  ),
+  $line-break
+);
+
+$line-height: ();
+$line-height: map-merge(
+  (
+    1: 1,
+    1.6: 1.6,
+    2: 2,
+  ),
+  $line-height
+);
+
+$line-clamp: ();
+$line-clamp: map-merge(
+  (
+    "none": none,
+    2: 2,
+  ),
+  $line-clamp
+);
+</pre>
+              </div>

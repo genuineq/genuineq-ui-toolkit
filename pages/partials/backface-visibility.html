@@ -1,0 +1,30 @@
+<h2 class="page-title">Backface-Visibility</h2>
+              <p class="info">The backface-visibility property relates to 3D transforms. With 3D transforms, you can manage to rotate an element so what we think of as the “front” of an element no longer faces the screen. For instance, this would flip an element away from the screen(left-side).
+                It will look as if you picked it up with a spatula and flipped it over like a pancake. That’s because the default for backface-visibility is visible. Instead of it being visible, you could hide it using hidden (right side).
+              </p>
+              <div class="example-container d-flex justify-content-space-around">
+                <p class="transform-flip">text</p>
+                <p class="transform-flip backface-visibility-hidden">text</p>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;p class="transform-flip">text&lt;/p>
+&lt;p class="transform-flip backface-visibility-hidden">text&lt;/p>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$backface-visibility: ();
+$backface-visibility: map-merge(
+  (
+    "visible": visible,
+    "hidden": hidden,
+    "inherit": inherit,
+    "initial": initial,
+  ),
+  $backface-visibility
+);
+</pre>
+              </div>

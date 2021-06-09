@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components - Dropdown</title>
+    <link rel="stylesheet" href="..\themes\project name\assets\css\app.css"/>
+    <link rel="stylesheet" href="website.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  </head>
+  <body class="font-family-sans-serif">
+      <div class="container">
+        <div class="row lightgray">
+          <div class="col-4">
+            <nav class="sidebar">
+              <ul class="sidebar-items">
+              <!-- Basic Classes -->
+                <li class="sidebar-title">
+                  Basic Classes
+                </li>
+                <li class="sidebar-item">
+                  <a href="borders.html" class="sidebar-link">Borders</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="colors.html" class="sidebar-link">Colors</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="flex.html" class="sidebar-link">Flex</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="fonts.html" class="sidebar-link">Fonts</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="images.html" class="sidebar-link">Images</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="lists.html" class="sidebar-link">Lists</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="shadows.html" class="sidebar-link">Shadows</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="spacers.html" class="sidebar-link">Spacers</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="width.html" class="sidebar-link">Width</a>
+                </li>
+
+                <!-- COMPONENTS -->
+                <li class="sidebar-title">
+                  Components
+                </li>
+                <li class="sidebar-item">
+                  <a href="accordion.html" class="sidebar-link">Accordion</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="buttons.html" class="sidebar-link">Buttons</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="carousel.html" class="sidebar-link">Crousel</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="dropdown.html" class="sidebar-link active-link">Dropdown</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="forms.html" class="sidebar-link">Forms</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="navbar.html" class="sidebar-link">Navbar</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="sidebar.html" class="sidebar-link">Sidebar</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="datatable.html" class="sidebar-link">DataTable</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-8 border-left">
+            <h1 class="page-header">Dropdown</h1>
+            <h2 class="page-title">Example</h2>
+            <div class="example-container">
+              <div class="dropdown-main">
+                <button class="dropdown-btn" data-behaviour="dropdown">Dropdown</button>
+                <ul class="dropdown-menu" data-element="dropdown-menu">
+                  <li class="dropdown-link">Item #1</li>
+                  <li class="dropdown-link">Item #2</li>
+                  <li class="dropdown-link">Item #3</li>
+                </ul>
+              </div>
+            </div>
+            <h2 class="page-title">HTML</h2>
+            <div class="example-container">
+<pre class="text-example">
+&lt;div class="dropdown-main">
+  &lt;button class="dropdown-btn" data-behaviour="dropdown">Dropdown&lt;/button>
+  &lt;ul class="dropdown-menu" data-element="dropdown-menu">
+    &lt;li class="dropdown-link">Item #1&lt;/li>
+    &lt;li class="dropdown-link">Item #2&lt;/li>
+    &lt;li class="dropdown-link">Item #3&lt;/li>
+  &lt;/ul>
+&lt;/div>
+</pre>
+            </div>
+            <h2 class="page-title">Sass Variables</h2>
+            <div class="example-container">
+<pre class="text-example">
+    Dropdown Main Parent
+$dropdown-main-witdh: 150px;
+
+    Dropdown Button variables
+$dropdonwn-btn-border: none;
+$dropdonwn-btn-cursor: pointer;
+$dropdown-btn-bg: $primary-color;
+$dropdonwn-btn-border-radius: 5px;
+$dropdonwn-btn-padding-x: $spacer/2;
+$dropdonwn-btn-padding-y: $spacer;
+$dropdonwn-btn-font-family: $font-family-base;
+$dropdonwn-btn-font-size: $font-size-base;
+$dropdonwn-btn-line-height: $line-height-base;
+$dropdown-btn-letter-spacing: $letter-spacing-base;
+
+    Dropdown Menu
+$dropdown-menu-bg: lightgray;
+$dropdown-menu-border: solid 1px black;
+$dropdown-menu-border-radius: 6px;
+
+    Dropdown Link variables
+$dropdown-link-size: $font-size-base;
+$dropdown-link-height: $line-height-base;
+$dropdown-link-spacing: 2px;
+$dropdown-link-font-family: $font-family-base;
+$dropdown-link-padding-x: 6px;
+$dropdown-link-padding-y: 6px;
+</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../themes/project name/assets/javascript/app.js"></script>
+    </body>
+</html>

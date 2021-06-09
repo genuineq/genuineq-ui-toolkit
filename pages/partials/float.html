@@ -1,0 +1,30 @@
+<h2 class="page-title">Float</h2>
+              <p class="info">The float property in CSS is used for positioning and layout on web pages. A common usage might be floating an image to one side and letting text wrap around it.</p>
+              <div class="example-container height-3">
+                <div class="height-2 width-1 background-color-info float-left"></div>
+                <div class="height-2 width-1 background-color-info float-right"></div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="height-2 width-1 background-color-info float-left">&lt;/div>
+&lt;div class="height-2 width-1 background-color-info float-right">&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$float: ();
+$float: map-merge(
+  (
+    "none": none,
+    "top": top,
+    "bottom": bottom,
+    "left": left,
+    "right": right,
+    "inherit": inherit,
+  ),
+  $float
+);
+</pre>
+              </div>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components - Forms</title>
+    <link rel="stylesheet" href="..\themes\project name\assets\css\app.css"/>
+    <link rel="stylesheet" href="website.css">
+  </head>
+  <body class="font-family-sans-serif">
+      <div class="container">
+        <div class="row lightgray">
+          <div class="col-4">
+            <nav class="sidebar">
+              <ul class="sidebar-items">
+              <!-- Basic Classes -->
+                <li class="sidebar-title">
+                  Basic Classes
+                </li>
+                <li class="sidebar-item">
+                  <a href="borders.html" class="sidebar-link">Borders</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="colors.html" class="sidebar-link">Colors</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="flex.html" class="sidebar-link">Flex</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="fonts.html" class="sidebar-link">Fonts</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="images.html" class="sidebar-link">Images</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="lists.html" class="sidebar-link">Lists</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="shadows.html" class="sidebar-link">Shadows</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="spacers.html" class="sidebar-link">Spacers</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="width.html" class="sidebar-link">Width</a>
+                </li>
+
+                <!-- COMPONENTS -->
+                <li class="sidebar-title">
+                  Components
+                </li>
+                <li class="sidebar-item">
+                  <a href="accordion.html" class="sidebar-link">Accordion</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="buttons.html" class="sidebar-link">Buttons</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="carousel.html" class="sidebar-link">Crousel</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="dropdown.html" class="sidebar-link">Dropdown</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="forms.html" class="sidebar-link  active-link">Forms</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="navbar.html" class="sidebar-link">Navbar</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="sidebar.html" class="sidebar-link">Sidebar</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="datatable.html" class="sidebar-link">DataTable</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-8 border-left">
+            <h1 class="page-header">Forms</h1>
+            <h2 class="page-title">Mail and Password</h2>
+            <div class="example-container">
+              <div class="form-container">
+                <label for="mail" class="form-field-label mt-0">Email Addres</label>
+                <input type="email" name="mail" placeholder="name@example.com" class="form-field-control">
+              </div>
+              <div class="form-container mt-1">
+                <label for="password" class="form-field-label">Password</label>
+                <input type="password" name="password" placeholder="********" class="form-field-control">
+              </div>
+            </div>
+            <h2 class="page-title">HTML</h2>
+            <div class="example-container">
+<pre class="text-example">
+&lt;div class="form-container">
+  &lt;label for="mail" class="form-field-label">Email Addres&lt;/label>
+  &lt;input type="email" name="mail" placeholder="name@example.com" class="form-field-control">
+&lt;/div>
+&lt;div class="form-container">
+  &lt;label for="password" class="form-field-label">Password&lt;/label>
+  &lt;input type="password" name="password" placeholder="********" class="form-field-control">
+&lt;/div>
+</pre>
+            </div>
+            <h2 class="page-title">Textarea</h2>
+            <div class="example-container">
+              <div class="form-container">
+                <label for="textarea" class="form-field-label">Comments</label>
+                <textarea name="textarea" cols="30" rows="10" placeholder="write your comments here" class="form-field-control"></textarea>
+              </div>
+            </div>
+            <h2 class="page-title">HTML</h2>
+            <div class="example-container">
+<pre class="text-example">
+&lt;div class="form-container">
+  &lt;label for="textarea" class="form-field-label">Comments&lt;/label>
+  &lt;textarea name="textarea" cols="30" rows="10"placeholder="write your comments here" 
+  class="form-field-control">&lt;/textarea>
+&lt;/div>
+</pre>
+            </div>
+            <h2 class="page-title">Checkbox</h2>
+            <div class="example-container">
+              <div class="form-container-checkbox">
+                <input type="checkbox">
+                <label>Do you agree with the terms and conditions</label>
+              </div>
+            </div>
+            <h2 class="page-title">HTML</h2>
+            <div class="example-container">
+<pre class="text-example">
+&lt;div class="form-container-checkbox">
+  &lt;input type="checkbox">
+  &lt;label>Do you agree with the terms and conditions&lt;/label>
+&lt;/div>
+</pre>
+            </div>
+            <h2 class="page-title">Input File</h2>
+            <div class="example-container">
+              <div class="form-container">
+                <label class="form-field-label">Choose a file to convert</label>
+                <input class="form-field-control-file" type="file">
+              </div>
+            </div>
+            <h2 class="page-title">HTML</h2>
+            <div class="example-container">
+<pre class="text-example">
+&lt;div class="form-container">
+  &lt;label class="form-field-label">Choose a file to convert&lt;/label>
+  &lt;input class="form-field-control-file" type="file">
+&lt;/div>
+</pre>
+            </div>
+            <h2 class="page-title">Sass Variables</h2>
+            <div class="example-container">
+<pre class="text-example">
+    Form Field Label variables
+$form-field-label-margin-top: 0px;
+$form-field-label-font-family: $font-family-base;
+$form-field-label-font-size: $font-size-base;
+$form-field-label-color: black;
+$form-field-label-font-weight: null;
+$form-field-label-line-height: $line-height-base;
+$form-filed-label-letter-spacing: $letter-spacing-base;
+$form-field-label-padding-left: 5px;
+
+    Form Field Control variables
+$form-field-control-margin-top: 5px;
+$form-field-control-font-family: $font-family-base;
+$form-field-control-font-size: $font-size-base;
+$form-field-control-color: black;
+$form-field-control-font-weight: null;
+$form-field-control-line-height: $line-height-base;
+$form-filed-control-letter-spacing: $letter-spacing-base;
+
+    Form Field Control File Choose variables
+$form-field-control-file-border: 1px solid black;
+$form-field-control-file-border-radius: 5px;
+$form-field-control-file-padding-x: 5px;
+$form-field-control-file-padding-y: 10px;
+$form-field-control-file-bg-color: lightgray;
+</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+ <h2 class="page-title">Block-Overflow</h2>
+              <p class="info">The block-overflow property truncates text and indicates more content follows by inserting an ellipsis or custom string after a number of lines that is set by the max-lines property.</p>
+              <p class="info">The property has been introduced in the Editor’s Draft of the CSS Overflow Module Level 3 specification. That means it’s experimental at the moment and considered a work in progress. In fact, you can follow the conversation which includes chatter about renaming the property altogether.</p>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$block-overflow: ();
+$block-overflow: map-merge(
+  (
+    "clips": clip,
+    "ellipsis": ellipsis,
+  ),
+  $block-overflow
+);
+</pre>
+</div>

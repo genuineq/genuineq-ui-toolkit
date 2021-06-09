@@ -1,0 +1,19 @@
+<h2 class="page-title">Clear</h2>
+              <p class="info">The clear property is directly related to floats. If the element can fit horizontally in the space next to another element which is floated, it will. Unless you apply clear to that element in the same direction as the float. Then the element will move down below the floated element.</p>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$clear: ();
+$clear: map-merge(
+  (
+    "none": none,
+    "left": left,
+    "right": right,
+    "both": both,
+    "initial": initial,
+    "inherit": inherit,
+  ),
+  $clear
+);
+</pre>
+              </div>

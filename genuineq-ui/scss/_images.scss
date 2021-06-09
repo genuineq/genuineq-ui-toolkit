@@ -1,22 +1,23 @@
 @if $enable-images {
   /** Class for fluid image (width: 100%) */
   .image-fluid {
-    width: 100%;
+    width: map-get($widths, 100);
     height: auto;
   }
   /** Class for thumbnail image */
   .image-thumbnail {
-    width: $image-thumbnail-width;
-    height: $image-thumbnail-height;
-    padding: $image-thumbnail-padding;
-    background: $image-thumbnail-bg;
-    border: $image-thumbnail-border;
-    border-radius: $image-thumbnail-border-radius;
-    box-shadow: $image-thumbnail-box-shadow;
+    width: map-get($widths, 2);
+    height: auto;
+    padding: map-get($spacers, 0);
+    border-width: map-get($borders-width, 0);
+    border-style: map-get($borders-styles, "solid");
+    border-color: map-get($colors, "black");
+    border-radius: map-get($borders-radius, 4);
+    box-shadow: map-get($box-shadows, 1);
   }
   /** Creating classes for all the proprieties of object-fit */
   @each $attribute, $name in (object-fit: object-fit) {
-    @each $key, $value in $object-fit-attributes {
+    @each $key, $value in $object-fit {
       .#{$name}-#{$key} {
         #{$attribute}: $value;
       }
