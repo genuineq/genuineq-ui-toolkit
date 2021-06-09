@@ -1,0 +1,20 @@
+<h2 class="page-title">Contain</h2>
+              <p class="info">The contain property in CSS indicates to the browser that the element and its descendants are considered independent of the document tree as much as possible. This potentially provides performance benefits with calculations in layout, style, paint, size, or any combination for a limited area of the DOM and not the entire page.</p>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$contain: ();
+$contain: map-merge(
+  (
+    "none": none,
+    "layout": layout,
+    "paint": paint,
+    "size": size,
+    "style": style,
+    "content": content,
+    "strict": strict,
+  ),
+  $contain
+);
+</pre>
+              </div>

@@ -1,0 +1,309 @@
+<h2 class="page-title">Background-Attachment</h2>
+              <p class="info">The background-attachment property in CSS specifies how to move the background relative to the viewport.
+                There are three values: scroll, fixed, and local.</p>
+              <div class="example-container">
+                <div class="height-2 width-1"><div class="backgournd-image-genuineq height-2 width-1 background-attachment-scroll"></div></div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="backgournd-image-genuineq height-2 width-1 background-attachment-scroll">&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$background-attachment: ();
+$background-attachment: map-merge(
+  (
+    "scroll": scroll,
+    "fixed": fixed,
+    "local": local,
+  ),
+  $background-attachment
+);
+</pre>
+              </div>
+              <h2 class="page-title">Background-Blend-Mode</h2>
+              <p class="info">The background-blend-mode property defines how an element’s background-image should blend with its background-color.</p>
+              <div class="example-container d-flex justify-content-center">
+                <div class="height-3 width-4 background-image-genuineq"></div>
+                <div class="height-3 width-4 background-image-genuineq background-color-primary background-blend-mode-screen"></div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="height-3 width-4 background-image-genuineq">&lt;/div>
+&lt;div class="height-3 width-4 background-image-genuineq background-color-primary 
+background-blend-mode-screen">&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$background-blend-mode: ();
+$background-blend-mode: map-merge(
+  (
+    "initial": initial,
+    "inherit": inherit,
+    "screen": screen,
+  ),
+  $background-blend-mode
+);
+</pre>
+              </div>
+              <h2 class="page-title">Background-Clip</h2>
+              <p class="info">background-clip lets you control how far a background image or color extends beyond an element’s padding or content.</p>
+              <div class="example-container d-flex justify-content-space-around flex-wrap-wrap">
+                <div class="height-2 border-width-4 border-style-solid border-color-warning background-color-info background-clip-border-box m-3"><p>This paragraph is the content.</p></div>
+                <div class="height-2 border-width-4 border-style-solid border-color-warning background-color-info background-clip-padding-box m-3"><p>This paragraph is the content.</p></div>
+                <div class="height-2 border-width-4 border-style-solid border-color-warning background-color-info background-clip-content-box  m-3"><p>This paragraph is the content.</p></div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="border-color-warning background-color-info background-clip-border-box">
+  &lt;p>This paragraph is the content.&lt;/p>
+&lt;/div>
+&lt;div class="border-color-warning background-color-info background-clip-padding-box">
+  &lt;p>This paragraph is the content.&lt;/p>
+&lt;/div>
+&lt;div class="border-color-warning background-color-info background-clip-content-box">
+  &lt;p>This paragraph is the content.&lt;/p>
+&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$background-clip: ();
+$background-clip: map-merge(
+  (
+    "border-box": border-box,
+    "padding-box": padding-box,
+    "content-box": content-box,
+    "inherit": inherit,
+  ),
+  $background-clip
+);
+</pre>
+              </div>
+              <h2 class="page-title">Background-Color</h2>
+              <p class="info">The background-color property in CSS applies solid colors as background on an element using the $colors array to choose the color. Here’s an example:</p>
+              <div class="example-container d-flex justify-content-space-around">
+                <div class="height-2 width-3 background-color-primary"></div>
+                <div class="height-2 width-3 background-color-secondary"></div>
+                <div class="height-2 width-3 background-color-info"></div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="height-2 width-3 background-color-primary">&lt;/div>
+&lt;div class="height-2 width-3 background-color-secondary">&lt;/div>
+&lt;div class="height-2 width-3 background-color-info">&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+@each $attribute, $name in (background-color: background-color) {
+  @each $key, $value in $colors {
+    .#{$name}-#{$key} {
+        #{$attribute}: $value;
+    }
+  }
+}
+
+
+$colors: ();
+$colors: map-merge(
+  (
+    "primary": #0d6efd,
+    "secondary": #6c757d,
+    "danger": #dc3545,
+    "warning": #ffc107,
+    "succes": #198754,
+    "info": #0dcaf0,
+    "black": #000000,
+    "white": #ffffff,
+    "gray": lightgray,
+    "transparent": transparent,
+    "ccc": #ccc,
+    "f9": #f9f9f9,
+    "f6": #f6f6f6,
+  ),
+  $colors
+);
+</pre>
+              </div>
+              <h2 class="page-title">Background-Image</h2>
+              <p class="info">The background-image property in CSS applies a graphic (e.g. PNG, SVG, JPG, GIF, WEBP) or gradient to the background of an element.</p>
+              <div class="example-container">
+                <div class="height-4 width-5 background-image-genuineq d-flex justify-content-center align-items-center"><p class="color-white">This is a paragraph inside a div</p></div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="height-4 width-5 background-image-genuineq">
+  &lt;p class="color-white">This is a paragraph inside a div&lt;/p>
+&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$background-image: ();
+$background-image: map-merge(
+  (
+    "svg": url(""),
+    1:
+      url("https://41.media.tumblr.com/efd1fba27c3e20/tumblr_mqqy59HMaf1qzattso1_1280.jpg"),
+    "genuineq":
+      url("https://genuineq.com/wp-content/themes/genuineq/images/genuineq-og-image.jpg"),
+  ),
+  $background-image
+);
+</pre>
+              </div>
+              <h2 class="page-title">Background-Origin</h2>
+              <p class="info">The background-origin property defines where to paint the background: across the whole element, inside the border, or inside the padding.
+                There are four values: border-box, padding-box, content-box and inherit. Here’s a demo:</p>
+              <div class="example-container d-flex justify-content-space-around">
+                <div class="height-2 width-3 background-origin-border-box border-style-solid border-width-2 border-color-secondary"></div>
+                <div class="height-2 width-3 background-origin-padding-box border-style-solid border-width-2 border-color-secondary"></div>
+                <div class="height-2 width-3 background-origin-content-box border-style-solid border-width-2 border-color-secondary"></div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+                <pre class="text-example">
+&lt;div class="height-2 width-3 background-origin-border-box">&lt;/div>
+&lt;div class="height-2 width-3 background-origin-padding-box">&lt;/div>
+&lt;div class="height-2 width-3 background-origin-content-box">&lt;/div>
+                </pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$background-origin: ();
+$background-origin: map-merge(
+  (
+    "border-box": border-box,
+    "padding-box": padding-box,
+    "content-box": content-box,
+    "inherit": inherit,
+  ),
+  $background-origin
+);
+</pre>
+              </div>
+              <h2 class="page-title">Background-Position</h2>
+              <p class="info">The background-position property in CSS allows you to move a background image (or gradient) around within its container.</p>
+              <div class="example-container">
+                <div class="height-4 width-5 background-image-logo background-repeat-no-repeat background-position-top-right d-flex justify-content-center align-items-center">
+                  <p> This background-image is positioned in top right.</p>
+                </div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="background-image-logo background-repeat-no-repeat background-position-top-right">
+  &lt;p> This background-image is positioned in top right.&lt;/p>
+&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$background-position: ();
+$background-position: map-merge(
+  (
+    "top-right": top right,
+  ),
+  $background-position
+);
+</pre>
+              </div>
+
+              <!-- <div class="row example-container">
+                <div class="col-12 col-lg-3">
+                  <div class="width-2 height-3 background-image-logo background-repeat-repeat mr-6"></div>
+                  <div class="width-2 mt-6">background-repeat-repeat</div>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <div class="width-2 height-3 background-image-logo background-repeat-repeat-x mr-6"></div>
+                  <div class="width-2 mt-6">background-repeat-repeat-x</div>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <div class="width-2 height-3 background-image-logo background-repeat-repeat-y mr-6"></div>
+                  <div class="width-2 mt-6">background-repeat-repeat-y</div>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <div class="width-2 height-3 background-image-logo background-repeat-no-repeat mr-6"></div>
+                  <div class="width-2 mt-6">background-repeat-no-repeat</div>
+                </div>
+              </div> -->
+
+              <h2 class="page-title">Background-repeat</h2>
+              <p class="info">If a background-image property is specified, the background-repeat property in CSS defines if (and how) it will repeat. Here’s an example:</p>
+              <div class="example-container d-flex justify-content-space-around flex-wrap-wrap">
+                <div class="width-2 height-3 background-image-logo background-repeat-repeat mr-6"></div>
+                <div class="width-2 height-3 background-image-logo background-repeat-repeat-x mr-6"></div>
+                <div class="width-2 height-3 background-image-logo background-repeat-repeat-y mr-6"></div>
+                <div class="width-2 height-3 background-image-logo background-repeat-no-repeat mr-6"></div>
+                <div class="width-2 mt-6">background-repeat-repeat</div>
+                <div class="width-2 mt-6">background-repeat-repeat-x</div>
+                <div class="width-2 mt-6">background-repeat-repeat-y</div>
+                <div class="width-2 mt-6">background-repeat-no-repeat</div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="width-2 height-3 background-image-logo background-repeat-repeat">&lt;/div>
+&lt;div class="width-2 height-3 background-image-logo background-repeat-repeat-x">&lt;/div>
+&lt;div class="width-2 height-3 background-image-logo background-repeat-repeat-y">&lt;/div>
+&lt;div class="width-2 height-3 background-image-logo background-repeat-no-repeat">&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$background-repeat: ();
+$background-repeat: map-merge(
+  (
+    "repeat": repeat,
+    "repeat-x": repeat-x,
+    "repeat-y": repeat-y,
+    "no-repeat": no-repeat,
+    "space": space,
+    "round": round,
+  ),
+  $background-repeat
+);
+</pre>
+              </div>
+              <h2 class="page-title">Background-Size</h2>
+              <p class="info">The background-size property in CSS is one of the most useful — and most complex — of the background properties. There are many variations and different syntaxes you can use for this property, all of which have different use cases. Here’s a basic example:</p>
+              <div class="example-container">
+                <div class="height-3 background-image-genuineq background-size-cover"></div>
+              </div>
+              <p class="info"> <b>cover</b> tells the browser to make sure the image always covers the entire container, even if it has to stretch the image or cut a little bit off one of the edges. <b>contain</b>, on the other hand, says to always show the whole image, even if that leaves a little space to the sides or bottom.</p>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="height-3 background-image-genuineq background-size-cover">&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$background-size: ();
+$background-size: map-merge(
+  (
+    300: 300px,
+    "contain": contain,
+    "cover": cover,
+  ),
+  $background-size
+);
+</pre>
+              </div>

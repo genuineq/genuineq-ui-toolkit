@@ -1,0 +1,50 @@
+<h2 class="page-title">Display</h2>
+              <p class="info">Every element on a web page is a rectangular box. The display property in CSS determines just how that rectangular box behaves. There are only a handful of values that are commonly used:</p>
+              <div class="example-container">
+                <div class="display-none height-2 width-1 background-color-info">Display: none</div>
+                <div class="display-inline height-2 width-1 background-color-info ml-3">Display: inline</div>
+                <div class="display-inline-block height-2 width-1 background-color-info mb-3">Display: inline-block</div>
+                <div class="display-block height-2 width-1 background-color-info mb-3">Display: block</div>
+                <div class="display-run-in height-2 width-1 background-color-info mb-3">Display: run-in</div>
+                <div class="display-flex justify-content-space-around align-items-space-around flex-wrap-wrap height-2 width-1 background-color-info">
+                  <p class="width-1">Display: Flex</p>
+                  <div class="height-20px width-20px background-color-black"></div>
+                  <div class="height-20px width-20px background-color-black"></div>
+                  <div class="height-20px width-20px background-color-black"></div>
+                  <div class="height-20px width-20px background-color-black"></div>
+                </div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="display-none height-2 width-1 background-color-info">Display: none&lt;/div>
+&lt;div class="display-inline height-2 width-1 background-color-info ml-3">Display: inline&lt;div>
+&lt;div class="display-inline-block height-2 width-1 background-color-info mb-3">Display: inline-block&lt;/div>
+&lt;div class="display-block height-2 width-1 background-color-info mb-3">Display: block&lt;/div>
+&lt;div class="display-run-in height-2 width-1 background-color-info mb-3">Display: run-in&lt;/div>
+&lt;div class="display-flex justify-content-space-around align-items-space-around flex-wrap-wrap height-2 width-1 background-color-info">
+  &lt;p class="width-1">Display: Flex&lt;/p>
+  &lt;div class="height-20px width-20px background-color-black">&lt;/div>
+  &lt;div class="height-20px width-20px background-color-black">&lt;/div>
+  &lt;div class="height-20px width-20px background-color-black">&lt;/div>
+  &lt;div class="height-20px width-20px background-color-black">&lt;/div>
+&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$display: ();
+$display: map-merge(
+  (
+    "none": none,
+    "inline": inline,
+    "inline-block": inline-block,
+    "block": block,
+    "run-in": run-in,
+    "flex": flex,
+  ),
+  $display
+);
+</pre>
+              </div>

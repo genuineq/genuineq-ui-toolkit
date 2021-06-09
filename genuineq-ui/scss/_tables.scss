@@ -2,12 +2,12 @@
  * Table styles
  */
 table.dataTable {
-  clear: both;
-  border-collapse: separate;
-  border-spacing: 0;
-  width: $table-width;
-  margin: $table-margins;
-  font-family: $table-font-family;
+  clear: map-get($clear, "clear");
+  border-collapse: map-get($borders-colapse, "separate");
+  border-spacing: map-get($borders-spacing, 0);
+  width: map-get($widths, 100);
+  margin: map-get($spacers, 0) map-get($spacers, "auto");
+  font-family: map-get($font-family, "sans-serif");
   /*
      * Header and footer styles
      */
@@ -17,30 +17,37 @@ table.dataTable {
 }
 table.dataTable thead th,
 table.dataTable tfoot th {
-  font-weight: $table-thead-tfoot-font-weight;
+  font-weight: map-get($fonts-weight, "bold");
 }
 table.dataTable thead th,
 table.dataTable thead td {
-  padding: $table-thead-padding;
-  border-bottom: $table-thead-bottom-border;
+  padding: map-get($spacers, 1);
+  border-bottom-width: map-get($borders-width, 0);
+  border-bottom-style: map-get($borders-styles, "solid");
+  border-bottom-color: map-get($colors, "black");
 }
 table.dataTable thead th:active,
 table.dataTable thead td:active {
-  outline: $table-thead-outile;
+  outline: map-get($outline-style, "none");
 }
 table.dataTable tfoot th,
 table.dataTable tfoot td {
-  padding: $table-tfoot-padding;
-  border-top: $table-tfoot-top-border;
+  padding: map-get($spacers, 3) map-get($spacers, 6) map-get($spacers, 2)
+    map-get($spacers, 6);
+  border-top-width: map-get($borders-width, 0);
+  border-top-style: map-get($borders-styles, "solid");
+  border-top-color: map-get($colors, "black");
 }
+
 table.dataTable thead .sorting,
 table.dataTable thead .sorting_asc,
 table.dataTable thead .sorting_desc,
 table.dataTable thead .sorting_asc_disabled,
 table.dataTable thead .sorting_desc_disabled {
-  cursor: $table-thead-cursor;
-  background-repeat: no-repeat;
-  background-position: center right;
+  cursor: map-get($cursors, "pointer");
+  background-repeat: map-get($background-repeat, "no-repeat");
+  background-position: map-get($background-position, "center")
+    map-get($background-position, "right");
 }
 /** Imagini pentru semnele de sortari (pe care nu le avem)*/
 // table.dataTable thead .sorting {
@@ -59,26 +66,29 @@ table.dataTable thead .sorting_desc_disabled {
 //   background-image: url("../images/sort_desc_disabled.png");
 // }
 table.dataTable tbody tr {
-  background-color: $table-bg;
+  background-color: map-get($colors, "white");
 }
 table.dataTable tbody tr.selected {
   background-color: $table-tbody-selected-tr-bg-color;
 }
 table.dataTable tbody th,
 table.dataTable tbody td {
-  padding: $table-tbody-padding;
+  padding: map-get($spacers, 2) map-get($spacers, 3);
 }
 table.dataTable.row-border tbody th,
 table.dataTable.row-border tbody td,
 table.dataTable.display tbody th,
 table.dataTable.display tbody td {
-  border-top: $table-tbody-top-border;
+  border-top-width: map-get($borders-width, 0);
+  border-top-style: map-get($borders-styles, "solid");
+  border-top-color: map-get($colors, "ccc");
 }
+
 table.dataTable.row-border tbody tr:first-child th,
 table.dataTable.row-border tbody tr:first-child td,
 table.dataTable.display tbody tr:first-child th,
 table.dataTable.display tbody tr:first-child td {
-  border-top: none;
+  border-top-style: map-get($borders-styles, "none");
 }
 table.dataTable.cell-border tbody th,
 table.dataTable.cell-border tbody td {
@@ -95,7 +105,7 @@ table.dataTable.cell-border tbody tr:first-child td {
 }
 table.dataTable.stripe tbody tr.odd,
 table.dataTable.display tbody tr.odd {
-  background-color: $table-tbody-odd-bg;
+  background-color: map-get($spacers, "f9");
 }
 table.dataTable.stripe tbody tr.odd.selected,
 table.dataTable.display tbody tr.odd.selected {
@@ -103,7 +113,7 @@ table.dataTable.display tbody tr.odd.selected {
 }
 table.dataTable.hover tbody tr:hover,
 table.dataTable.display tbody tr:hover {
-  background-color: $table-tbody-hover;
+  background-color: map-get($colors, "f6");
 }
 table.dataTable.hover tbody tr:hover.selected,
 table.dataTable.display tbody tr:hover.selected {
@@ -355,7 +365,7 @@ table.dataTable td {
   margin-left: $table-controls-pagination-btn-min-width;
   text-align: $table-controls-pagination-btn-text-align;
   text-decoration: none !important;
-  cursor: $table-controls-pagination-btn-cursor;
+  cursor: map-get($cursors, "pointer");
   // *cursor: hand;
   color: $table-controls-pagination-btn-color !important;
   border: $table-controls-pagination-btn-border;
@@ -412,7 +422,7 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
-  cursor: $table-controls-pagination-btn-disabled-cursor;
+  cursor: map-get($cursors, "pointer");
   color: $table-controls-pagination-btn-disabled-color !important;
   border: $table-controls-pagination-btn-disabled-border;
   background: $table-controls-pagination-btn-disabled-bg;
@@ -498,7 +508,7 @@ table.dataTable td {
   margin-top: -25px;
   padding-top: 20px;
   text-align: center;
-  font-size: 1.2em;
+  font-size: map-get($fonts-size, 1);
   background-color: white;
   background: -webkit-gradient(
     linear,

@@ -4,20 +4,18 @@
     @each $key, $color in $buttons {
       .#{$name}-#{$key} {
         #{$attribute}: $color;
-        border-radius: $btn-border-radius;
-        border: $btn-border;
-        cursor: $btn-cursor;
-        padding: $btn-padding-x $btn-padding-y;
-        outline: none;
-        font-family: $btn-font-family;
-        font-size: $btn-font-size;
-        line-height: $btn-line-height;
+        color: map-get($colors, "white");
+        border-radius: map-get($borders-radius, 4);
+        border: map-get($borders-styles, "none");
+        cursor: map-get($cursors, "pointer");
+        padding: map-get($spacers, 5) map-get($spacers, 4);
+        outline: map-get($outline-style, "none");
+        font-family: map-get($font-family, "sans-serif");
+        font-size: map-get($fonts-size, 0);
+        line-height: map-get($line-height, 1);
+        letter-spacing: map-get($letter-spacing, 0);
         &:hover {
-          @if ($btn-hover) {
-            background-color: lighten($color, $btn-hover-percent);
-          } @else {
-            background-color: darken($color, $btn-hover-percent);
-          }
+          background-color: darken($color, 20%);
         }
       }
     }
@@ -27,20 +25,18 @@
     @each $key, $color in $buttons {
       .#{$name}-#{$key} {
         #{$attribute}: $color;
-        border-radius: $btn-border-radius-sm;
-        border: $btn-border-sm;
-        cursor: $btn-cursor;
-        padding: $btn-padding-x-sm $btn-padding-y-sm;
+        color: map-get($colors, "white");
+        border-radius: map-get($borders-radius, 4);
+        border: map-get($borders-styles, "none");
+        cursor: map-get($cursors, "pointer");
+        padding: map-get($spacers, 2) map-get($spacers, 3);
         outline: none;
-        font-family: $btn-font-family;
-        font-size: $btn-font-size-sm;
-        line-height: $btn-line-height-sm;
+        font-family: map-get($font-family, "sans-serif");
+        font-size: map-get($fonts-size, 12);
+        line-height: map-get($line-height, 1);
+        letter-spacing: map-get($letter-spacing, 0);
         &:hover {
-          @if ($btn-hover) {
-            background-color: lighten($color, $btn-hover-percent);
-          } @else {
-            background-color: darken($color, $btn-hover-percent);
-          }
+          background-color: darken($color, 20%);
         }
       }
     }
@@ -50,20 +46,18 @@
     @each $key, $color in $buttons {
       .#{$name}-#{$key} {
         #{$attribute}: $color;
-        border-radius: $btn-border-radius-lg;
-        border: $btn-border-lg;
-        cursor: $btn-cursor;
-        padding: $btn-padding-x-lg $btn-padding-y-lg;
+        color: map-get($colors, "white");
+        border-radius: map-get($borders-radius, 4);
+        border: map-get($borders-styles, "none");
+        cursor: map-get($cursors, "pointer");
+        padding: map-get($spacers, 6) map-get($spacers, 6);
         outline: none;
-        font-family: $btn-font-family;
-        font-size: $btn-font-size-lg;
-        line-height: $btn-line-height-lg;
+        font-family: map-get($font-family, "sans-serif");
+        font-size: map-get($fonts-size, 2);
+        line-height: map-get($line-height, 1);
+        letter-spacing: map-get($letter-spacing, 0);
         &:hover {
-          @if ($btn-hover) {
-            background-color: lighten($color, $btn-hover-percent);
-          } @else {
-            background-color: darken($color, $btn-hover-percent);
-          }
+          background-color: darken($color, 20%);
         }
       }
     }
@@ -73,25 +67,20 @@
     @each $key, $color in $buttons {
       .#{$name}-#{$key} {
         #{$attribute}: $color;
-        border-radius: $btn-border-radius;
-        cursor: $btn-cursor;
-        padding: $btn-padding-x $btn-padding-y;
+        border-width: map-get($borders-width, 1);
+        border-style: map-get($borders-styles, "solid");
+        color: $color;
+        background-color: map-get($colors, "white");
+        border-radius: map-get($borders-radius, 4);
+        cursor: map-get($cursors, "pointer");
+        padding: map-get($spacers, 5) map-get($spacers, 4);
         outline: none;
-        font-family: $btn-font-family;
-        font-size: $btn-font-size;
-        line-height: $btn-line-height;
+        font-family: map-get($font-family, "sans-serif");
+        font-size: map-get($fonts-size, 0);
+        line-height: map-get($line-height, 1);
+        letter-spacing: map-get($letter-spacing, 0);
         &:hover {
-          @if ($btn-hover) {
-            background-color: lighten(
-              $btn-outile-background-color,
-              $btn-hover-percent
-            );
-          } @else {
-            background-color: darken(
-              $btn-outile-background-color,
-              $btn-hover-percent
-            );
-          }
+          background-color: darken(map-get($colors, "white"), 20%);
         }
       }
     }

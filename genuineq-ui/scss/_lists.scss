@@ -4,18 +4,18 @@
       /** Class for Lists */
       .list {
         list-style: none;
-        font-size: $list-font-size;
-        line-height: $list-line-height;
-        letter-spacing: $list-letter-spacing;
-        font-family: $list-font-family;
+        font-size: map-get($fonts-size, 0);
+        line-height: map-get($line-height, 1);
+        letter-spacing: map-get($letter-spacing, 0);
+        font-family: map-get($font-family, "sans-serif");
       }
       /** Class for Lists with custom bullets */
       .list-bullet {
         list-style: none;
-        font-size: $list-font-size;
-        line-height: $list-line-height;
-        letter-spacing: $list-letter-spacing;
-        font-family: $list-font-family;
+        font-size: map-get($fonts-size, 0);
+        line-height: map-get($line-height, 1);
+        letter-spacing: map-get($letter-spacing, 0);
+        font-family: map-get($font-family, "sans-serif");
         /** Every li in the list is getting a custom bullet */
         & > li::before {
           content: $list-bullet-content;

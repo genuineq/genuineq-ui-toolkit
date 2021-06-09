@@ -1,0 +1,32 @@
+<h2 class="page-title">Backdrop-Filter</h2>
+              <p class="info">The backdrop-filter property in CSS is used to apply filter effects (grayscale, contrast, blur, etc) to the background/backdrop of an element. The backdrop-filter has the same effect as the filter property, except the filter effects are applied only to the background and instead of to the element’s content.</p>
+              <div class="example-container background-image-1">
+                <div class="backdrop-filter-10px">
+                  <p>The background image should be pleasantly blurred under this box.</p>
+                </div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="background-image-1">
+  &lt;div class="backdrop-filter-10px">
+    &lt;p>The background image should be pleasantly blurred under this box.&lt;/p>
+  &lt;/div>
+&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$backdrop-filter: ();
+$backdrop-filter: map-merge(
+  (
+    "grayscale": grayscale,
+    "contrast": contrast,
+    "blur": blur,
+    "10px": blur(10px),
+  ),
+  $backdrop-filter
+);
+</pre>
+              </div>

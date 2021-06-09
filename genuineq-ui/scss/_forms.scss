@@ -12,38 +12,41 @@
 
   /** Class for Labels */
   .form-field-label {
-    margin-top: $form-field-label-margin-top;
-    font-family: $form-field-label-font-family;
-    font-size: $form-field-label-font-size;
-    color: $form-field-label-color;
-    font-weight: $form-field-label-font-weight;
-    line-height: $form-field-label-line-height;
-    letter-spacing: $form-filed-label-letter-spacing;
+    font-family: map-get($font-family, "sans-serif");
+    font-size: map-get($fonts-size, 0);
+    color: map-get($colors, "black");
+    line-height: map-get($line-height, 1);
+    letter-spacing: map-get($letter-spacing, 0);
 
     /** Uncommon attributes between label and control */
-    padding-left: $form-field-label-padding-left;
+    padding-left: map-get($spacers, 2);
   }
 
   /** Class for <input>, <textarea> */
   .form-field-control {
     width: 100%;
-    text-decoration: none;
-    margin-top: $form-field-control-margin-top;
-    font-family: $form-field-control-font-family;
-    font-size: $form-field-control-font-size;
-    color: $form-field-control-color;
-    font-weight: $form-field-control-font-weight;
-    line-height: $form-field-control-line-height;
-    letter-spacing: $form-filed-control-letter-spacing;
+    outline: none;
+    margin-top: map-get($spacers, 1);
+    padding: map-get($spacers, 2);
+    font-family: map-get($font-family, "sans-serif");
+    font-size: map-get($fonts-size, 0);
+    color: map-get($colors, "black");
+    line-height: map-get($line-height, 1);
+    letter-spacing: map-get($letter-spacing, 0);
+    border-width: map-get($borders-width, 0);
+    border-style: map-get($borders-styles, "solid");
+    border-color: map-get($colors, "black");
+    border-radius: map-get($borders-radius, 4);
     /** For text area */
     resize: none;
     &-file {
       @extend.form-field-control;
-      border: $form-field-control-file-border;
-      border-radius: $form-field-control-file-border-radius;
-      padding: $form-field-control-file-padding-x
-        $form-field-control-file-padding-y;
-      background-color: $form-field-control-file-bg-color;
+      border-width: map-get($borders-width, 0);
+      border-style: map-get($borders-styles, "solid");
+      border-color: map-get($colors, "black");
+      border-radius: map-get($borders-radius, 4);
+      padding: map-get($spacers, 4) map-get($spacers, 2);
+      background-color: map-get($colors, "gray");
     }
   }
 }

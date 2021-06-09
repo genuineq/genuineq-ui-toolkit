@@ -1,0 +1,16 @@
+ <h2 class="page-title">Color-Adjust</h2>
+              <p class="info">The color-adjust property is described by the spec as “preserving colors in different-capability devices.” You know how there are phones, tablets and other devices out there without retina-quality screens? Well, this property provides the browser with a hint to make decisions about how to handle colors based on that quality.</p>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$color-adjust: ();
+$color-adjust: map-merge(
+  (
+    0: 0,
+    "economy": economy,
+    "exact": exact,
+  ),
+  $color-adjust
+);
+</pre>
+              </div>

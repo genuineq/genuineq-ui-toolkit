@@ -1,0 +1,31 @@
+<h2 class="page-title">Hanging-Punctuation</h2>
+<p class="info">The hanging-punctuation property aims at giving web designers a finer grained control over typography on the web.</p>
+<div class="example-container">
+<blockquote class="hanging-punctuation-first">
+    “Let your tears flow, but let them also cease. Let deepest sighs be drawn from your breast, but let them also find an end.” — Seneca
+</blockquote>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;blockquote class="hanging-punctuation-first">
+  “Let your tears flow, but let them also cease. Let deepest sighs be drawn from your breast, but let them also find an end.” — Seneca
+&lt;/blockquote>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$hanging-punctuation: ();
+$hanging-punctuation: map-merge(
+  (
+    "none": none,
+    "first": first,
+    "last": last,
+    "force-end": force-end,
+    "allow-end": allow-end,
+  ),
+  $hanging-punctuation
+);
+</pre>
+</div>
