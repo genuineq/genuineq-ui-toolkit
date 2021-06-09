@@ -1,7 +1,6 @@
 //** Dependencies. */
 
 import { _ } from './utilities/utilities.js'
+import Dropdown from "./classes/Dropdown.js"
 
-import Test from './classes/test'
-
-_('test').el().map((i, el) => new Test(el))
+_('dropdown').el().map((i, el) => new Dropdown(el))

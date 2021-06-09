@@ -1,0 +1,72 @@
+@if $enable-accordions {
+  .accordion-container {
+    margin-top: 300px;
+    margin-left: 400px;
+
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    width: $accordion-container-width;
+  }
+  .accordion-element {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    /** Styling the first button */
+    &:first-child .accordion-btn {
+      border-radius: $accordion-container-border-radius-top;
+    }
+
+    /** Styling the last button */
+    &:last-child .accordion-btn {
+      border-radius: $accordion-container-border-radius-bottom;
+      /** Changing the last button border radius when it s clicked */
+      &:active {
+        border-radius: 0;
+      }
+    }
+
+    /** Styling the last info */
+    &:last-child .accordion-info {
+      border-bottom: $accordion-container-border;
+      border-radius: $accordion-container-border-radius-bottom;
+    }
+  }
+
+  .accordion-btn {
+    text-align: left;
+    background-color: $accordion-btn-bg-color;
+    color: $accordion-btn-color;
+    border: $accordion-btn-border;
+    cursor: $accordion-btn-cursor;
+    padding: $accordion-btn-padding-x $accordion-btn-padding-y;
+    font-family: $accordion-btn-font-family;
+    font-size: $accordion-btn-font-size;
+    line-height: $accordion-btn-line-height;
+    letter-spacing: $accordion-btn-letter-spacing;
+
+    &:focus {
+      color: $accordion-btn-focus-color;
+      border: $accordion-btn-focus-border;
+    }
+
+    /** When clicked it shows */
+    &:focus + .accordion-info {
+      display: block;
+    }
+  }
+  .accordion-info {
+    display: none;
+    background-color: $accordion-info-bg-color;
+    border-right: $accordion-info-border;
+    border-left: $accordion-info-border;
+    padding: $accordion-info-padding-x $accordion-info-padding-y;
+    font-family: $accordion-info-font-family;
+    font-size: $accordion-info-font-size;
+    line-height: $accordion-info-line-height;
+    letter-spacing: $accordion-info-letter-spacing;
+  }
+}
