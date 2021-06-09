@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components - Navbar</title>
+    <link rel="stylesheet" href="..\themes\project name\assets\css\app.css"/>
+    <link rel="stylesheet" href="website.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  </head>
+  <body class="font-family-sans-serif">
+      <div class="container">
+        <div class="row lightgray">
+          <div class="col-4">
+            <nav class="sidebar">
+              <ul class="sidebar-items">
+              <!-- Basic Classes -->
+                <li class="sidebar-title">
+                  Basic Classes
+                </li>
+                <li class="sidebar-item">
+                  <a href="borders.html" class="sidebar-link">Borders</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="colors.html" class="sidebar-link">Colors</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="flex.html" class="sidebar-link">Flex</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="fonts.html" class="sidebar-link">Fonts</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="images.html" class="sidebar-link">Images</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="lists.html" class="sidebar-link">Lists</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="shadows.html" class="sidebar-link">Shadows</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="spacers.html" class="sidebar-link">Spacers</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="width.html" class="sidebar-link">Width</a>
+                </li>
+
+                <!-- COMPONENTS -->
+                <li class="sidebar-title">
+                  Components
+                </li>
+                <li class="sidebar-item">
+                  <a href="accordion.html" class="sidebar-link">Accordion</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="buttons.html" class="sidebar-link">Buttons</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="carousel.html" class="sidebar-link">Crousel</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="dropdown.html" class="sidebar-link">Dropdown</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="forms.html" class="sidebar-link">Forms</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="navbar.html" class="sidebar-link active-link">Navbar</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="sidebar.html" class="sidebar-link">Sidebar</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="datatable.html" class="sidebar-link">DataTable</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-8 border-left">
+            <h1 class="page-header">Navbar</h1>
+            <h2 class="page-title">Example</h2>
+            <div class="example-container">
+              <nav class="navbar">
+                <a href="http://127.0.0.1:5500/index.html" class="navbar-brand">
+                  <img class="navbar-brand-img" src="https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-social-logo.png"></a>
+                <div class="navbar-toggler" data-behaviour="toggle-right">
+                  <div class="hamburger"></div>
+                </div>
+                <ul class="navbar-items navbar-items-hide" data-element = "toggle-menu">
+                  <div class="close close-right" data-element="close"></div>
+                  <li class="navbar-item">
+                    <a href="#" class="navbar-link">Home</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#" class="navbar-link">Link 1</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#" class="navbar-link">Link 2</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#" class="navbar-link">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <h2 class="page-title">HTML</h2>
+            <div class="example-container">
+<pre class="text-example">
+&lt;nav class="navbar">
+  &lt;a href="http://127.0.0.1:5500/index.html" class="navbar-brand">
+    &lt;img class="navbar-brand-img" src="#">&lt;/a>
+  &lt;div class="navbar-toggler" data-behaviour="toggle-right">
+    &lt;div class="hamburger">&lt;/div>
+  &lt;/div>
+    &lt;ul class="navbar-items navbar-items-hide" data-element = "toggle-menu">
+      &lt;div class="close close-right" data-element="close">&lt;/div>
+      &lt;li class="navbar-item">
+        &lt;a href="#" class="navbar-link">Home&lt;/a>
+      &lt;/li>
+      &lt;li class="navbar-item">
+        &lt;a href="#" class="navbar-link">Link #1&lt;/a>
+      &lt;/li>
+      &lt;li class="navbar-item">
+        &lt;a href="#" class="navbar-link">Link #2&lt;/a>
+      &lt;/li>
+      &lt;li class="navbar-item">
+        &lt;a href="#" class="navbar-link">Link #3&lt;/a>
+      &lt;/li>
+  &lt;/ul>
+&lt;/nav>
+</pre>
+            </div>
+            <h2 class="page-title">Sass Variables</h2>
+            <div class="example-container">
+<pre class="text-example">
+    Navbar variables
+$navbar-bg-color: lightgray;
+$navbar-padding-y: 10px;
+$navbar-padding-x: 20px;
+
+    Navbar Brand Image variables
+$navbar-brand-img-height: 60px;
+
+    Navbar Items variables
+$navbar-items-margin-x: 20px;
+
+    Navbar Item variables
+$navbar-item-margin-right: 20px;
+
+    Navbar Link variables
+$navbar-link-font-family: $font-family-base;
+$navbar-link-font-size: $font-size-base;
+$navbar-link-line-height: $line-height-base;
+$navbar-link-letter-spacing: $letter-spacing-base;
+$navbar-link-font-weight: 500;
+$navbar-link-cursor: pointer;
+$navbar-link-color: $black;
+$navbar-link-bg-color: $navbar-bg-color;
+$navbar-link-hover-color: lighten($navbar-link-color, 40%);
+
+    Navbar Direction Mobile variables
+$navbar-items-transform: translateY(-100%);
+$navbar-items-transition: 0.3s;
+</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../themes/project name/assets/javascript/app.js"></script>
+    </body>
+</html>

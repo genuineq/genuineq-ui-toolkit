@@ -5,7 +5,7 @@ $font-size-base: 1rem;
 $line-height-base: 1rem;
 $letter-spacing-base: 0.1rem;
 $font-family-heading: "";
-$font-family-base: "sans-serif";
+$font-family-base: sans-serif;
 $font-family-extra: "";
 $spacer: 1rem;
 $border: 1px;
@@ -44,20 +44,31 @@ For each color in array it will be generated clases for background and text
 All breakpoints: bg-color-name, text-color-name
 Specific breakpoints: bg-breakpoint-color-name, text-breakpoint-color-name
 ****************************************************************************/
+
+$black: #000000;
+$white: #ffffff;
+$gray: lightgray;
+
 $colors: ();
 $colors: map-merge(
   (
-    "primary": #ff0001,
-    "secondary": #0011ff,
-    "danger": #00ff0d,
-    "warning": #ff0003,
-    "success": #ff0004,
+    "primary": #0d6efd,
+    "secondary": #6c757d,
+    "danger": #dc3545,
+    "warning": #ffc107,
+    "succes": #198754,
+    "info": #0dcaf0,
     "black": #000000,
     "white": #ffffff,
-    "gray": #ff0005,
+    "gray": lightgray,
+    "transparent": transparent,
+    "ccc": #ccc,
+    "f9": #f9f9f9,
+    "f6": #f6f6f6,
   ),
   $colors
 );
+
 /**************************** Spacers ******************************************
 You can add new spacers in array like "name": value.
 For each spacer in array it will be generated clases for margin and padding
@@ -68,208 +79,107 @@ Specific breakpoints:
 (m, mx, my, mt, mb, ml, mr)-breakpoint-name
 (p, px, py, pt, pb, pl, pr)-breakpoint-name
 ********************************************************************************/
+
 $spacers: ();
 $spacers: map-merge(
   (
     0: 0,
-    1: $spacer,
-    //all the spacers will be multiple of spacer
+    1: 6px,
+    2: 8px,
+    3: 10px,
+    4: 12px,
+    5: 15px,
+    6: 20px,
+    7: 30px,
+    8: 100px,
+    "auto": auto,
+    "40px": 40px,
+    "60px": 60px,
+    "18p": 18%,
   ),
   $spacers
 );
 
 /********************************************************************************
-**************************** Border *********************************************
+**************************** Positions ******************************************
 ********************************************************************************/
-$borders-styles: ();
-$borders-styles: map-merge(
-  (
-    "solid": solid,
-    "dotted": dotted,
-  ),
-  $borders-styles
-);
 
-$borders-square: ();
-$borders-square: map-merge(
+$positions: ();
+$positions: map-merge(
   (
-    0: 0,
-    1: 0.1rem,
+    "top": top,
+    "right": right,
+    "bottom": bottom,
+    "left": left,
+    "center": center,
   ),
-  $borders-square
-);
-
-$borders-radius: ();
-$borders-radius: map-merge(
-  (
-    0: 0,
-    1: 0.3rem,
-  ),
-  $borders-radius
+  $positions
 );
 
 /********************************************************************************
-**************************** Fonts **********************************************
+**************************** Global Atributes ***********************************
 ********************************************************************************/
-$fonts-size: ();
-$fonts-size: map-merge(
-  (
-    0: 16px,
-    1: 20px,
-    2: 24px,
-  ),
-  $fonts-size
-);
 
-$fonts-weight: ();
-$fonts-weight: map-merge(
+$global: ();
+$global: map-merge(
   (
-    0: "200",
-    1: "400",
-    2: "500",
+    "initial": initial,
+    "inherit": inherit,
+    "unset": unset,
   ),
-  $fonts-weight
-);
-
-$letter-spacing: ();
-$letter-spacing: map-merge(
-  (
-    0: 2px,
-    1: 4px,
-    2: 6px,
-  ),
-  $letter-spacing
-);
-
-$line-height: ();
-$line-height: map-merge(
-  (
-    1: 1,
-    1.6: 1.6,
-    2: 2,
-  ),
-  $line-height
-);
-
-$font-family: ();
-$font-family: map-merge(
-  (
-    "arial": "Arial",
-    "helvetica": "Helvetica",
-    "verdana": "Verdana",
-  ),
-  $font-family
+  $global
 );
 
 /********************************************************************************
-**************************** Flex ***********************************************
+**************************** classes for positioning ****************************
 ********************************************************************************/
-$flex-directions: ();
-$flex-directions: map-merge(
+
+$top: ();
+$top: map-merge(
   (
-    "row": row,
-    "row-reverse": row-reverse,
-    "column": column,
-    "column-reverse": column-reverse,
+    "5px": 5px,
+    "10px": 10px,
+    "20px": 20px,
   ),
-  $flex-directions
+  $top
 );
 
-$flex-wrap: ();
-$flex-wrap: map-merge(
+$left: ();
+$left: map-merge(
   (
-    "nowrap": nowrap,
-    "wrap": wrap,
-    "wrap-reverse": wrap-reverse,
+    "5px": 5px,
+    "10px": 10px,
+    "20px": 20px,
   ),
-  $flex-wrap
+  $left
 );
 
-$justify-content: ();
-$justify-content: map-merge(
+$right: ();
+$right: map-merge(
   (
-    "flex-start": flex-start,
-    "flex-end": flex-end,
-    "center": center,
-    "space-around": space-around,
-    "space-between": space-between,
+    "5px": 5px,
+    "10px": 10px,
+    "20px": 20px,
   ),
-  $justify-content
+  $right
 );
 
-$align-items: ();
-$align-items: map-merge(
+$bottom: ();
+$bottom: map-merge(
   (
-    "stretch": stretch,
-    "center": center,
-    "baseline": baseline,
-    "flex-start": flex-start,
-    "flex-end": flex-end,
+    "5px": 5px,
+    "10px": 10px,
+    "20px": 20px,
   ),
-  $align-items
-);
-
-$align-content: ();
-$align-content: map-merge(
-  (
-    "stretch": stretch,
-    "center": center,
-    "flex-start": flex-start,
-    "flex-end": flex-end,
-    "space-around": space-around,
-    "space-between": space-between,
-  ),
-  $align-content
+  $bottom
 );
 
 /********************************************************************************
 **************************** Buttons ********************************************
 ********************************************************************************/
-/** $btn-hover: true = lighten($color, $btn-hover-percent) - $btn-hover: false = darken($color, $btn-hover-percent) */
-$btn-hover: false;
-$btn-hover-percent: 5%;
-$btn-cursor: pointer;
-$btn-font-family: $font-family-base;
-
-$btn-padding-y: $spacer;
-$btn-padding-x: $spacer;
-$btn-font-size: $font-size-base;
-$btn-border-radius: 5px;
-$btn-line-height: $line-height-base;
-$btn-border: none;
-
-$btn-padding-y-sm: $spacer/2;
-$btn-padding-x-sm: $spacer/2;
-$btn-font-size-sm: $font-size-base/2;
-$btn-border-radius-sm: 4px;
-$btn-line-height-sm: $line-height-base;
-$btn-border-sm: none;
-
-$btn-padding-y-lg: $spacer * 1.5;
-$btn-padding-x-lg: $spacer * 1.5;
-$btn-font-size-lg: $font-size-base * 1.5;
-$btn-border-radius-lg: 6px;
-$btn-line-height-lg: $line-height-base;
-$btn-border-lg: none;
-
-$btn-outile-background-color: white;
 
 $buttons: ();
 $buttons: map-merge($colors, $buttons);
-
-/********************************************************************************
-**************************** Width **********************************************
-********************************************************************************/
-
-$widths: ();
-$widths: map-merge(
-  (
-    0: 50xp,
-    1: 100px,
-    2: 200px,
-  ),
-  $widths
-);
 
 /********************************************************************************
 **************************** Shadows ********************************************
@@ -278,7 +188,8 @@ $widths: map-merge(
 $box-shadows: ();
 $box-shadows: map-merge(
   (
-    0: 10px 10px 10px 2px black,
+    0: 10px 10px 10px 2px map-get($colors, "black"),
+    1: 10px 10px 10px 2px map-get($colors, "white"),
   ),
   $box-shadows
 );
@@ -300,73 +211,14 @@ $inset-shadows: map-merge(
 );
 
 /********************************************************************************
-**************************** Dropdown *******************************************
-********************************************************************************/
-/** Dropdown Main Parent */
-$dropdown-main-witdh: 150px;
-
-/** Dropdown Button variables */
-$dropdonwn-btn-border: none;
-$dropdonwn-btn-cursor: pointer;
-$dropdown-btn-bg: blue;
-$dropdonwn-btn-border-radius: 5px;
-$dropdonwn-btn-padding-x: $spacer/2;
-$dropdonwn-btn-padding-y: $spacer;
-$dropdonwn-btn-font-family: $font-family-base;
-$dropdonwn-btn-font-size: $font-size-base;
-$dropdonwn-btn-line-height: $line-height-base;
-$dropdown-btn-letter-spacing: $letter-spacing-base;
-
-/** Dropdown Menu */
-$dropdown-menu-bg: gray;
-$dropdown-menu-border: solid 1px black;
-$dropdown-menu-border-radius: 6px;
-
-/** Dropdown Link variables */
-$dropdown-link-size: $font-size-base;
-$dropdown-link-height: $line-height-base;
-$dropdown-link-spacing: 2px;
-$dropdown-link-font-family: $font-family-base;
-$dropdown-link-padding-x: 6px;
-$dropdown-link-padding-y: 6px;
-
-/********************************************************************************
 **************************** Lists **********************************************
 ********************************************************************************/
-
-$list-font-size: $font-size-base;
-$list-line-height: $line-height-base;
-$list-letter-spacing: $letter-spacing-base;
-$list-font-family: $font-family-base;
 
 $list-bullet-content: "";
 
 /********************************************************************************
 **************************** Tables *********************************************
 ********************************************************************************/
-
-/** Table variables */
-$table-width: 100%;
-$table-font-family: $font-family-base;
-$table-margins: 0 auto;
-$table-bg: white;
-
-/** Header and Footer variables */
-$table-thead-tfoot-font-weight: bold;
-
-$table-thead-padding: 2px 2px;
-$table-thead-bottom-border: 1px solid #111;
-$table-thead-outile: none;
-$table-thead-cursor: pointer;
-
-$table-tfoot-padding: 10px 18px 6px 18px;
-$table-tfoot-top-border: 1px solid #111;
-
-/** Header and Footer variables */
-$table-tbody-padding: 8px 10px;
-$table-tbody-top-border: 1px solid #ccc;
-$table-tbody-odd-bg: #f9f9f9;
-$table-tbody-hover: #f6f6f6;
 
 $table-tbody-thtd-border-top: "";
 $table-tbody-thtd-border-right: "";
@@ -387,7 +239,7 @@ $table-tbody-sorting1-odd-selected: "";
 $table-tbody-sorting1-even-selected: "";
 $table-tbody-sorting1-hover-selected: "";
 
-/** Sorting 1 */
+/** Sorting 2 */
 $table-tbody-sorting2-odd: #f1f1f1;
 $table-tbody-sorting2-even: #fafafa;
 $table-tbody-sorting2-hover: #eaeaea;
@@ -395,7 +247,7 @@ $table-tbody-sorting2-odd-selected: "";
 $table-tbody-sorting2-even-selected: "";
 $table-tbody-sorting2-hover-selected: "";
 
-/** Sorting 1 */
+/** Sorting 3 */
 $table-tbody-sorting3-odd: #f1f1f1;
 $table-tbody-sorting3-even: #fafafa;
 $table-tbody-sorting3-hover: #eaeaea;
@@ -439,7 +291,6 @@ $table-controls-pagination-btn-min-width: 1.5em;
 $table-controls-pagination-btn-padding: 0.5em 1em;
 $table-controls-pagination-btn-margin-left: 2px;
 $table-controls-pagination-btn-text-align: center;
-$table-controls-pagination-btn-cursor: pointer;
 $table-controls-pagination-btn-color: #333;
 $table-controls-pagination-btn-border: 1px solid transparent;
 $table-controls-pagination-btn-border-radius: 2px;
@@ -447,40 +298,1413 @@ $table-controls-pagination-btn-border-radius: 2px;
 /** Button Active */
 $table-controls-pagination-btn-active-color: #333;
 $table-controls-pagination-btn-active-border: 1px solid #979797;
-$table-controls-pagination-btn-active-bg-color: white;
-$table-controls-pagination-btn-active-gradient-color1: white;
+$table-controls-pagination-btn-active-bg-color: $white;
+$table-controls-pagination-btn-active-gradient-color1: $white;
 $table-controls-pagination-btn-active-gradient-color2: #979797;
 
 /** Button Disabled */
-$table-controls-pagination-btn-disabled-cursor: default;
 $table-controls-pagination-btn-disabled-color: #666;
 $table-controls-pagination-btn-disabled-border: 1px solid transparent;
 $table-controls-pagination-btn-disabled-bg: tranparent;
 $table-controls-pagination-btn-disabled-box-shadow: none;
 
 /** Button Hover */
-$table-controls-pagination-btn-hover-color: white;
+$table-controls-pagination-btn-hover-color: $white;
 $table-controls-pagination-btn-hover-border: 1px solid #111;
 $table-controls-pagination-btn-hover-bg-color: #585858;
 $table-controls-pagination-btn-hover-gradient-color1: #585858;
 $table-controls-pagination-btn-hover-gradient-color2: #111;
 
+/*************************** All ****************************************/
+$all: ();
+$all: map-merge(
+  (
+    "initial": initial,
+    "inherit": inherit,
+    "unset": unset,
+  ),
+  $all
+);
+
 /********************************************************************************
-**************************** Images *********************************************
+**************************** Animation ******************************************
 ********************************************************************************/
 
-/** image-thubmnail variables */
-$image-thumbnail-width: 200px;
-$image-thumbnail-height: auto;
-$image-thumbnail-padding: 0;
-$image-thumbnail-bg: "";
-$image-thumbnail-border: 5px solid gray;
-$image-thumbnail-border-radius: 5px;
-$image-thumbnail-box-shadow: 10px 10px 10px 2px white;
+$animation-name: ();
+$animation-name: map-merge(
+  (
+    0: 0,
+    "stretch": stretch,
+    "example": example,
+  ),
+  $animation-name
+);
 
-/** Object-fit array*/
-$object-fit-attributes: ();
-$object-fit-attributes: map-merge(
+$animation-duration: ();
+$animation-duration: map-merge(
+  (
+    0: 0.3s,
+    1: 1.5s,
+    "4s": 4s,
+  ),
+  $animation-duration
+);
+
+$animation-timing-function: ();
+$animation-timing-function: map-merge(
+  (
+    "ease": ease,
+    "ease-in": ease-in,
+    "ease-out": ease-out,
+    "ease-in-out": ease-in-out,
+    "linear": linear,
+  ),
+  $animation-timing-function
+);
+
+$animation-delay: ();
+$animation-delay: map-merge(
+  (
+    0: 0,
+  ),
+  $animation-delay
+);
+
+$animation-direction: ();
+$animation-direction: map-merge(
+  (
+    "alternate": alternate,
+    "normal": normal,
+  ),
+  $animation-direction
+);
+
+$animation-iteration-count: ();
+$animation-iteration-count: map-merge(
+  (
+    "infinite": infinite,
+  ),
+  $animation-iteration-count
+);
+
+$animation-fill-mode: ();
+$animation-fill-mode: map-merge(
+  (
+    "none": none,
+    "forwards": forwards,
+    "backwards": backwards,
+    "both": both,
+  ),
+  $animation-fill-mode
+);
+
+$animation-play-state: ();
+$animation-play-state: map-merge(
+  (
+    "running": running,
+    "paused": paused,
+  ),
+  $animation-play-state
+);
+
+/*************************** Aspect-Ration ****************************************/
+$aspect-ratio: ();
+$aspect-ratio: map-merge(
+  (
+    1: 1/1,
+    16: 16/9,
+  ),
+  $aspect-ratio
+);
+
+/*************************** Backdrop-Filter ****************************************/
+$backdrop-filter: ();
+$backdrop-filter: map-merge(
+  (
+    "grayscale": grayscale,
+    "contrast": contrast,
+    "blur": blur,
+    "10px": blur(10px),
+  ),
+  $backdrop-filter
+);
+
+/*************************** Backface-visibility ****************************************/
+$backface-visibility: ();
+$backface-visibility: map-merge(
+  (
+    "visible": visible,
+    "hidden": hidden,
+    "inherit": inherit,
+    "initial": initial,
+  ),
+  $backface-visibility
+);
+
+/*************************** Background-Attachment ****************************************/
+$background-attachment: ();
+$background-attachment: map-merge(
+  (
+    "scroll": scroll,
+    "fixed": fixed,
+    "local": local,
+  ),
+  $background-attachment
+);
+
+/*************************** Background-Blend-Mode ****************************************/
+$background-blend-mode: ();
+$background-blend-mode: map-merge(
+  (
+    "initial": initial,
+    "inherit": inherit,
+    "screen": screen,
+  ),
+  $background-blend-mode
+);
+
+/*************************** Background-Clip ****************************************/
+$background-clip: ();
+$background-clip: map-merge(
+  (
+    "border-box": border-box,
+    "padding-box": padding-box,
+    "content-box": content-box,
+    "inherit": inherit,
+  ),
+  $background-clip
+);
+
+/*************************** Background-image ****************************************/
+$background-image: ();
+$background-image: map-merge(
+  (
+    "svg": url(""),
+    1:
+      url("https://41.media.tumblr.com/efd15be8d41b12a7b0ef17fba27c3e20/tumblr_mqqy59HMaf1qzattso1_1280.jpg"),
+    "genuineq":
+      url("https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg"),
+    "logo": url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/codepen.png"),
+  ),
+  $background-image
+);
+
+/*************************** Background-Origin ****************************************/
+$background-origin: ();
+$background-origin: map-merge(
+  (
+    "border-box": border-box,
+    "padding-box": padding-box,
+    "content-box": content-box,
+    "inherit": inherit,
+  ),
+  $background-origin
+);
+
+/*************************** Background-Position ****************************************/
+
+$background-position: ();
+$background-position: map-merge(
+  (
+    "top-right": top right,
+  ),
+  $background-position
+);
+
+/*************************** Background-Repeat ****************************************/
+
+$background-repeat: ();
+$background-repeat: map-merge(
+  (
+    "repeat": repeat,
+    "repeat-x": repeat-x,
+    "repeat-y": repeat-y,
+    "no-repeat": no-repeat,
+    "space": space,
+    "round": round,
+  ),
+  $background-repeat
+);
+
+/*************************** Background-size ****************************************/
+$background-size: ();
+$background-size: map-merge(
+  (
+    300: 300px,
+    "contain": contain,
+    "cover": cover,
+  ),
+  $background-size
+);
+
+/*************************** Bleed ****************************************/
+$bleed: ();
+$bleed: map-merge(
+  (
+    "auto": auto,
+  ),
+  $bleed
+);
+
+/*************************** Block-Overflow ****************************************/
+$block-overflow: ();
+$block-overflow: map-merge(
+  (
+    "clips": clip,
+    "ellipsis": ellipsis,
+  ),
+  $block-overflow
+);
+
+/********************************************************************************
+**************************** Borders *********************************************
+********************************************************************************/
+
+$borders-width: ();
+$borders-width: map-merge(
+  (
+    0: 1px,
+    1: 2px,
+    2: 3px,
+    3: 4px,
+    4: 5px,
+  ),
+  $borders-width
+);
+
+$borders-styles: ();
+$borders-styles: map-merge(
+  (
+    "solid": solid,
+    "dotted": dotted,
+    "dashed": dashed,
+    "double": double,
+    "groove": groove,
+    "ridge": ridge,
+    "inset": inset,
+    "outset": outset,
+    "none": none,
+  ),
+  $borders-styles
+);
+
+$borders-square: ();
+$borders-square: map-merge(
+  (
+    0: 0,
+    1: 0.1rem,
+  ),
+  $borders-square
+);
+
+$borders-radius: ();
+$borders-radius: map-merge(
+  (
+    0: 0,
+    1: 2px,
+    2: 4px,
+    3: 5px,
+    4: 6px,
+    5: 8px,
+  ),
+  $borders-radius
+);
+
+$borders-colapse: ();
+$borders-colapse: map-merge(
+  (
+    "separate": separate,
+  ),
+  $borders-colapse
+);
+
+$borders-spacing: ();
+$borders-spacing: map-merge(
+  (
+    0: 0,
+  ),
+  $borders-spacing
+);
+
+$borders-boundary: ();
+$borders-boundary: map-merge(
+  (
+    "none": none,
+    "parent": parent,
+    "display": display,
+  ),
+  $borders-boundary
+);
+
+$borders-image-source: ();
+$borders-image-source: map-merge(
+  (
+    0: url(""),
+  ),
+  $borders-image-source
+);
+
+$borders-image-slice: ();
+$borders-image-slice: map-merge(
+  (
+    20: 20,
+  ),
+  $borders-image-slice
+);
+
+$borders-image-width: ();
+$borders-image-width: map-merge(
+  (
+    1: 100%,
+  ),
+  $borders-image-width
+);
+
+/*************************** Box-Decoration-Break ****************************************/
+$box-decoration-break: ();
+$box-decoration-break: map-merge(
+  (
+    "clone": clone,
+    "slice": slice,
+  ),
+  $box-decoration-break
+);
+
+/*************************** Box-Sizing ****************************************/
+$box-sizing: ();
+$box-sizing: map-merge(
+  (
+    "content-box": content-box,
+    "padding-box": padding-box,
+    "border-box": border-box,
+    "inherit": inherit,
+  ),
+  $box-sizing
+);
+
+/*************************** Break-Inside ****************************************/
+$break-inside: ();
+$break-inside: map-merge(
+  (
+    "avoid": avoid,
+  ),
+  $break-inside
+);
+
+/*************************** Caption-Side ****************************************/
+$caption-side: ();
+$caption-side: map-merge(
+  (
+    "top": top,
+    "bottom": bottom,
+    "inherit": inherit,
+  ),
+  $caption-side
+);
+
+/*************************** Caret-Shape ****************************************/
+$caret-shape: ();
+$caret-shape: map-merge(
+  (
+    "auto": auto,
+    "block": block,
+    "underscore": underscore,
+    "bar": bar,
+  ),
+  $caret-shape
+);
+
+/*************************** Clear ****************************************/
+$clear: ();
+$clear: map-merge(
+  (
+    "none": none,
+    "left": left,
+    "right": right,
+    "both": both,
+    "initial": initial,
+    "inherit": inherit,
+  ),
+  $clear
+);
+
+/*************************** Clip-Path ****************************************/
+$clip-path: ();
+$clip-path: map-merge(
+  (
+    0: 0,
+    1: inset(10% 10% 10% 10% round 20%, 20%),
+  ),
+  $clip-path
+);
+
+/*************************** Color-Adjust ****************************************/
+$color-adjust: ();
+$color-adjust: map-merge(
+  (
+    0: 0,
+    "economy": economy,
+    "exact": exact,
+  ),
+  $color-adjust
+);
+
+/********************************************************************************
+**************************** Column ******************************************
+********************************************************************************/
+$column-count: ();
+$column-count: map-merge(
+  (
+    3: 3,
+    6: 6,
+    12: 12,
+  ),
+  $column-count
+);
+
+$column-fill: ();
+$column-fill: map-merge(
+  (
+    "auto": auto,
+    "balance": balance,
+  ),
+  $column-fill
+);
+
+$column-gap: ();
+$column-gap: map-merge(
+  (
+    "normal": normal,
+    "unset": unset,
+    25: 25px,
+  ),
+  $column-gap
+);
+
+$column-rule-width: ();
+$column-rule-width: map-merge(
+  (
+    1: 1px,
+  ),
+  $column-rule-width
+);
+
+$column-rule-style: ();
+$column-rule-style: map-merge(
+  (
+    "solid": solid,
+  ),
+  $column-rule-style
+);
+
+$column-span: ();
+$column-span: map-merge(
+  (
+    "all": all,
+    "none": none,
+  ),
+  $column-span
+);
+
+$column-width: ();
+$column-width: map-merge(
+  (
+    50: 50px,
+  ),
+  $column-width
+);
+
+/*************************** Contain ****************************************/
+$contain: ();
+$contain: map-merge(
+  (
+    "none": none,
+    "layout": layout,
+    "paint": paint,
+    "size": size,
+    "style": style,
+    "content": content,
+    "strict": strict,
+  ),
+  $contain
+);
+
+/*************************** Content ****************************************/
+$content: ();
+$content: map-merge(
+  (
+    0: "",
+    "arrow": ">",
+  ),
+  $content
+);
+
+/***************************************************************************
+*************************** Counter ****************************************
+****************************************************************************/
+
+$counter-increment: ();
+$counter-increment: map-merge(
+  (
+    "name": "name",
+    "mega-step": mega-step,
+  ),
+  $counter-increment
+);
+
+$counter-reset: ();
+$counter-reset: map-merge(
+  (
+    "name": "name",
+    "mega-step": mega-step,
+  ),
+  $counter-reset
+);
+
+$counter-set: ();
+$counter-set: map-merge(
+  (
+    "name": "name",
+  ),
+  $counter-set
+);
+
+/*************************** Cursor ****************************************/
+$cursors: ();
+$cursors: map-merge(
+  (
+    "pointer": pointer,
+    "grab": grab,
+    "hand": hand,
+  ),
+  $cursors
+);
+
+/*************************** Direction ****************************************/
+$direction: ();
+$direction: map-merge(
+  (
+    "ltr": ltr,
+    "rtl": rtl,
+    "inherit": inherit,
+  ),
+  $direction
+);
+
+/*************************** Display ****************************************/
+$display: ();
+$display: map-merge(
+  (
+    "none": none,
+    "inline": inline,
+    "inline-block": inline-block,
+    "block": block,
+    "run-in": run-in,
+    "flex": flex,
+    "grid": grid,
+  ),
+  $display
+);
+
+/*************************** Empty-Cells ****************************************/
+$empty-cells: ();
+$empty-cells: map-merge(
+  (
+    "show": show,
+    "hide": hide,
+    "inherit": inherit,
+    "initial": initial,
+    "unset": unset,
+  ),
+  $empty-cells
+);
+
+/*************************** Filter ****************************************/
+/** You can use one of those function in order to use filter (filter: blur(20px))
+blur()
+brightness()
+contrast()
+drop-shadow()
+grayscale()
+hue-rotate()
+invert()
+opacity()
+saturate()
+sepia()
+url() – for applying SVG filters */
+$filter: ();
+$filter: map-merge(
+  (
+    "blur-example": blur(2px),
+  ),
+  $filter
+);
+
+/********************************************************************************
+**************************** Flex ***********************************************
+********************************************************************************/
+$flex-directions: ();
+$flex-directions: map-merge(
+  (
+    "row": row,
+    "row-reverse": row-reverse,
+    "column": column,
+    "column-reverse": column-reverse,
+  ),
+  $flex-directions
+);
+
+$flex-wrap: ();
+$flex-wrap: map-merge(
+  (
+    "nowrap": nowrap,
+    "wrap": wrap,
+    "wrap-reverse": wrap-reverse,
+  ),
+  $flex-wrap
+);
+
+$justify-content: ();
+$justify-content: map-merge(
+  (
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "center": center,
+    "space-around": space-around,
+    "space-between": space-between,
+  ),
+  $justify-content
+);
+
+$justify-items: ();
+$justify-items: map-merge(
+  (
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "center": center,
+    "space-around": space-around,
+    "space-between": space-between,
+  ),
+  $justify-items
+);
+
+$justify-self: ();
+$justify-self: map-merge(
+  (
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "center": center,
+    "space-around": space-around,
+    "space-between": space-between,
+  ),
+  $justify-self
+);
+
+$align-items: ();
+$align-items: map-merge(
+  (
+    "stretch": stretch,
+    "center": center,
+    "baseline": baseline,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+  ),
+  $align-items
+);
+
+$align-content: ();
+$align-content: map-merge(
+  (
+    "stretch": stretch,
+    "center": center,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "space-around": space-around,
+    "space-between": space-between,
+  ),
+  $align-content
+);
+
+$align-self: ();
+$align-self: map-merge(
+  (
+    "stretch": stretch,
+    "center": center,
+    "baseline": baseline,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+  ),
+  $align-self
+);
+
+$flex-basis: ();
+$flex-basis: map-merge(
+  (
+    100: 100px,
+  ),
+  $flex-basis
+);
+
+$flex-grow: ();
+$flex-grow: map-merge(
+  (
+    2: 2,
+  ),
+  $flex-grow
+);
+
+$flex-shrink: ();
+$flex-shrink: map-merge(
+  (
+    2: 2,
+  ),
+  $flex-shrink
+);
+
+/*************************** Float ****************************************/
+$float: ();
+$float: map-merge(
+  (
+    "none": none,
+    "top": top,
+    "bottom": bottom,
+    "left": left,
+    "right": right,
+    "inherit": inherit,
+  ),
+  $float
+);
+
+/********************************************************************************
+**************************** Fonts **********************************************
+********************************************************************************/
+$font-display: ();
+$font-display: map-merge(
+  (
+    "auto": auto,
+    "block": block,
+    "swap": swap,
+    "fallback": fallback,
+    "optional": optional,
+  ),
+  $font-display
+);
+
+$font-family: ();
+$font-family: map-merge(
+  (
+    "arial": arial,
+    "helvetica": helvetica,
+    "verdana": verdana,
+    "sans-serif": sans-serif,
+    "times-new-roman": times-new-roman,
+  ),
+  $font-family
+);
+
+$font-feature-settings: ();
+$font-feature-settings: map-merge(
+  (
+    "smcp": smcp 1,
+  ),
+  $font-feature-settings
+);
+
+$font-kerning: ();
+$font-kerning: map-merge(
+  (
+    "auto": auto,
+    "none": none,
+    "normal": normal,
+  ),
+  $font-kerning
+);
+
+$font-optical-sizing: ();
+$font-optical-sizing: map-merge(
+  (
+    "auto": auto,
+    "none": none,
+    "initial": initial,
+    "inherit": inherit,
+    "unset": unset,
+  ),
+  $font-optical-sizing
+);
+
+$fonts-size: ();
+$fonts-size: map-merge(
+  (
+    12: 12px,
+    0: 16px,
+    1: 18px,
+    2: 24px,
+    3: 28px,
+  ),
+  $fonts-size
+);
+
+$font-size-adjust: ();
+$font-size-adjust: map-merge(
+  (
+    0: 0,
+    0.5: 0.5,
+    1: 1,
+  ),
+  $font-size-adjust
+);
+
+$font-stretch: ();
+$font-stretch: map-merge(
+  (
+    "ultra-condensed": ultra-condensed,
+    "extra-condensed": extra-condensed,
+    "condensed": condensed,
+    "semi-condensed": semi-condensed,
+    "normal": normal,
+    "semi-expanded": semi-expanded,
+    "expanded": expanded,
+    "extra-expanded": extra-expanded,
+    "ultra-expanded": ultra-expanded,
+  ),
+  $font-stretch
+);
+
+$font-style: ();
+$font-style: map-merge(
+  (
+    "italic": italic,
+    "oblique": oblique,
+    "normal": normal,
+  ),
+  $font-style
+);
+
+$font-systhesis: ();
+$font-systhesis: map-merge(
+  (
+    100: 100,
+    500: 500,
+    700: 700,
+  ),
+  $font-systhesis
+);
+
+$font-variant: ();
+$font-variant: map-merge(
+  (
+    "small-caps": small-caps,
+    "normal": normal,
+  ),
+  $font-variant
+);
+
+$font-variant-numeric: ();
+$font-variant-numeric: map-merge(
+  (
+    "normal": normal,
+    "ordinal": ordinal,
+    "slashed-zero": slashed-zero,
+  ),
+  $font-variant-numeric
+);
+
+$fonts-weight: ();
+$fonts-weight: map-merge(
+  (
+    0: 200,
+    1: 400,
+    2: 500,
+    3: 700,
+  ),
+  $fonts-weight
+);
+
+$line-break: ();
+$line-break: map-merge(
+  (
+    "auto": auto,
+    "loose": loose,
+    "normal": normal,
+    "strict": strict,
+    "anywhere": anywhere,
+  ),
+  $line-break
+);
+
+$line-height: ();
+$line-height: map-merge(
+  (
+    1: 1,
+    1.6: 1.6,
+    2: 2,
+  ),
+  $line-height
+);
+
+$line-clamp: ();
+$line-clamp: map-merge(
+  (
+    "none": none,
+    2: 2,
+  ),
+  $line-clamp
+);
+
+/*************************** Gap ****************************************/
+$gap: ();
+$gap: map-merge(
+  (
+    "20px": 20px,
+    "1rem": 1rem,
+  ),
+  $gap
+);
+
+/*************************** Grid-Row / Grid-Column ****************************************/
+$grid-row: ();
+$grid-row: map-merge(
+  (
+    "12.5rem": 12.5rem,
+    "example-1": 2/3,
+    "example-2": 1/2,
+    "example-3": 2/4,
+  ),
+  $grid-row
+);
+
+$grid-column: ();
+$grid-column: map-merge(
+  (
+    "example-1": 1/3,
+    "example-2": 3/-1,
+    "example-3": 3/4,
+  ),
+  $grid-column
+);
+
+/*************************** Grid-Template-Row / Grid-Template-Column ****************************************/
+$grid-template-rows: ();
+$grid-template-rows: map-merge(
+  (
+    "example": repeat(3, 1fr),
+  ),
+  $grid-template-rows
+);
+
+$grid-template-columns: ();
+$grid-template-columns: map-merge(
+  (
+    "example": repeat(3, 1fr),
+  ),
+  $grid-template-columns
+);
+
+/*************************** Hanging-Punctuation ****************************************/
+$hanging-punctuation: ();
+$hanging-punctuation: map-merge(
+  (
+    "none": none,
+    "first": first,
+    "last": last,
+    "force-end": force-end,
+    "allow-end": allow-end,
+  ),
+  $hanging-punctuation
+);
+
+/*************************** Height ****************************************/
+
+$heights: ();
+$heights: map-merge(
+  (
+    0: 50xp,
+    1: 60px,
+    2: 100px,
+    3: 150px,
+    4: 200px,
+    10: 600px,
+    100: 100%,
+    "auto": auto,
+    "20px": 20px,
+  ),
+  $heights
+);
+
+/*************************** Hyphens ****************************************/
+$hyphens: ();
+$hyphens: map-merge(
+  (
+    "none": none,
+    "manual": manual,
+    "auto": auto,
+  ),
+  $hyphens
+);
+
+/*************************** Image-Rendering ****************************************/
+$image-rendering: ();
+$image-rendering: map-merge(
+  (
+    "auto": auto,
+    "crisp-edges": crisp-edges,
+    "pixelated": pixelated,
+  ),
+  $image-rendering
+);
+
+/*************************** Initial-Letter ****************************************/
+$initial-letter: ();
+$initial-letter: map-merge(
+  (
+    2: 2,
+  ),
+  $initial-letter
+);
+
+/*************************** Initial-Size ****************************************/
+$initial-size: ();
+$initial-size: map-merge(
+  (
+    700: 700px,
+  ),
+  $initial-size
+);
+
+/*************************** Inset ****************************************/
+$inset: ();
+$inset: map-merge(
+  (
+    0: 10px 20px 30px 40px,
+  ),
+  $inset
+);
+
+$inset-block: ();
+$inset-block: map-merge(
+  (
+    0: 50px,
+    "auto": auto,
+  ),
+  $inset-block
+);
+
+$inset-block-end: ();
+$inset-block-end: map-merge(
+  (
+    0: 50px,
+    "auto": auto,
+  ),
+  $inset-block-end
+);
+
+$inset-block-start: ();
+$inset-block-start: map-merge(
+  (
+    0: 50px,
+    "auto": auto,
+  ),
+  $inset-block-start
+);
+
+$inset-inline: ();
+$inset-inline: map-merge(
+  (
+    0: 50px,
+    "auto": auto,
+  ),
+  $inset-inline
+);
+
+$inset-inline-end: ();
+$inset-inline-end: map-merge(
+  (
+    0: 50px,
+    "auto": auto,
+  ),
+  $inset-inline-end
+);
+
+$inset-inline-start: ();
+$inset-inline-start: map-merge(
+  (
+    0: 50px,
+    "auto": auto,
+  ),
+  $inset-inline-start
+);
+
+/*************************** Isolation ****************************************/
+$isolation: ();
+$isolation: map-merge(
+  (
+    "isolate": isolate,
+    "auto": auto,
+  ),
+  $isolation
+);
+
+/*************************** List-Style ****************************************/
+$list-style-type: ();
+$list-style-type: map-merge(
+  (
+    "disc": disc,
+    "circle": circle,
+    "square": square,
+    "decimal": decimal,
+    "decimal-leading-zero": decimal-leading-zero,
+    "lower-roman": lower-roman,
+    "upper-roman": upper-roman,
+    "lower-greek": lower-greek,
+    "lower-latin": lower-latin,
+    "upper-latin": upper-latin,
+    "armenian": armenian,
+    "georgian": georgian,
+    "lower-alpha": lower-alpha,
+    "upper-alpha": upper-alpha,
+    "none": none,
+  ),
+  $list-style-type
+);
+
+$list-style-position: ();
+$list-style-position: map-merge(
+  (
+    "outside": outside,
+  ),
+  $list-style-position
+);
+
+$list-style-image: ();
+$list-style-image: map-merge(
+  (
+    "none": none,
+  ),
+  $list-style-image
+);
+
+/*************************** Margin-Block ****************************************/
+$margin-block: ();
+$margin-block: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-block
+);
+
+$margin-block-end: ();
+$margin-block-end: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-block-end
+);
+
+$margin-block-start: ();
+$margin-block-start: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-block-start
+);
+
+$margin-inline: ();
+$margin-inline: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-inline
+);
+
+$margin-inline-end: ();
+$margin-inline-end: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-inline-end
+);
+
+$margin-inline-start: ();
+$margin-inline-start: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-inline-start
+);
+
+/*************************** Mask ****************************************/
+$mask-clip: ();
+$mask-clip: map-merge(
+  (
+    "border-box": border-box,
+    "content-box": content-box,
+    "fill-box": fill-box,
+    "margin-box": margin-box,
+    "padding-box": padding-box,
+    "stroke-box": stroke-box,
+    "view-box": view-box,
+    "no-clip": no-clip,
+    "initial": initial,
+    "inherit": inherit,
+    "unset": unset,
+  ),
+  $mask-clip
+);
+
+$mask-composite: ();
+$mask-composite: map-merge(
+  (
+    "add": add,
+    "substract": substract,
+    "intersect": intersect,
+    "exclude": exclude,
+    "inherit": inherit,
+    "initial": initial,
+    "unset": unset,
+  ),
+  $mask-composite
+);
+
+$mask-image: ();
+$mask-image: map-merge(
+  (
+    "poza1": url(""),
+  ),
+  $mask-image
+);
+
+$mask-mode: ();
+$mask-mode: map-merge(
+  (
+    "alpha": alpha,
+    "luminance": luminance,
+    "match-source": match-source,
+  ),
+  $mask-mode
+);
+
+$mask-origin: ();
+$mask-origin: map-merge(
+  (
+    "content-box": content-box,
+    "padding-box": padding-box,
+    "margin-box": margin-box,
+    "fill-box": fill-box,
+    "stroke-box": stroke-box,
+    "view-box": view-box,
+    "initial": initial,
+    "inherit": inherit,
+    "unset": unset,
+  ),
+  $mask-origin
+);
+
+$mask-position: ();
+$mask-position: map-merge(
+  (
+    0: 0% 0%,
+  ),
+  $mask-position
+);
+
+$mask-position: map-merge($mask-position, $positions);
+
+$mask-repeat: ();
+$mask-repeat: map-merge(
+  (
+    "repeat": repeat,
+    "repeat-x": repeat-x,
+    "repeat-y": repeat-y,
+    "no-repeat": no-repeat,
+    "space": space,
+    "round": round,
+  ),
+  $mask-repeat
+);
+
+$mask-size: ();
+$mask-size: map-merge(
+  (
+    0: 200px 100px,
+  ),
+  $mask-size
+);
+
+$mask-style: ();
+$mask-style: map-merge(
+  (
+    "alpha": alpha,
+    "luminance": luminance,
+  ),
+  $mask-style
+);
+
+/*************************** Max ****************************************/
+$max-height: ();
+$max-height: map-merge(
+  (
+    0: 100px,
+  ),
+  $max-height
+);
+
+$max-inline-size: ();
+$max-inline-size: map-merge(
+  (
+    0: 100px,
+  ),
+  $max-inline-size
+);
+
+$max-width: ();
+$max-width: map-merge(
+  (
+    0: 100px,
+  ),
+  $max-width
+);
+
+/*************************** Min ****************************************/
+$min-height: ();
+$min-height: map-merge(
+  (
+    0: 100px,
+  ),
+  $min-height
+);
+
+$min-width: ();
+$min-width: map-merge(
+  (
+    "100px": 100px,
+  ),
+  $min-width
+);
+
+/*************************** Mix-Blend-Mode ****************************************/
+$mix-blend-mode: ();
+$mix-blend-mode: map-merge(
+  (
+    "normal": normal,
+    "multiply": multiply,
+    "screen": screen,
+    "lighten": lighten,
+    "color-dodge": color-dodge,
+    "color-burn": color-burn,
+    "hard-light": hard-light,
+    "soft-light": soft-light,
+    "difference": difference,
+    "exclusion": exclusion,
+    "saturation": saturation,
+    "color": color,
+    "luminosity": luminosity,
+  ),
+  $mix-blend-mode
+);
+
+/*************************** Object-Fit ****************************************/
+$object-fit: ();
+$object-fit: map-merge(
   (
     "fill": fill,
     "contain": contain,
@@ -488,79 +1712,1059 @@ $object-fit-attributes: map-merge(
     "none": none,
     "scale-down": scale-down,
   ),
-  $object-fit-attributes
+  $object-fit
 );
 
-/********************************************************************************
-**************************** Forms **********************************************
-********************************************************************************/
+/*************************** Object-Position ****************************************/
+$object-position: ();
+$object-position: map-merge(
+  (
+    0: 40% 30%,
+  ),
+  $object-position
+);
 
-/** Form Container variables*/
+$object-position: map-merge($positions, $object-position);
 
-/** Form Field Label variables*/
-$form-field-label-margin-top: 15px;
-$form-field-label-font-family: $font-family-base;
-$form-field-label-font-size: $font-size-base;
-$form-field-label-color: black;
-$form-field-label-font-weight: null;
-$form-field-label-line-height: $line-height-base;
-$form-filed-label-letter-spacing: $letter-spacing-base;
+/*************************** Offset ****************************************/
+$offset-anchor: ();
+$offset-anchor: map-merge(
+  (
+    "auto": auto,
+    0: 50% 50%,
+  ),
+  $offset-anchor
+);
 
-$form-field-label-padding-left: 5px;
+$offset-distance: ();
+$offset-distance: map-merge(
+  (
+    0: 0%,
+    100: 100%,
+  ),
+  $offset-distance
+);
 
-/** Form Field Control variables*/
-$form-field-control-margin-top: 5px;
-$form-field-control-font-family: $font-family-base;
-$form-field-control-font-size: $font-size-base;
-$form-field-control-color: black;
-$form-field-control-font-weight: null;
-$form-field-control-line-height: $line-height-base;
-$form-filed-control-letter-spacing: $letter-spacing-base;
+$offset-path: ();
+$offset-path: map-merge(
+  (
+    0: path("M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0"),
+  ),
+  $offset-path
+);
 
-/** Form Field Control File Choose variables */
-$form-field-control-file-border: 1px solid black;
-$form-field-control-file-border-radius: 5px;
-$form-field-control-file-padding-x: 5px;
-$form-field-control-file-padding-y: 10px;
-$form-field-control-file-bg-color: gray;
+$offset-rotate: ();
+$offset-rotate: map-merge(
+  (
+    0: 0,
+  ),
+  $offset-rotate
+);
 
-/********************************************************************************
-**************************** Accordions *****************************************
-********************************************************************************/
+/*************************** Opacity ****************************************/
+$opacity: ();
+$opacity: map-merge(
+  (
+    0: 0.5,
+    1: 0.75,
+  ),
+  $opacity
+);
 
-/** Accordion Container variables */
-$accordion-container-width: 50%;
-$accordion-container-border: 1px solid black;
-$accordion-container-border-radius-top: 4px 4px 0 0;
-$accordion-container-border-radius-bottom: 0 0 4px 4px;
+/*************************** Order ****************************************/
+$order: ();
+$order: map-merge(
+  (
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+  ),
+  $order
+);
 
-/** Accordion Element variables */
+/*************************** Orphans ****************************************/
+$orphans: ();
+$orphans: map-merge(
+  (
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+  ),
+  $orphans
+);
 
-/** Accordion Button variables */
-$accordion-btn-bg-color: blue;
-$accordion-btn-color: white;
-$accordion-btn-border: $accordion-container-border;
-$accordion-btn-cursor: pointer;
-$accordion-btn-padding-x: 10px;
-$accordion-btn-padding-y: 20px;
-$accordion-btn-font-family: $font-family-base;
-$accordion-btn-font-size: $font-size-base;
-$accordion-btn-line-height: $line-height-base;
-$accordion-btn-letter-spacing: $letter-spacing-base;
+/*************************** Outline ****************************************/
 
-$accordion-btn-focus-color: red;
-$accordion-btn-focus-border: 2px solid black;
+$outline-width: ();
+$outline-width: map-merge(
+  (
+    0: 1px,
+    1: 2px,
+    2: 3px,
+    3: 4px,
+    4: 5px,
+  ),
+  $outline-width
+);
 
-/** Accordion Info variables */
-$accordion-info-bg-color: white;
-$accordion-info-border: $accordion-container-border;
-$accordion-info-padding-x: 10px;
-$accordion-info-padding-y: 20px;
-$accordion-info-font-family: $font-family-base;
-$accordion-info-font-size: 14px;
-$accordion-info-line-height: $line-height-base;
-$accordion-info-letter-spacing: $letter-spacing-base;
+$outline-style: ();
+$outline-style: map-merge(
+  (
+    "solid": solid,
+    "dotted": dotted,
+    "none": none,
+  ),
+  $outline-style
+);
 
-/** Accordion First Button variables */
+$outline-offset: ();
+$outline-offset: map-merge(
+  (
+    10: 10px,
+  ),
+  $outline-offset
+);
 
-/** Accordion Last Button variables */
+/*************************** Overflow ****************************************/
+$overflow: ();
+$overflow: map-merge(
+  (
+    "visible": visible,
+    "hidden": hidden,
+    "scroll": scroll,
+    "auto": auto,
+  ),
+  $overflow
+);
+
+$overflow-anchor: ();
+$overflow-anchor: map-merge(
+  (
+    "auto": auto,
+    "none": none,
+  ),
+  $overflow-anchor
+);
+
+$overflow-wrap: ();
+$overflow-wrap: map-merge(
+  (
+    "normal": normal,
+    "break-word": break-word,
+  ),
+  $overflow-wrap
+);
+
+/*************************** Overscroll-Behaviour ****************************************/
+$overscroll-behavior: ();
+$overscroll-behavior: map-merge(
+  (
+    "contain": contain,
+    "none": none,
+    "auto": auto,
+  ),
+  $overscroll-behavior
+);
+
+/*************************** Page-Break ****************************************/
+$page-break-after: ();
+$page-break-after: map-merge(
+  (
+    "auto": auto,
+    "always": always,
+    "avoid": avoid,
+    "left": left,
+    "right": right,
+  ),
+  $page-break-after
+);
+
+$page-break-before: ();
+$page-break-before: map-merge(
+  (
+    "auto": auto,
+    "always": always,
+    "avoid": avoid,
+    "left": left,
+    "right": right,
+  ),
+  $page-break-before
+);
+
+$page-break-inside: ();
+$page-break-inside: map-merge(
+  (
+    "auto": auto,
+    "avoid": avoid,
+  ),
+  $page-break-inside
+);
+
+/*************************** Paint-Order ****************************************/
+$paint-order: ();
+$paint-order: map-merge(
+  (
+    "normal": normal,
+    "stroke": stroke,
+    "fill": fill,
+    "markers": markers,
+  ),
+  $paint-order
+);
+
+/*************************** Perspective ****************************************/
+$perspective: ();
+$perspective: map-merge(
+  (
+    "none": none,
+    1000: 1000px,
+  ),
+  $perspective
+);
+
+/*************************** Perspective-Origin ****************************************/
+$perspective-origin: ();
+$perspective-origin: map-merge(
+  (
+    0: 50% 30%,
+  ),
+  $perspective-origin
+);
+
+/*************************** Place-Items ****************************************/
+$place-items: ();
+$place-items: map-merge(
+  (
+    "auto": auto,
+    "normal": normal,
+    "stretch": stretch,
+    "start": start,
+    "end": end,
+    "center": center,
+    "left": left,
+    "right": right,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "self-start": self-start,
+    "self-end": self-end,
+    "first": first,
+    "baseline": baseline,
+    "last": last,
+  ),
+  $place-items
+);
+
+/*************************** Place-Self ****************************************/
+$place-self: ();
+$place-self: map-merge(
+  (
+    "auto": auto,
+    "normal": normal,
+    "stretch": stretch,
+    "start": start,
+    "end": end,
+    "center": center,
+    "left": left,
+    "right": right,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "self-start": self-start,
+    "self-end": self-end,
+    "first": first,
+    "baseline": baseline,
+    "last": last,
+  ),
+  $place-self
+);
+
+/*************************** Pointer-Events ****************************************/
+$pointer-events: ();
+$pointer-events: map-merge(
+  (
+    "none": none,
+    "auto": auto,
+  ),
+  $pointer-events
+);
+
+/*************************** Position ****************************************/
+$position: ();
+$position: map-merge(
+  (
+    "static": static,
+    "relative": relative,
+    "absolute": absolute,
+    "fixed": fixed,
+    "sticky": sticky,
+  ),
+  $position
+);
+
+/*************************** Quotes ****************************************/
+$quotes: ();
+$quotes: map-merge(
+  (
+    0: "'",
+  ),
+  $quotes
+);
+
+/*************************** Resize ****************************************/
+$resize: ();
+$resize: map-merge(
+  (
+    "none": none,
+    "both": both,
+    "horizontal": horizontal,
+    "verical": vertical,
+  ),
+  $resize
+);
+
+/*************************** Row-Gap ****************************************/
+$row-gap: ();
+$row-gap: map-merge(
+  (
+    0: 2rem,
+  ),
+  $row-gap
+);
+
+/*************************** Scroll-Behaviour ****************************************/
+$scroll-behaviour: ();
+$scroll-behaviour: map-merge(
+  (
+    "normal": normal,
+    "smooth": smooth,
+  ),
+  $scroll-behaviour
+);
+
+/*************************** Scroll-Margin ****************************************/
+$scroll-margin-top: ();
+$scroll-margin-top: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-margin-top
+);
+
+$scroll-margin-right: ();
+$scroll-margin-right: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-margin-right
+);
+
+$scroll-margin-bottom: ();
+$scroll-margin-bottom: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-margin-bottom
+);
+
+$scroll-margin-left: ();
+$scroll-margin-left: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-margin-left
+);
+
+/*************************** Scroll-Padding ****************************************/
+$scroll-padding-top: ();
+$scroll-padding-top: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-padding-top
+);
+
+$scroll-padding-right: ();
+$scroll-padding-right: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-padding-right
+);
+
+$scroll-padding-bottom: ();
+$scroll-padding-bottom: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-padding-bottom
+);
+
+$scroll-padding-left: ();
+$scroll-padding-left: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-padding-left
+);
+
+/*************************** Scroll-Snap-Align ****************************************/
+$scroll-snap-align: ();
+$scroll-snap-align: map-merge(
+  (
+    "none": none,
+    "start": start,
+    "end": end,
+    "center": center,
+  ),
+  $scroll-snap-align
+);
+
+/*************************** Scroll-Snap-Stop ****************************************/
+$scroll-snap-stop: ();
+$scroll-snap-stop: map-merge(
+  (
+    "normal": normal,
+    "always": always,
+  ),
+  $scroll-snap-stop
+);
+
+/*************************** Scroll-Snap-type ****************************************/
+$scroll-snap-type: ();
+$scroll-snap-type: map-merge(
+  (
+    "none": none,
+    "y-mandatory": y mandatory,
+    "x-proximity": x proximity,
+  ),
+  $scroll-snap-type
+);
+
+/*************************** Scrollbar-Color ****************************************/
+$scrollbar-color: ();
+$scrollbar-color: map-merge(
+  (
+    "auto": auto,
+    "light": light,
+    "dark": dark,
+    "red-yellow": red yellow,
+  ),
+  $scrollbar-color
+);
+
+$scrollbar-color: map-merge($colors, $scrollbar-color);
+
+/*************************** Scrollbar-Gutter ****************************************/
+$scrollbar-gutter: ();
+$scrollbar-gutter: map-merge(
+  (
+    "auto": auto,
+  ),
+  $scrollbar-gutter
+);
+
+/*************************** Scrollbar-Width ****************************************/
+$scrollbar-width: ();
+$scrollbar-width: map-merge(
+  (
+    "auto": auto,
+    "thin": thin,
+    "none": none,
+  ),
+  $scrollbar-width
+);
+
+/*************************** Shape-Image-Threshold ****************************************/
+$shape-image-treshold: ();
+$shape-image-treshold: map-merge(
+  (
+    ".6": 0.6,
+  ),
+  $shape-image-treshold
+);
+
+/*************************** Shape-Margin ****************************************/
+$shape-margin: ();
+$shape-margin: map-merge(
+  (
+    25: 25px,
+  ),
+  $shape-margin
+);
+
+/*************************** Shape-Outside ****************************************/
+$shape-outside: ();
+$shape-outside: map-merge(
+  (
+    "initial": initial,
+  ),
+  $shape-outside
+);
+
+/*************************** Speak ****************************************/
+$speak: ();
+$speak: map-merge(
+  (
+    "auto": auto,
+    "visible": visible,
+    "never": never,
+    "always": always,
+  ),
+  $speak
+);
+
+$speak-as: ();
+$speak-as: map-merge(
+  (
+    "normal": normal,
+    "spell-out": spell-out,
+    "digits": digits,
+    "literal-punctuation": literal-punctuation,
+    "no-punctuation": no-punctuation,
+  ),
+  $speak-as
+);
+
+/*************************** Stroke ****************************************/
+$stroke: ();
+$stroke: map-merge(
+  (
+    "black": black,
+  ),
+  $stroke
+);
+
+/*************************** Stroke-Dasharray ****************************************/
+$stroke-dasharray: ();
+$stroke-dasharray: map-merge(
+  (
+    2: 2,
+    6: 6,
+  ),
+  $stroke-dasharray
+);
+
+/*************************** Stroke-Dashoffset ****************************************/
+$stroke-dashoffset: ();
+$stroke-dashoffset: map-merge(
+  (
+    100: 100,
+  ),
+  $stroke-dashoffset
+);
+
+/*************************** Stroke-Linecap ****************************************/
+$stroke-linecap: ();
+$stroke-linecap: map-merge(
+  (
+    "butt": butt,
+    "square": square,
+    "round": round,
+  ),
+  $stroke-linecap
+);
+
+/*************************** Stroke-Linecap ****************************************/
+$stroke-linejoin: ();
+$stroke-linejoin: map-merge(
+  (
+    "crop-bevel": crop bevel,
+  ),
+  $stroke-linejoin
+);
+
+/*************************** Stroke-Width ****************************************/
+$stroke-width: ();
+$stroke-width: map-merge(
+  (
+    "2px": 2px,
+  ),
+  $stroke-width
+);
+
+/*************************** Tab-Size ****************************************/
+$tab-size: ();
+$tab-size: map-merge(
+  (
+    8: 8,
+    2: 2,
+  ),
+  $tab-size
+);
+
+/*************************** Table-Layout ****************************************/
+$table-layout: ();
+$table-layout: map-merge(
+  (
+    "auto": auto,
+    "fixed": fixed,
+  ),
+  $table-layout
+);
+
+/*************************** Text-Align ****************************************/
+$text-align: ();
+$text-align: map-merge(
+  (
+    "left": left,
+    "right": right,
+    "center": center,
+    "justify": justify,
+  ),
+  $text-align
+);
+
+$text-align-last: ();
+$text-align-last: map-merge(
+  (
+    "left": left,
+    "right": right,
+    "center": center,
+    "justify": justify,
+    "start": start,
+    "end": end,
+    "auto": auto,
+  ),
+  $text-align-last
+);
+
+/*************************** Text-Combine-Upright ****************************************/
+$text-combine-upright: ();
+$text-combine-upright: map-merge(
+  (
+    "none": none,
+    "all": all,
+    "digits": digits,
+  ),
+  $text-combine-upright
+);
+
+/*************************** Text-Decoration ****************************************/
+$text-decoration: ();
+$text-decoration: map-merge(
+  (
+    "none": none,
+    "underline": underline,
+    "line-through": line-through,
+    "overline": overline,
+  ),
+  $text-decoration
+);
+
+$text-decoration-line: ();
+$text-decoration-line: map-merge(
+  (
+    "none": none,
+    "underline": underline,
+    "line-through": line-through,
+    "overline": overline,
+  ),
+  $text-decoration-line
+);
+
+$text-decoration-skip: ();
+$text-decoration-skip: map-merge(
+  (
+    "objects": objects,
+    "none": none,
+    "spaces": spaces,
+    "ink": ink,
+    "edges": edges,
+    "box-decoration": box-decoration,
+  ),
+  $text-decoration-skip
+);
+
+$text-decoration-skip-ink: ();
+$text-decoration-skip-ink: map-merge(
+  (
+    "auto": auto,
+    "none": none,
+  ),
+  $text-decoration-skip-ink
+);
+
+$text-decoration-style: ();
+$text-decoration-style: map-merge(
+  (
+    "solid": solid,
+    "double": double,
+    "dotted": dotted,
+    "dashed": dashed,
+    "wavy": wavy,
+  ),
+  $text-decoration-style
+);
+
+$text-decoration-thickness: ();
+$text-decoration-thickness: map-merge(
+  (
+    "auto": auto,
+    "from-font": from-font,
+  ),
+  $text-decoration-thickness
+);
+
+$letter-spacing: ();
+$letter-spacing: map-merge(
+  (
+    "bold": bold,
+    0: 2px,
+    1: 4px,
+    2: 6px,
+  ),
+  $letter-spacing
+);
+
+/*************************** Text-Indent ****************************************/
+$text-indent: ();
+$text-indent: map-merge(
+  (
+    "10px": 10px,
+  ),
+  $text-indent
+);
+
+/*************************** Text-Justify ****************************************/
+$text-justify: ();
+$text-justify: map-merge(
+  (
+    "inter-word": inter-word,
+    "inter-character": inter-character,
+    "auto": auto,
+    "none": none,
+  ),
+  $text-justify
+);
+
+/*************************** Text-Orientation ****************************************/
+$text-orientation: ();
+$text-orientation: map-merge(
+  (
+    "mixed": mixed,
+    "upright": upright,
+    "sideways": sideways,
+  ),
+  $text-orientation
+);
+
+/*************************** Text-Overflow ****************************************/
+$text-overflow: ();
+$text-overflow: map-merge(
+  (
+    "ellipsis": ellipsis,
+    "clip": clip,
+    "ellipsis-word": ellipsis-word,
+  ),
+  $text-overflow
+);
+
+/*************************** Text-Rendering ****************************************/
+$text-rendering: ();
+$text-rendering: map-merge(
+  (
+    "auto": auto,
+    "optimizeSpeed": optimizeSpeed,
+    "optimizeLegibility": optimizeLegibility,
+    "geometricPrecision": geometricPrecision,
+  ),
+  $text-rendering
+);
+
+/*************************** Text-Shadow ****************************************/
+$text-shadow: ();
+$text-shadow: map-merge(
+  (
+    0: 1px 1px 1px map-get($colors, "black"),
+  ),
+  $text-shadow
+);
+
+/*************************** Text-Stroke ****************************************/
+$text-stroke-width: ();
+$text-stroke-width: map-merge(
+  (
+    2: 2px,
+  ),
+  $text-stroke-width
+);
+
+/*************************** Text-Transform ****************************************/
+$text-transform: ();
+$text-transform: map-merge(
+  (
+    "lowercase": lowercase,
+    "uppercase": uppercase,
+    "capitalize": capitalize,
+    "none": none,
+  ),
+  $text-transform
+);
+
+/*************************** Text-Underline-Offset ****************************************/
+$text-underline-offset: ();
+$text-underline-offset: map-merge(
+  (
+    "auto": auto,
+  ),
+  $text-underline-offset
+);
+
+/*************************** Text-Underline-Position ****************************************/
+$text-underline-position: ();
+$text-underline-position: map-merge(
+  (
+    "auto": auto,
+    "under": under,
+    "left": left,
+    "right": right,
+  ),
+  $text-underline-position
+);
+
+/*************************** Touch-Action ****************************************/
+$touch-action: ();
+$touch-action: map-merge(
+  (
+    "auto": auto,
+    "none": none,
+    "pan-x": pan-x,
+    "pan-y": pan-y,
+    "manipulation": manipulation,
+    "pan-left": pan-left,
+    "pan-right": pan-right,
+    "pan-down": pan-down,
+    "pan-up": pan-up,
+    "pinch-zoom": pinch-zoom,
+  ),
+  $touch-action
+);
+
+/*************************** Transform ****************************************/
+$transform: ();
+$transform: map-merge(
+  (
+    0: translateY(0),
+    1: translateY(-100%),
+    "flip": rotateY(180deg),
+  ),
+  $transform
+);
+
+$transform-origin: ();
+$transform-origin: map-merge(
+  (
+    "top-left": top left,
+  ),
+  $transform-origin
+);
+
+$transform-style: ();
+$transform-style: map-merge(
+  (
+    "preserve-3d": preserve-3d,
+    "flat": flat,
+  ),
+  $transform-style
+);
+
+/*************************** Transition ****************************************/
+$transition: ();
+$transition: map-merge(
+  (
+    0: 0.3s,
+  ),
+  $transition
+);
+
+$transition-delay: ();
+$transition-delay: map-merge(
+  (
+    0.25: 0.25s,
+  ),
+  $transition-delay
+);
+
+$transition-duration: ();
+$transition-duration: map-merge(
+  (
+    3: 3s,
+  ),
+  $transition-duration
+);
+
+$transition-property: ();
+$transition-property: map-merge(
+  (
+    "color": color,
+  ),
+  $transition-property
+);
+
+$transition-timing-function: ();
+$transition-timing-function: map-merge(
+  (
+    "ease-out": ease-out,
+  ),
+  $transition-timing-function
+);
+
+/*************************** Unicode-Bidi ****************************************/
+$unicode-bidi: ();
+$unicode-bidi: map-merge(
+  (
+    "embed": embed,
+    "bidi-override": bidi-override,
+    "normal": normal,
+  ),
+  $unicode-bidi
+);
+
+/*************************** Unicode-Range ****************************************/
+$unicode-range: ();
+$unicode-range: map-merge(
+  (
+    0: 0,
+  ),
+  $unicode-range
+);
+
+/*************************** User-Select ****************************************/
+$user-select: ();
+$user-select: map-merge(
+  (
+    "none": none,
+    "all": all,
+    "auto": auto,
+  ),
+  $user-select
+);
+
+/*************************** Vertical-Align ****************************************/
+$vertical-align: ();
+$vertical-align: map-merge(
+  (
+    "baseline": baseline,
+    "top": top,
+    "bottom": bottom,
+    "middle": middle,
+    "text-top": text-top,
+    "text-bottom": text-bottom,
+    "sub": sub,
+    "super": super,
+  ),
+  $vertical-align
+);
+
+/*************************** Visibility ****************************************/
+$visibility: ();
+$visibility: map-merge(
+  (
+    "hidden": hidden,
+    "collapse": collapse,
+    "visible": visible,
+  ),
+  $visibility
+);
+
+/*************************** Whitespace ****************************************/
+$whitespace: ();
+$whitespace: map-merge(
+  (
+    "normal": normal,
+    "pre": pre,
+    "nowrap": nowrap,
+    "pre-wrap": pre-wrap,
+    "pre-line": pre-line,
+  ),
+  $whitespace
+);
+
+/*************************** Widows ****************************************/
+$widows: ();
+$widows: map-merge(
+  (
+    3: 3,
+  ),
+  $widows
+);
+
+/*************************** Width ****************************************/
+
+$widths: ();
+$widths: map-merge(
+  (
+    0: 50xp,
+    1: 100px,
+    2: 150px,
+    3: 200px,
+    4: 250px,
+    100: 100%,
+    "auto": auto,
+    "20px": 20px,
+  ),
+  $widths
+);
+
+/*************************** Will-Change ****************************************/
+$will-change: ();
+$will-change: map-merge(
+  (
+    "auto": auto,
+    "scroll-position": scroll-position,
+    "contents": contents,
+  ),
+  $will-change
+);
+
+/*************************** Word-Break ****************************************/
+$word-break: ();
+$word-break: map-merge(
+  (
+    "break-all": break-all,
+    "normal": normal,
+    "keep-all": keep-all,
+  ),
+  $word-break
+);
+
+/*************************** Word-Spacing ****************************************/
+$word-spacing: ();
+$word-spacing: map-merge(
+  (
+    "5px": 5px,
+  ),
+  $word-spacing
+);
+
+/*************************** Writing-Mode ****************************************/
+$writing-mode: ();
+$writing-mode: map-merge(
+  (
+    "horizontal-tb": horizontal-tb,
+    "vertical-rl": vertical-rl,
+    "vertical-lr": vertical-lr,
+  ),
+  $writing-mode
+);
+
+/*************************** Z-Index ****************************************/
+$z-index: ();
+$z-index: map-merge(
+  (
+    10000: 10000,
+  ),
+  $z-index
+);
+
+/*************************** Zoom ****************************************/
+$zoom: ();
+$zoom: map-merge(
+  (
+    "150%": 150%,
+  ),
+  $zoom
+);

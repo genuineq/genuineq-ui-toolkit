@@ -1,0 +1,173 @@
+@if $enable-carousel {
+  /* Slider */
+
+  .slick-slider {
+    // position: relative; Creaza o margine jos in container
+    // display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: map-get($spacers, 0);
+
+    &:focus {
+      outline: none;
+    }
+
+    &.dragging {
+      cursor: map-get($cursors, "pointer");
+      cursor: map-get($cursors, "hand");
+    }
+  }
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+
+    .slick-loading & {
+      visibility: hidden;
+    }
+  }
+  .slick-slide {
+    // Fara float left nu se vede imaginea si apar toate divurile
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    [dir="rtl"] & {
+      float: right;
+    }
+    img {
+      // display: block;
+      // Nu schimba cu nimic
+    }
+    &.slick-loading img {
+      display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+      pointer-events: none;
+    }
+
+    .slick-initialized & {
+      display: block;
+    }
+
+    .slick-loading & {
+      visibility: hidden;
+    }
+
+    .slick-vertical & {
+      display: block;
+      height: auto;
+      border-width: map-get($borders-width, 0);
+      border-style: map-get($borders-styles, "solid");
+      border-color: map-get($colors, "transparent");
+    }
+  }
+  .slick-arrow.slick-hidden {
+    display: none;
+  }
+  .slick-arrow {
+    // Controleaza butoanele de previous si next
+    padding: map-get($spacers, 0);
+    outline: none;
+    font-family: map-get($font-family, "sans-serif");
+    font-size: map-get($fonts-size, 0);
+    letter-spacing: map-get($letter-spacing, 0);
+    line-height: map-get($line-height, 1);
+    font-weight: map-get($fonts-weight, 2);
+    cursor: map-get($cursors, "pointer");
+    color: map-get($colors, "white");
+    padding: map-get($spacers, 2) map-get($spacers, 2);
+    background-color: map-get($colors, "primary");
+    border-width: map-get($borders-width, 0);
+    border-style: map-get($borders-styles, "solid");
+    border-color: map-get($colors, "black");
+    border-radius: map-get($borders-radius, 2);
+  }
+  .slick-dotted {
+    // Este clasa wrapperul carouselului
+    // Nu am gasit ce face slick dotted
+  }
+  .slick-prev {
+    // Este clasa butonului cu previous
+  }
+  .draggable {
+    // In divul cu clasa carousel se formeaza inca un div cu clasa slick-list si draggable
+  }
+  .slick-cloned {
+    // Sunt clonate niste divuri in extremele sliderului
+  }
+  .slick-current {
+    // Current slide which is shown
+  }
+  .slick-active {
+    // Class for the active parts in the slider (the button and the slide)
+  }
+  .slick-next {
+    // Este clasa butonului cu next
+  }
+  .slick-dots {
+    // Este clasa cu numere de jos unde pot sa te duci la un slide anume <ul>
+    margin: 0;
+    padding: map-get($spacers, 0);
+    list-style: none;
+    // Doar pentru pozitionarea mea
+    display: flex;
+    justify-content: center;
+
+    /** Every button in the .slick-dots */
+    & > li > button {
+      outline: none;
+      font-family: map-get($font-family, "sans-serif");
+      font-size: map-get($fonts-size, 0);
+      letter-spacing: map-get($letter-spacing, 0);
+      line-height: map-get($line-height, 1);
+      font-weight: map-get($fonts-weight, 2);
+      cursor: map-get($cursors, "pointer");
+      color: map-get($colors, "white");
+      padding: map-get($spacers, 4) map-get($spacers, 3);
+      background-color: map-get($colors, "primary");
+      border-width: map-get($borders-width, 0);
+      border-style: map-get($borders-styles, "solid");
+      border-color: map-get($colors, "black");
+      border-radius: map-get($borders-radius, 4);
+    }
+  }
+}

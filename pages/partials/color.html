@@ -1,0 +1,27 @@
+<h2 class="page-title">Color</h2>
+              <p class="info">The color property in CSS sets the color of text and text decorations.</p>
+              <div class="example-container d-flex justify-content-space-around">
+                <div class="color-primary">color-primary</div>
+                <div class="color-warning">color-warning</div>
+                <div class="color-info">color-info</div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="color-primary">color-primary&lt;/div>
+&lt;div class="color-warning">color-warning&lt;/div>
+&lt;div class="color-info">color-info&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+@each $attribute, $name in (color: color) {
+  @each $key, $value in $colors {
+    .#{$name}-#{$key} {
+      #{$attribute}: $value;
+    }
+  }
+  }
+</pre>
+              </div>

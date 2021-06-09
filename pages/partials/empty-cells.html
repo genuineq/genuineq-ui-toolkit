@@ -1,0 +1,18 @@
+<h2 class="page-title">Empty-Cells</h2>
+              <p class="info">The empty-cells property in CSS selects empty table cells for the purpose of specifying whether or not to display borders and backgrounds on them. In other words, it tells the browser whether or not to draw borders around a table cell or fill in the background when that cell contains no content. It’s kind of like applying a visibility property on empty table cells. </p>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$empty-cells: ();
+$empty-cells: map-merge(
+  (
+    "show": show,
+    "hide": hide,
+    "inherit": inherit,
+    "initial": initial,
+    "unset": unset,
+  ),
+  $empty-cells
+);
+</pre>
+              </div>

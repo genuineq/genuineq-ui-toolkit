@@ -1,0 +1,41 @@
+<h2 class="page-title">Caret</h2>
+              <p class="info">The caret-color property in CSS changes the color of the cursor (caret) in inputs, texareas, or really any element that is editable.</p>
+              <p class="info">The caret-shape property in CSS changes the shape of the text cursor inside editable elements that indicates a user is typing. It’s part of the CSS Basic User Interfaces Module Level 4, which is currently in Working Draft status.</p>
+              <div class="example-container">
+                <div class="form-container">
+                  <label for="mail" class="form-field-label mt-0">Email Addres</label>
+                  <input type="email" name="mail" placeholder="name@example.com" class="form-field-control caret-color-primary caret-shape-bar">
+                </div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="form-container">
+  &lt;label for="mail" class="form-field-label mt-0">Email Addres&lt; /label>
+  &lt;input type="email" name="mail" placeholder="name@example.com" class="form-field-control caret-color-primary caret-shape-bar">
+&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$caret-shape: ();
+$caret-shape: map-merge(
+  (
+    "auto": auto,
+    "block": block,
+    "underscore": underscore,
+    "bar": bar,
+  ),
+  $caret-shape
+);
+
+@each $attribute, $name in (caret-color: caret-color) {
+  @each $key, $value in $colors {
+    .#{$name}-#{$key} {
+      #{$attribute}: $value;
+    }
+  }
+}
+</pre>
+              </div>

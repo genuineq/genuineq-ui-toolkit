@@ -17,6 +17,7 @@ const livereload = require('gulp-livereload')
 const autoprefixer = require('gulp-autoprefixer')
 const accessibility = require('gulp-accessibility')
 const bro = require('gulp-bro')
+const purgecss = require('gulp-purgecss')
 
 /**********************************************
 *********** GULP CUSTOM CONFIGURATION *********
@@ -72,6 +73,8 @@ gulp.task("styles", async () => {
         .pipe(plumber({ errorHandler: onError }))
         .pipe(sourcemaps.init())
         .pipe(scss())
+        // .pipe(purgecss({content: ['**/*.html']}))
+        // .pipe(gulp.dest('app.css'))
         .pipe(minifycss())
         .pipe(autoprefixer("last 5 versions"))
         .pipe(sourcemaps.write('.'))

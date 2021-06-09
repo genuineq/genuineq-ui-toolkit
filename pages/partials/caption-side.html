@@ -1,0 +1,77 @@
+<h2 class="page-title">Caption-Side</h2>
+              <p class="info">The caption-side property in CSS allows you to define where to position HTML’s element, used on HTML tables. This property can also apply to any element whose display property is set to caption-side.</p>
+              <div class="example-container d-flex justify-content-space-around flex-wrap-wrap">
+                <table class="border-style-solid border-width-1 border-color-black">
+                  <caption class="pt-1 caption-side-bottom">This is a table caption example</caption>
+                  <tr>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                  </tr>
+                  <tr>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                  </tr>
+                </table>
+                <table class="border-style-solid border-width-1 border-color-black">
+                  <caption class="pb-1 caption-side-top">This is a table caption example</caption>
+                  <tr>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                  </tr>
+                  <tr>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                  </tr>
+                </table>
+                <div class="pt-2">caption-side-bottom</div>
+                <div class="pt-2">caption-side-top</div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;table class="border-style-solid border-width-1 border-color-black">
+  &lt;caption class="pt-1 caption-side-bottom">This is a table caption example</caption>
+    &lt;tr>
+      &lt;td>Example text&lt;/td>
+      &lt;td>Example text&lt;/td>
+      &lt;td>Example text&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>Example text&lt;/td>
+      &lt;td>Example text&lt;/td>
+      &lt;td>Example text&lt;/td>
+    &lt;/tr>
+&lt;/table>
+&lt;table class="border-style-solid border-width-1 border-color-black">
+  &lt;caption class="pb-1 caption-side-top">This is a table caption example</caption>
+    &lt;tr>
+      &lt;td>Example text&lt;/td>
+      &lt;td>Example text&lt;/td>
+      &lt;td>Example text&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>Example text&lt;/td>
+      &lt;td>Example text&lt;/td>
+      &lt;td>Example text&lt;/td>
+    &lt;/tr>
+&lt;/table>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$caption-side: ();
+$caption-side: map-merge(
+  (
+    "top": top,
+    "bottom": bottom,
+    "inherit": inherit,
+  ),
+  $caption-side
+);
+</pre>
+              </div>

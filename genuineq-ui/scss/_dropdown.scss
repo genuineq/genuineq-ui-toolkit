@@ -3,42 +3,43 @@
     display: flex;
     flex: wrap;
     flex-direction: column;
-    padding: 0;
-    width: $dropdown-main-witdh;
+    padding: map-get($spacers, 0);
+    width: map-get($widths, 2);
   }
   .dropdown-btn {
     outline: none;
-    background-color: $dropdown-btn-bg;
-    border-radius: $dropdonwn-btn-border-radius;
-    border: $dropdonwn-btn-border;
-    cursor: $dropdonwn-btn-cursor;
-    padding: $dropdonwn-btn-padding-x $dropdonwn-btn-padding-y;
-    font-family: $dropdonwn-btn-font-family;
-    font-size: $dropdonwn-btn-font-size;
-    line-height: $dropdonwn-btn-line-height;
-    letter-spacing: $dropdown-btn-letter-spacing;
+    background-color: map-get($colors, "primary");
+    border-radius: map-get($borders-radius, 4);
+    border-width: map-get($borders-width, 0);
+    border-style: map-get($borders-styles, "solid");
+    border-color: map-get($colors, "black");
+    cursor: map-get($cursors, "pointer");
+    padding: map-get($spacers, 3) map-get($spacers, 5);
+    font-family: map-get($font-family, "sans-serif");
+    font-size: map-get($fonts-size, 0);
+    line-height: map-get($line-height, 1);
+    letter-spacing: map-get($letter-spacing, 0);
     &:hover {
-      background-color: darken($dropdown-btn-bg, 20%);
-    }
-    &:focus {
-      background-color: darken($dropdown-btn-bg, 20%);
+      background-color: darken(map-get($colors, "white"), 20%);
     }
   }
   .dropdown-menu {
     display: none;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: map-get($spacers, 0);
+    padding: map-get($spacers, 0);
     margin-top: 1px;
-    background-color: $dropdown-menu-bg;
-    border: $dropdown-menu-border;
-    border-radius: $dropdown-menu-border-radius;
+    background-color: map-get($colors, "white");
+    border-width: map-get($borders-width, 0);
+    border-style: map-get($borders-styles, "solid");
+    border-color: map-get($colors, "black");
+    border-radius: map-get($borders-radius, 4);
   }
   .dropdown-link {
-    font-size: $dropdown-link-size;
-    line-height: $dropdown-link-height;
-    letter-spacing: $dropdown-link-spacing;
-    font-family: $dropdown-link-font-family;
-    padding: $dropdown-link-padding-x $dropdown-link-padding-y;
+    font-size: map-get($fonts-size, 0);
+    line-height: map-get($line-height, 1);
+    letter-spacing: map-get($letter-spacing, 0);
+    font-family: map-get($font-family, "sans-serif");
+    padding: map-get($spacers, 2) map-get($spacers, 3);
   }
 }

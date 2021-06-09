@@ -1,0 +1,147 @@
+<h2 class="page-title">Flex</h2>
+              <p class="info">The flex property is a sub-property of the Flexible Box Layout module.</p>
+              <div class="example-container d-flex justify-content-space-around align-items-space-around flex-wrap-wrap">
+                <div class="height-2 width-1 background-color-info"></div>
+                <div class="height-2 width-1 background-color-info"></div>
+                <div class="height-2 width-1 background-color-info"></div>
+                <div class="height-2 width-1 background-color-info"></div>
+                <div class="height-2 width-1 background-color-info"></div>
+                <div class="height-2 width-1 background-color-info"></div>
+                <div class="height-2 width-1 background-color-info"></div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="d-flex justify-content-space-around align-items-space-around flex-wrap-wrap">
+  &lt;div class="height-2 width-1 background-color-info">&lt;/div>
+  &lt;div class="height-2 width-1 background-color-info">&lt;/div>
+  &lt;div class="height-2 width-1 background-color-info">&lt;/div>
+  &lt;div class="height-2 width-1 background-color-info">&lt;/div>
+  &lt;div class="height-2 width-1 background-color-info">&lt;/div>
+  &lt;div class="height-2 width-1 background-color-info">&lt;/div>
+  &lt;div class="height-2 width-1 background-color-info">&lt;/div>
+&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$flex-directions: ();
+$flex-directions: map-merge(
+  (
+    "row": row,
+    "row-reverse": row-reverse,
+    "column": column,
+    "column-reverse": column-reverse,
+  ),
+  $flex-directions
+);
+
+$flex-wrap: ();
+$flex-wrap: map-merge(
+  (
+    "nowrap": nowrap,
+    "wrap": wrap,
+    "wrap-reverse": wrap-reverse,
+  ),
+  $flex-wrap
+);
+
+$justify-content: ();
+$justify-content: map-merge(
+  (
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "center": center,
+    "space-around": space-around,
+    "space-between": space-between,
+  ),
+  $justify-content
+);
+
+$justify-items: ();
+$justify-items: map-merge(
+  (
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "center": center,
+    "space-around": space-around,
+    "space-between": space-between,
+  ),
+  $justify-items
+);
+
+$justify-self: ();
+$justify-self: map-merge(
+  (
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "center": center,
+    "space-around": space-around,
+    "space-between": space-between,
+  ),
+  $justify-self
+);
+
+$align-items: ();
+$align-items: map-merge(
+  (
+    "stretch": stretch,
+    "center": center,
+    "baseline": baseline,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+  ),
+  $align-items
+);
+
+$align-content: ();
+$align-content: map-merge(
+  (
+    "stretch": stretch,
+    "center": center,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "space-around": space-around,
+    "space-between": space-between,
+  ),
+  $align-content
+);
+
+$align-self: ();
+$align-self: map-merge(
+  (
+    "stretch": stretch,
+    "center": center,
+    "baseline": baseline,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+  ),
+  $align-self
+);
+
+$flex-basis: ();
+$flex-basis: map-merge(
+  (
+    100: 100px,
+  ),
+  $flex-basis
+);
+
+$flex-grow: ();
+$flex-grow: map-merge(
+  (
+    2: 2,
+  ),
+  $flex-grow
+);
+
+$flex-shrink: ();
+$flex-shrink: map-merge(
+  (
+    2: 2,
+  ),
+  $flex-shrink
+);
+</pre>  
+              </div>

@@ -14,7 +14,16 @@
 // Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers)
 // TODO: remove in v5
 // stylelint-disable-next-line selector-list-comma-newline-after
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
   display: block;
 }
 
@@ -27,19 +36,25 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-//   font-family: $font-family-base;
-//   @include font-size($font-size-base);
-//   font-weight: $font-weight-base;
-//   line-height: $line-height-base;
-//   color: $body-color;
-//   text-align: left; // 3
-//   background-color: $body-bg; // 2
+  //   font-family: $font-family-base;
+  //   @include font-size($font-size-base);
+  //   font-weight: $font-weight-base;
+  //   line-height: $line-height-base;
+  //   color: $body-color;
+  //   text-align: left; // 3
+  //   background-color: $body-bg; // 2
 }
 
 /********************************************************************************
 ************************** Typography *******************************************
 ********************************************************************************/
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }

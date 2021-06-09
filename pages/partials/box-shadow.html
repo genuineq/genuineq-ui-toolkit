@@ -1,0 +1,24 @@
+ <h2 class="page-title">Box-Shadow</h2>
+              <p class="info">Used in casting shadows (often called “Drop Shadows”, like in Photoshop) from elements. Here is an example with the deepest possible browser support:</p>
+              <div class="example-container d-flex justify-content-center">
+                <div class="width-2 height-2 box-shadow-0 background-color-primary"></div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="width-2 height-2 box-shadow-0 background-color-primary">&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$box-shadows: ();
+$box-shadows: map-merge(
+  (
+    0: 10px 10px 10px 2px map-get($colors, "black"),
+    1: 10px 10px 10px 2px map-get($colors, "white"),
+  ),
+  $box-shadows
+);
+</pre>
+              </div>

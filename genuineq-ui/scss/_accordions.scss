@@ -1,72 +1,91 @@
 @if $enable-accordions {
   .accordion-container {
-    margin-top: 300px;
-    margin-left: 400px;
-
-    padding: 0;
+    padding: map-get($spacers, 0);
     display: flex;
     flex-direction: column;
-
-    width: $accordion-container-width;
+    width: map-get($widths, 100);
   }
   .accordion-element {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: map-get($spacers, 0);
 
     /** Styling the first button */
     &:first-child .accordion-btn {
-      border-radius: $accordion-container-border-radius-top;
+      border-radius: map-get($borders-radius, 3)
+        map-get($borders-radius, 3)
+        0
+        0;
     }
 
     /** Styling the last button */
     &:last-child .accordion-btn {
-      border-radius: $accordion-container-border-radius-bottom;
+      border-radius: 0
+        0
+        map-get($borders-radius, 3)
+        map-get($borders-radius, 3);
       /** Changing the last button border radius when it s clicked */
-      &:active {
-        border-radius: 0;
+      &:focus {
+        border-radius: map-get($borders-radius, 0);
       }
     }
 
     /** Styling the last info */
     &:last-child .accordion-info {
-      border-bottom: $accordion-container-border;
-      border-radius: $accordion-container-border-radius-bottom;
-    }
-  }
-
-  .accordion-btn {
-    text-align: left;
-    background-color: $accordion-btn-bg-color;
-    color: $accordion-btn-color;
-    border: $accordion-btn-border;
-    cursor: $accordion-btn-cursor;
-    padding: $accordion-btn-padding-x $accordion-btn-padding-y;
-    font-family: $accordion-btn-font-family;
-    font-size: $accordion-btn-font-size;
-    line-height: $accordion-btn-line-height;
-    letter-spacing: $accordion-btn-letter-spacing;
-
-    &:focus {
-      color: $accordion-btn-focus-color;
-      border: $accordion-btn-focus-border;
+      border-width: map-get($borders-width, 0);
+      border-style: map-get($borders-styles, "solid");
+      border-color: map-get($colors, "black");
+      border-radius: 0
+        0
+        map-get($borders-radius, 3)
+        map-get($borders-radius, 3);
     }
 
-    /** When clicked it shows */
-    &:focus + .accordion-info {
+    .accordion-btn {
+      text-align: left;
+      background-color: map-get($colors, "primary");
+      color: map-get($colors, "white");
+      border-width: map-get($borders-width, 0);
+      border-style: map-get($borders-styles, "solid");
+      border-color: map-get($colors, "black");
+      cursor: map-get($cursors, "pointer");
+      padding: map-get($spacers, 3) map-get($spacers, 6);
+      font-family: map-get($font-family, "sans-serif");
+      font-size: map-get($fonts-size, 0);
+      line-height: map-get($line-height, 1);
+      letter-spacing: map-get($letter-spacing, 0);
+
+      &:focus {
+        background-color: darken(map-get($colors, "primary"), 5%);
+        color: darken(map-get($colors, "white"), 20%);
+        border-width: map-get($borders-width, 0);
+        border-style: map-get($borders-styles, "solid");
+        border-color: map-get($colors, "black");
+      }
+
+      /** When clicked it shows */
+      &:focus + .accordion-info {
+        display: block;
+      }
+    }
+    .accordion-info {
+      display: none;
+      background-color: map-get($colors, "white");
+      border-right-width: map-get($borders-width, 0);
+      border-right-style: map-get($borders-styles, "solid");
+      border-right-color: map-get($colors, "black");
+      border-left-width: map-get($borders-width, 0);
+      border-left-style: map-get($borders-styles, "solid");
+      border-left-color: map-get($colors, "black");
+      padding: map-get($spacers, 3) map-get($spacers, 6);
+      font-family: map-get($font-family, "sans-serif");
+      font-size: map-get($fonts-size, 0);
+      line-height: map-get($line-height, 1);
+      letter-spacing: map-get($letter-spacing, 0);
+    }
+    .accordion-info-show {
       display: block;
     }
-  }
-  .accordion-info {
-    display: none;
-    background-color: $accordion-info-bg-color;
-    border-right: $accordion-info-border;
-    border-left: $accordion-info-border;
-    padding: $accordion-info-padding-x $accordion-info-padding-y;
-    font-family: $accordion-info-font-family;
-    font-size: $accordion-info-font-size;
-    line-height: $accordion-info-line-height;
-    letter-spacing: $accordion-info-letter-spacing;
   }
 }

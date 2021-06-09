@@ -1,0 +1,29 @@
+<h2 class="page-title">Cursor</h2>
+              <p class="info">The cursor property in CSS controls what the mouse cursor will look like when it is located over the element in which this property is set. Obviously, it’s only relevant in browsers/operating systems in which there is a mouse and cursor. They are used essentially for UX to convey the idea of certain functionality. So try not to break that affordance.</p>
+              <div class="example-container d-flex justify-content-space-around">
+                <div class="height-2 width-1 background-color-info text-align-center pt-40px">Pointer</div>
+                <div class="height-2 width-1 background-color-info text-align-center pt-40px">Grab</div>
+                <div class="height-2 width-1 background-color-info text-align-center pt-40px">Hand</div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="height-2 width-1 background-color-info text-align-center pt-40px">Pointer&lt;/div>
+&lt;div class="height-2 width-1 background-color-info text-align-center pt-40px">Grab&lt;/div>
+&lt;div class="height-2 width-1 background-color-info text-align-center pt-40px">Hand&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$cursors: ();
+$cursors: map-merge(
+  (
+    "pointer": pointer,
+    "grab": grab,
+    "hand": hand,
+  ),
+  $cursors
+);
+</pre>
+              </div>

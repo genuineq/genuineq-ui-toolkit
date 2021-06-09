@@ -1,0 +1,25 @@
+<h2 class="page-title">Content</h2>
+              <p class="info">The content property in CSS is used in conjunction with the pseudo-elements ::before and ::after. It is used to literally insert content. There are four value types it can have. </p>
+              <div class="example-container">
+                <div class="content-arrow">This paragraph has a an after attribute.</div>
+              </div>
+              <h2 class="page-title">HTML</h2>
+              <div class="example-container">
+<pre class="text-example">
+&lt;div class="content-arrow">This paragraph has a an after attribute.&lt;/div>
+</pre>
+              </div>
+              <h2 class="page-title">SCSS</h2>
+              <div class="example-container">
+<pre class="text-example">
+$content: ();
+$content: map-merge(
+  (
+    0: "",
+    "arrow": ">",
+  ),
+  $content
+);
+
+</pre>
+              </div>

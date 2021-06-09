@@ -1,0 +1,1322 @@
+@charset "UTF-8";
+/***************************************************************************************
+******* General variables that will be used to calculate other variables ***************
+***************************************************************************************/
+/***************************************************************************************
+*********** Breakpoints ****************************************************************
+***************************************************************************************/
+/***************************************************************************************
+*********** Grid gutters ***************************************************************
+***************************************************************************************/
+/**************************** Colors ***************************************
+You can add new colors in array like "name": value.
+For each color in array it will be generated clases for background and text
+All breakpoints: bg-color-name, text-color-name
+Specific breakpoints: bg-breakpoint-color-name, text-breakpoint-color-name
+****************************************************************************/
+/**************************** Spacers ******************************************
+You can add new spacers in array like "name": value.
+For each spacer in array it will be generated clases for margin and padding
+All breakpoints:
+(m, mx, my, mt, mb, ml, mr)-name
+(p, px, py, pt, pb, pl, pr)-name
+Specific breakpoints:
+(m, mx, my, mt, mb, ml, mr)-breakpoint-name
+(p, px, py, pt, pb, pl, pr)-breakpoint-name
+********************************************************************************/
+/********************************************************************************
+**************************** Positions ******************************************
+********************************************************************************/
+/********************************************************************************
+**************************** Global Atributes ***********************************
+********************************************************************************/
+/********************************************************************************
+**************************** Buttons ********************************************
+********************************************************************************/
+/********************************************************************************
+**************************** Shadows ********************************************
+********************************************************************************/
+/********************************************************************************
+**************************** Lists **********************************************
+********************************************************************************/
+/********************************************************************************
+**************************** Tables *********************************************
+********************************************************************************/
+/** Selected */
+/** Sorting 1 */
+/** Sorting 2 */
+/** Sorting 3 */
+/** Control features */
+/** Show x entries */
+/** Search bar */
+/** Table info in bottom left */
+/** Pagination in bottom right */
+/** Positioning */
+/** Button */
+/** Button Active */
+/** Button Disabled */
+/** Button Hover */
+/*************************** All ****************************************/
+/********************************************************************************
+**************************** Animation ******************************************
+********************************************************************************/
+/*************************** Aspect-Ration ****************************************/
+/*************************** Backdrop-Filter ****************************************/
+/*************************** Backface-visibility ****************************************/
+/*************************** Background-Attachment ****************************************/
+/*************************** Background-Blend-Mode ****************************************/
+/*************************** Background-Clip ****************************************/
+/*************************** Background-image ****************************************/
+/*************************** Background-Origin ****************************************/
+/*************************** Background-Position ****************************************/
+/*************************** Background-Repeat ****************************************/
+/*************************** Background-size ****************************************/
+/*************************** Bleed ****************************************/
+/*************************** Block-Overflow ****************************************/
+/********************************************************************************
+**************************** Borders *********************************************
+********************************************************************************/
+/*************************** Box-Sizing ****************************************/
+/*************************** Break-Inside ****************************************/
+/*************************** Caption-Side ****************************************/
+/*************************** Caret-Shape ****************************************/
+/*************************** Clear ****************************************/
+/*************************** Clip-Path ****************************************/
+/*************************** Color-Adjust ****************************************/
+/********************************************************************************
+**************************** Column ******************************************
+********************************************************************************/
+/*************************** Contain ****************************************/
+/*************************** Content ****************************************/
+/***************************************************************************
+*************************** Counter ****************************************
+****************************************************************************/
+/*************************** Cursor ****************************************/
+/*************************** Direction ****************************************/
+/*************************** Display ****************************************/
+/*************************** Empty-Cells ****************************************/
+/*************************** Filter ****************************************/
+/** You can use one of those function in order to use filter (filter: blur(20px))
+blur()
+brightness()
+contrast()
+drop-shadow()
+grayscale()
+hue-rotate()
+invert()
+opacity()
+saturate()
+sepia()
+url() – for applying SVG filters */
+/********************************************************************************
+**************************** Flex ***********************************************
+********************************************************************************/
+/*************************** Float ****************************************/
+/********************************************************************************
+**************************** Fonts **********************************************
+********************************************************************************/
+/*************************** Gap ****************************************/
+/*************************** Grid-Row / Grid-Column ****************************************/
+/*************************** Grid-Template-Row / Grid-Template-Column ****************************************/
+/*************************** Hanging-Punctuation ****************************************/
+/*************************** Height ****************************************/
+/*************************** Hyphens ****************************************/
+/*************************** Image-Rendering ****************************************/
+/*************************** Initial-Letter ****************************************/
+/*************************** Initial-Size ****************************************/
+/*************************** Inset ****************************************/
+/*************************** Isolation ****************************************/
+/*************************** List-Style ****************************************/
+/*************************** Margin-Block ****************************************/
+/*************************** Mask ****************************************/
+/*************************** Max ****************************************/
+/*************************** Min ****************************************/
+/*************************** Mix-Blend-Mode ****************************************/
+/*************************** Object-Fit ****************************************/
+/*************************** Object-Position ****************************************/
+/*************************** Offset ****************************************/
+/*************************** Opacity ****************************************/
+/*************************** Order ****************************************/
+/*************************** Orphans ****************************************/
+/*************************** Outline ****************************************/
+/*************************** Overflow ****************************************/
+/*************************** Overscroll-Behaviour ****************************************/
+/*************************** Page-Break ****************************************/
+/*************************** Paint-Order ****************************************/
+/*************************** Perspective ****************************************/
+/*************************** Perspective-Origin ****************************************/
+/*************************** Place-Items ****************************************/
+/*************************** Place-Self ****************************************/
+/*************************** Pointer-Events ****************************************/
+/*************************** Position ****************************************/
+/*************************** Quotes ****************************************/
+/*************************** Resize ****************************************/
+/*************************** Row-Gap ****************************************/
+/*************************** Scroll-Behaviour ****************************************/
+/*************************** Scroll-Margin ****************************************/
+/*************************** Scroll-Padding ****************************************/
+/*************************** Scroll-Snap-Align ****************************************/
+/*************************** Scroll-Snap-Stop ****************************************/
+/*************************** Scroll-Snap-type ****************************************/
+/*************************** Scrollbar-Color ****************************************/
+/*************************** Scrollbar-Gutter ****************************************/
+/*************************** Scrollbar-Width ****************************************/
+/*************************** Shape-Image-Threshold ****************************************/
+/*************************** Shape-Margin ****************************************/
+/*************************** Shape-Outside ****************************************/
+/*************************** Speak ****************************************/
+/*************************** Stroke ****************************************/
+/*************************** Stroke-Dasharray ****************************************/
+/*************************** Stroke-Dashoffset ****************************************/
+/*************************** Stroke-Linecap ****************************************/
+/*************************** Stroke-Linecap ****************************************/
+/*************************** Stroke-Width ****************************************/
+/*************************** Tab-Size ****************************************/
+/*************************** Table-Layout ****************************************/
+/*************************** Text-Align ****************************************/
+/*************************** Text-Combine-Upright ****************************************/
+/*************************** Text-Decoration ****************************************/
+/*************************** Text-Indent ****************************************/
+/*************************** Text-Justify ****************************************/
+/*************************** Text-Orientation ****************************************/
+/*************************** Text-Overflow ****************************************/
+/*************************** Text-Rendering ****************************************/
+/*************************** Text-Shadow ****************************************/
+/*************************** Text-Stroke ****************************************/
+/*************************** Text-Transform ****************************************/
+/*************************** Text-Underline-Offset ****************************************/
+/*************************** Text-Underline-Position ****************************************/
+/*************************** Touch-Action ****************************************/
+/*************************** Transform ****************************************/
+/*************************** Transition ****************************************/
+/*************************** Unicode-Bidi ****************************************/
+/*************************** Unicode-Range ****************************************/
+/*************************** User-Select ****************************************/
+/*************************** Vertical-Align ****************************************/
+/*************************** Visibility ****************************************/
+/*************************** Whitespace ****************************************/
+/*************************** Widows ****************************************/
+/*************************** Width ****************************************/
+/*************************** Will-Change ****************************************/
+/*************************** Word-Break ****************************************/
+/*************************** Word-Spacing ****************************************/
+/*************************** Writing-Mode ****************************************/
+/*************************** Z-Index ****************************************/
+/*************************** Zoom ****************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+body {
+  margin: 0; }
+
+/********************************************************************************
+************************** Typography *******************************************
+********************************************************************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+ .col-4, .col-8, .col-12, .col {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%; }
+
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
+
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+/**************************** Colors **************************************************
+    Sass each loop for building classes for all the colors map array in variables.
+    For background the class it will be bg-name-of-the-key in colors map array.
+    For text the class it will be text-name-of-the-key in colors map array.
+    Thes classes will be created only if variable $enable-colors is set to true
+***************************************************************************************/
+
+/**************************************
+*********** Margin and Padding ********
+**************************************/
+
+.mt-0 {
+  margin-top: 0 !important; }
+
+.mt-1 {
+  margin-top: 6px !important; }
+
+/**************************************
+          *********** Negative margins **********
+          **************************************/
+
+/**************************************
+        *********** Special margin ************
+          **************************************/
+
+@media (min-width: 576px) {
+  /**************************************
+          *********** Negative margins **********
+          **************************************/
+  /**************************************
+        *********** Special margin ************
+          **************************************/ }
+
+@media (min-width: 768px) {
+  /**************************************
+          *********** Negative margins **********
+          **************************************/
+  /**************************************
+        *********** Special margin ************
+          **************************************/ }
+
+@media (min-width: 992px) {
+  /**************************************
+          *********** Negative margins **********
+          **************************************/
+  /**************************************
+        *********** Special margin ************
+          **************************************/ }
+
+@media (min-width: 1200px) {
+  /**************************************
+          *********** Negative margins **********
+          **************************************/
+  /**************************************
+        *********** Special margin ************
+          **************************************/ }
+
+/** Boder style and color */
+/** Border style. */
+
+/** Border color. */
+
+@media (min-width: 576px) {
+  /** Border style. */
+  /** Border color. */ }
+
+@media (min-width: 768px) {
+  /** Border style. */
+  /** Border color. */ }
+
+@media (min-width: 992px) {
+  /** Border style. */
+  /** Border color. */ }
+
+@media (min-width: 1200px) {
+  /** Border style. */
+  /** Border color. */ }
+
+/** Square borders. */
+/** Border width around. */
+
+/** Border width top. */
+
+/** Border width bottom. */
+
+/** Border width left. */
+
+/** Border width right. */
+
+@media (min-width: 576px) {
+  /** Border width around. */
+  /** Border width top. */
+  /** Border width bottom. */
+  /** Border width left. */
+  /** Border width right. */ }
+
+@media (min-width: 768px) {
+  /** Border width around. */
+  /** Border width top. */
+  /** Border width bottom. */
+  /** Border width left. */
+  /** Border width right. */ }
+
+@media (min-width: 992px) {
+  /** Border width around. */
+  /** Border width top. */
+  /** Border width bottom. */
+  /** Border width left. */
+  /** Border width right. */ }
+
+@media (min-width: 1200px) {
+  /** Border width around. */
+  /** Border width top. */
+  /** Border width bottom. */
+  /** Border width left. */
+  /** Border width right. */ }
+
+/** Rounded borders. */
+/** Border radius around. */
+
+/** Border radius right. */
+
+/** Border radius top right. */
+
+/** Border radius top left. */
+
+/** Border radius bottom left. */
+
+/** Border radius bototm right. */
+
+@media (min-width: 576px) {
+  /** Border radius around. */
+  /** Border radius right. */
+  /** Border radius top right. */
+  /** Border radius top left. */
+  /** Border radius bottom left. */
+  /** Border radius bototm right. */ }
+
+@media (min-width: 768px) {
+  /** Border radius around. */
+  /** Border radius right. */
+  /** Border radius top right. */
+  /** Border radius top left. */
+  /** Border radius bottom left. */
+  /** Border radius bototm right. */ }
+
+@media (min-width: 992px) {
+  /** Border radius around. */
+  /** Border radius right. */
+  /** Border radius top right. */
+  /** Border radius top left. */
+  /** Border radius bottom left. */
+  /** Border radius bototm right. */ }
+
+@media (min-width: 1200px) {
+  /** Border radius around. */
+  /** Border radius right. */
+  /** Border radius top right. */
+  /** Border radius top left. */
+  /** Border radius bottom left. */
+  /** Border radius bototm right. */ }
+
+/** Font Size class. */
+
+.font-size-1 {
+  font-size: 18px; }
+
+.font-size-3 {
+  font-size: 28px; }
+
+/** Font Weight class. */
+
+/** Line Height class. */
+
+/** Letter Spacing class. */
+
+/** Line Family class. */
+
+.font-family-sans-serif {
+  font-family: sans-serif; }
+
+@media (min-width: 576px) {
+  /** Font Size class. */
+  /** Font Weight class. */
+  /** Line Height class. */
+  /** Letter Spacing class. */
+  /** Line Family class. */ }
+
+@media (min-width: 768px) {
+  /** Font Size class. */
+  /** Font Weight class. */
+  /** Line Height class. */
+  /** Letter Spacing class. */
+  /** Line Family class. */ }
+
+@media (min-width: 992px) {
+  /** Font Size class. */
+  /** Font Weight class. */
+  /** Line Height class. */
+  /** Letter Spacing class. */
+  /** Line Family class. */ }
+
+@media (min-width: 1200px) {
+  /** Font Size class. */
+  /** Font Weight class. */
+  /** Line Height class. */
+  /** Letter Spacing class. */
+  /** Line Family class. */ }
+
+/** Display Flex class. */
+.d-flex {
+  display: flex; }
+
+/** Flex Direction class. */
+
+.flex-direction-column {
+  flex-direction: column; }
+
+/** Flex Wrap class. */
+
+.flex-wrap-wrap {
+  flex-wrap: wrap; }
+
+/** Justify Content class. */
+
+.justify-content-center {
+  justify-content: center; }
+
+.justify-content-space-around {
+  justify-content: space-around; }
+
+/** Align Items  class. */
+
+.align-items-center {
+  align-items: center; }
+
+/** Align Content class. */
+
+@media (min-width: 576px) {
+  /** Display Flex class. */
+  /** Flex Direction class. */
+  /** Flex Wrap class. */
+  /** Justify Content class. */
+  /** Align Items  class. */
+  /** Align Content class. */ }
+
+@media (min-width: 768px) {
+  /** Display Flex class. */
+  /** Flex Direction class. */
+  /** Flex Wrap class. */
+  /** Justify Content class. */
+  /** Align Items  class. */
+  /** Align Content class. */ }
+
+@media (min-width: 992px) {
+  /** Display Flex class. */
+  /** Flex Direction class. */
+  /** Flex Wrap class. */
+  /** Justify Content class. */
+  /** Align Items  class. */
+  /** Align Content class. */ }
+
+@media (min-width: 1200px) {
+  /** Display Flex class. */
+  /** Flex Direction class. */
+  /** Flex Wrap class. */
+  /** Justify Content class. */
+  /** Align Items  class. */
+  /** Align Content class. */ }
+
+/** Button class class. */
+.btn-primary {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 12px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-primary:hover {
+    background-color: #0143a3; }
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 12px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-secondary:hover {
+    background-color: #3d4246; }
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 12px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-danger:hover {
+    background-color: #921925; }
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 12px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-warning:hover {
+    background-color: #a07800; }
+
+.btn-succes {
+  background-color: #198754;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 12px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-succes:hover {
+    background-color: #09311e; }
+
+.btn-info {
+  background-color: #0dcaf0;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 12px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-info:hover {
+    background-color: #08798f; }
+
+.btn-black {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 12px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-black:hover {
+    background-color: black; }
+
+/** Small Button class. */
+.btn-sm-primary {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-sm-primary:hover {
+    background-color: #0143a3; }
+
+/** Large Button class. */
+
+.btn-lg-danger {
+  background-color: #dc3545;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 20px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-lg-danger:hover {
+    background-color: #921925; }
+
+/** Outline Button class. */
+.btn-outline-primary {
+  border-color: #0d6efd;
+  border-width: 2px;
+  border-style: solid;
+  color: #0d6efd;
+  background-color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 15px 12px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-outline-primary:hover {
+    background-color: #cccccc; }
+
+.btn-outline-secondary {
+  border-color: #6c757d;
+  border-width: 2px;
+  border-style: solid;
+  color: #6c757d;
+  background-color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 15px 12px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-outline-secondary:hover {
+    background-color: #cccccc; }
+
+.btn-outline-danger {
+  border-color: #dc3545;
+  border-width: 2px;
+  border-style: solid;
+  color: #dc3545;
+  background-color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 15px 12px;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .btn-outline-danger:hover {
+    background-color: #cccccc; }
+
+/** Width class. */
+
+.width-1 {
+  width: 100px; }
+
+.width-4 {
+  width: 250px; }
+
+@media (min-width: 576px) {
+  /** Width class. */ }
+
+@media (min-width: 768px) {
+  /** Width class. */ }
+
+@media (min-width: 992px) {
+  /** Width class. */ }
+
+@media (min-width: 1200px) {
+  /** Width class. */ }
+
+/** Box Shadows class. */
+
+/** Drop Shadows class. */
+
+/** Inset shadows class. */
+
+@media (min-width: 576px) {
+  /** Box Shadows class. */
+  /** Drop Shadows class. */
+  /** Inset shadows class. */ }
+
+@media (min-width: 768px) {
+  /** Box Shadows class. */
+  /** Drop Shadows class. */
+  /** Inset shadows class. */ }
+
+@media (min-width: 992px) {
+  /** Box Shadows class. */
+  /** Drop Shadows class. */
+  /** Inset shadows class. */ }
+
+@media (min-width: 1200px) {
+  /** Box Shadows class. */
+  /** Drop Shadows class. */
+  /** Inset shadows class. */ }
+
+.dropdown-main {
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+  padding: 0;
+  width: 150px; }
+
+.dropdown-btn {
+  outline: none;
+  background-color: #0d6efd;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px; }
+  .dropdown-btn:hover {
+    background-color: #cccccc; }
+
+.dropdown-menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 1px;
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 6px; }
+
+.dropdown-link {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  padding: 8px 10px; }
+
+/*
+ * Table styles
+ */
+
+/** Imagini pentru semnele de sortari (pe care nu le avem)*/
+
+/********************************************************************************
+**************************** Control Features ***********************************
+********************************************************************************/
+/** Positionig of all the features */
+
+/** Show x entries */
+
+/** Search bar */
+
+/** Table info in bottom left */
+
+/** Pagination in bottom right */
+/** Positioning */
+
+/** Button */
+
+/** Button Active */
+
+/** Button disabled */
+
+/** Button Hover */
+
+/** Class for Lists */
+.list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-family: sans-serif; }
+
+/** Class for Lists with custom bullets */
+
+@media (min-width: 576px) {
+  /** Class for Lists */
+  .list {
+    list-style: none;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-family: sans-serif; }
+  /** Class for Lists with custom bullets */ }
+
+@media (min-width: 768px) {
+  /** Class for Lists */
+  .list {
+    list-style: none;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-family: sans-serif; }
+  /** Class for Lists with custom bullets */ }
+
+@media (min-width: 992px) {
+  /** Class for Lists */
+  .list {
+    list-style: none;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-family: sans-serif; }
+  /** Class for Lists with custom bullets */ }
+
+@media (min-width: 1200px) {
+  /** Class for Lists */
+  .list {
+    list-style: none;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-family: sans-serif; }
+  /** Class for Lists with custom bullets */ }
+
+/** Class for fluid image (width: 100%) */
+.image-fluid {
+  width: 100%;
+  height: auto; }
+
+/** Class for thumbnail image */
+.image-thumbnail {
+  width: 150px;
+  height: auto;
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 6px;
+  box-shadow: 10px 10px 10px 2px #ffffff; }
+
+/** Creating classes for all the proprieties of object-fit */
+.object-fit-fill {
+  object-fit: fill; }
+
+.object-fit-contain {
+  object-fit: contain; }
+
+.object-fit-cover {
+  object-fit: cover; }
+
+.object-fit-none {
+  object-fit: none; }
+
+.object-fit-scale-down {
+  object-fit: scale-down; }
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /** Form Container for Checkboxes*/ }
+  .form-container-checkbox {
+    width: 100%; }
+
+/** Class for Labels */
+.form-field-label {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1;
+  letter-spacing: 2px;
+  /** Uncommon attributes between label and control */
+  padding-left: 8px; }
+
+/** Class for <input>, <textarea> */
+.form-field-control, .form-field-control-file {
+  width: 100%;
+  outline: none;
+  margin-top: 6px;
+  padding: 8px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1;
+  letter-spacing: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 6px;
+  /** For text area */
+  resize: none; }
+  .form-field-control-file {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 6px;
+    padding: 12px 8px;
+    background-color: lightgray; }
+
+.accordion-container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.accordion-element {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  /** Styling the first button */
+  /** Styling the last button */
+  /** Styling the last info */ }
+  .accordion-element:first-child .accordion-btn {
+    border-radius: 5px 5px 0 0; }
+  .accordion-element:last-child .accordion-btn {
+    border-radius: 0 0 5px 5px;
+    /** Changing the last button border radius when it s clicked */ }
+    .accordion-element:last-child .accordion-btn:focus {
+      border-radius: 0; }
+  .accordion-element:last-child .accordion-info {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 0 0 5px 5px; }
+  .accordion-element .accordion-btn {
+    text-align: left;
+    background-color: #0d6efd;
+    color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 2px;
+    /** When clicked it shows */ }
+    .accordion-element .accordion-btn:focus {
+      background-color: #0262ef;
+      color: #cccccc;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #000000; }
+    .accordion-element .accordion-btn:focus + .accordion-info {
+      display: block; }
+  .accordion-element .accordion-info {
+    display: none;
+    background-color: #ffffff;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #000000;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #000000;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 2px; }
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: lightgray; }
+
+.navbar-brand {
+  padding: 0;
+  display: flex;
+  align-items: center; }
+
+.navbar-brand-img {
+  height: 60px; }
+
+.navbar-items {
+  display: flex; }
+
+.navbar-item {
+  list-style: none;
+  margin-right: 20px;
+  list-style: none; }
+  .navbar-item:last-child {
+    margin-right: 0; }
+
+.navbar-link {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: "500";
+  line-height: 1;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: #000000; }
+  .navbar-link:hover {
+    color: #333333; }
+
+@media screen and (max-width: 769px) {
+  .navbar {
+    position: relative;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between; }
+  .navbar-toggler {
+    position: relative; }
+  .hamburger {
+    width: 25px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #0d6efd; }
+    .hamburger::before {
+      position: absolute;
+      content: "";
+      top: -8px;
+      left: 0px;
+      background-color: #0d6efd;
+      width: 100%;
+      height: 3px;
+      border-radius: 1px; }
+    .hamburger::after {
+      position: absolute;
+      content: "";
+      top: 8px;
+      left: 0px;
+      background-color: #0d6efd;
+      width: 100%;
+      height: 3px;
+      border-radius: 1px; }
+  .navbar-items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    background-color: transparent;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0dcaf0; }
+  .navbar-items-hide {
+    transform: translateY(-100%);
+    transition: 0.3s; }
+  .close {
+    position: absolute;
+    top: 40px;
+    width: 25px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #0d6efd;
+    transform: rotate(45deg); }
+    .close::after {
+      position: absolute;
+      content: "";
+      top: 0px;
+      left: 0px;
+      background-color: #0d6efd;
+      width: 100%;
+      height: 3px;
+      border-radius: 1px;
+      transform: rotate(90deg); }
+  .close-right {
+    right: 20px; }
+  .navbar-item {
+    margin-right: 0; } }
+
+/* Slider */
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+
+.sidebar {
+  min-height: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  padding: 30px 100px; }
+
+.sidebar-items {
+  margin: 0;
+  padding: 0; }
+
+.sidebar-item, .sidebar-title {
+  list-style: none;
+  margin-bottom: 20px; }
+  .sidebar-item:last-child, .sidebar-title:last-child {
+    margin-bottom: 0; }
+
+.sidebar-link {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: "500";
+  line-height: 1;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: #000000; }
+  .sidebar-link:hover {
+    color: #666666; }
+
+.sidebar-title {
+  font-family: sans-serif;
+  font-size: 24px; }
+  .sidebar-title:hover {
+    color: #000000; }
+
+@media screen and (max-width: 769px) {
+  .sidebar {
+    display: none; } }
+
+.all-unset {
+  all: unset; }
+
+.animation-name-example {
+  animation-name: example; }
+
+.animation-duration-4s {
+  animation-duration: 4s; }
+
+.animation-iteration-count-infinite {
+  animation-iteration-count: infinite; }
+
+.aspect-ratio-16 {
+  aspect-ratio: 1.77778; }
+
+.backdrop-filter-10px {
+  backdrop-filter: blur(10px); }
+
+.backface-visibility-hidden {
+  backface-visibility: hidden; }
+
+.background-attachment-scroll {
+  background-attachment: scroll; }
+
+.background-blend-mode-screen {
+  background-blend-mode: screen; }
+
+.background-color-primary {
+  background-color: #0d6efd; }
+
+.background-image-1 {
+  background-image: url("https://41.media.tumblr.com/efd15be8d41b12a7b0ef17fba27c3e20/tumblr_mqqy59HMaf1qzattso1_1280.jpg"); }
+
+.background-image-genuineq {
+  background-image: url("https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg"); }
+
+.border-width-1 {
+  border-width: 2px; }
+
+.border-style-solid {
+  border-style: solid; }
+
+.border-color-black {
+  border-color: #000000; }
+
+.flex-wrap-wrap {
+  flex-wrap: wrap; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.justify-content-space-around {
+  justify-content: space-around; }
+
+.align-items-center {
+  align-items: center; }
+
+.font-family-sans-serif {
+  font-family: sans-serif; }
+
+.height-2 {
+  height: 100px; }
+
+.height-3 {
+  height: 150px; }
+
+.object-fit-fill {
+  object-fit: fill; }
+
+.object-fit-contain {
+  object-fit: contain; }
+
+.object-fit-cover {
+  object-fit: cover; }
+
+.object-fit-none {
+  object-fit: none; }
+
+.object-fit-scale-down {
+  object-fit: scale-down; }
+
+.transform-flip {
+  transform: rotateY(180deg); }
+
+.width-1 {
+  width: 100px; }
+
+.width-4 {
+  width: 250px; }
