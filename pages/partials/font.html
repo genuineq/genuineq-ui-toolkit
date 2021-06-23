@@ -157,6 +157,17 @@ $fonts-weight: map-merge(
   $fonts-weight
 );
 
+$letter-spacing: ();
+$letter-spacing: map-merge(
+  (
+    "bold": bold,
+    0: 2px,
+    1: 4px,
+    2: 6px,
+  ),
+  $letter-spacing
+);
+
 $line-break: ();
 $line-break: map-merge(
   (

@@ -1,0 +1,49 @@
+<h2 class="page-title">Opacity</h2>
+<p class="info">The opacity property in CSS specifies how transparent an element is.</p>
+<div class="example-container d-flex justify-content-space-around flex-wrap-wrap">
+  <div class="opacity-1 height-2 width-1 background-color-info display-grid place-items-center m-3">
+    <p>opacity: 1;</p>
+  </div>
+  <div class="opacity-07 height-2 width-1 background-color-info display-grid place-items-center m-3">
+    <p>opacity: 0.7;</p>
+  </div>
+  <div class="opacity-05 height-2 width-1 background-color-info display-grid place-items-center m-3">
+    <p>opacity: 0.5;</p>
+  </div>
+  <div class="opacity-01 height-2 width-1 background-color-info display-grid place-items-center m-3 ">
+    <p>opacity: 0.1;</p>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;opacity-1 height-2 width-1 background-color-info display-grid place-items-center m-3&quot;&gt;
+  &lt;p&gt;opacity: 1;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;opacity-07 height-2 width-1 background-color-info display-grid place-items-center m-3&quot;&gt;
+  &lt;p&gt;opacity: 0.7;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;opacity-05 height-2 width-1 background-color-info display-grid place-items-center m-3&quot;&gt;
+  &lt;p&gt;opacity: 0.5;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;opacity-01 height-2 width-1 background-color-info display-grid place-items-center m-3 &quot;&gt;
+  &lt;p&gt;opacity: 0.1;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$opacity: ();
+$opacity: map-merge(
+  (
+    "1": 1,
+    "07": 0.7,
+    "05": 0.5,
+    "03": 0.1,
+    "01": 0.1,
+  ),
+  $opacity
+);
+</pre>
+</div>

@@ -1,0 +1,62 @@
+<h2 class="page-title">Outline</h2>
+<p class="info">You can’t set an outline on just one (or two, or three) sides of an elements. All sides only. There is no such thing as outline-top, outline-right, outline-bottom, or outline-left like there is with border.</p>
+<div class="example-container d-flex justify-content-center">
+  <div class="outline-width-10px outline-style-solid outline-color-warning height-4 width-4 background-color-info display-grid place-items-center">
+    <p>outline-width: 10px;</p>
+    <p>outline-style: solid;</p>
+    <p>outline-color: warning (#ffc107);</p>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;outline-width-10px outline-style-solid outline-color-warning height-4 width-4 background-color-info display-grid place-items-center&quot;&gt;
+  &lt;p&gt;outline-width: 10px;&lt;/p&gt;
+  &lt;p&gt;outline-style: solid;&lt;/p&gt;
+  &lt;p&gt;outline-color: warning (#ffc107);&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$outline-width: ();
+$outline-width: map-merge(
+  (
+    0: 1px,
+    1: 2px,
+    2: 3px,
+    3: 4px,
+    4: 5px,
+    "10px": 10px,
+  ),
+  $outline-width
+);
+
+$outline-style: ();
+$outline-style: map-merge(
+  (
+    "solid": solid,
+    "dotted": dotted,
+    "none": none,
+  ),
+  $outline-style
+);
+
+@each $attribute, $name in (outline-color: outline-color) {
+  @each $key, $value in $colors {
+    .#{$name}-#{$key} {
+      #{$attribute}: $value;
+    }
+  }
+}
+
+$outline-offset: ();
+$outline-offset: map-merge(
+  (
+    10: 10px,
+  ),
+  $outline-offset
+);
+</pre>
+</div>

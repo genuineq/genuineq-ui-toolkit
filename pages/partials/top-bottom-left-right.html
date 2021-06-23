@@ -1,0 +1,67 @@
+<h2 class="page-title">Top / Bottom / Left / Right</h2>
+<p class="info">The top, bottom, left, and right properties are used with position to set the placement of an element. They only have an effect on positioned elements, which are elements with the position property set to anything other than static. For example: relative, absolute, fixed, or sticky.</p>
+<div class="example-container d-flex justify-content-center align-items-center">
+	<div class="height-3 width-3 background-color-gray">
+		<div class="height-1 width-1 position-relative top-10px left-20px background-color-info text-align-center p-3">
+			top: 10px; left: 20px;
+		</div>
+	</div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class="height-3 width-3 background-color-gray">
+  &lt;div class="height-1 width-1 position-relative top-10px left-20px background-color-info text-align-center p-3">
+    top: 10px; left: 20px;
+  &lt;/div>
+&lt;/div>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$top: ();
+$top: map-merge(
+  (
+    "5px": 5px,
+    "10px": 10px,
+    "20px": 20px,
+    "12p": 12%,
+    "3em": 3em,
+  ),
+  $top
+);
+
+$left: ();
+$left: map-merge(
+  (
+    "5px": 5px,
+    "10px": 10px,
+    "20px": 20px,
+    "50p": 50%,
+    "10p": 10%,
+  ),
+  $left
+);
+
+$right: ();
+$right: map-merge(
+  (
+    "5px": 5px,
+    "10px": 10px,
+    "20px": 20px,
+  ),
+  $right
+);
+
+$bottom: ();
+$bottom: map-merge(
+  (
+    "5px": 5px,
+    "10px": 10px,
+    "20px": 20px,
+  ),
+  $bottom
+);
+</pre>
+</div>

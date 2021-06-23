@@ -1,0 +1,75 @@
+<h2 class="page-title">Padding</h2>
+<p class="info">The padding property in CSS defines the innermost portion of the box model, creating space around an element’s content, inside of any defined margins and/or borders.</p>
+<div class="example-container">
+  <div class="height-400px width-400px background-color-info p-8">
+    <div class="height-4 width-3 background-color-warning display-grid place-items-center">
+      <p>padding: 100px;</p>
+    </div>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;height-400px width-400px background-color-info p-8 &quot;&gt;
+  &lt;div class=&quot;height-4 width-3 background-color-warning place-items-center&quot;&gt;
+    &lt;p>padding: 100px;</p>
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: 6px,
+    2: 8px,
+    3: 10px,
+    4: 12px,
+    5: 15px,
+    6: 20px,
+    7: 30px,
+    8: 100px,
+    "auto": auto,
+    "40px": 40px,
+    "60px": 60px,
+    "18p": 18%,
+    "50p": 50%,
+  ),
+  $spacers
+);
+
+
+             <b> Margins and Paddding </b>
+@if $enable-spacers {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @each $prop, $abbrev in (margin: m, padding: p) {
+        @each $size, $length in $spacers {
+          .#{$abbrev}#{$infix}-#{$size} {
+            #{$prop}: $length !important;
+          }
+          .#{$abbrev}t#{$infix}-#{$size},
+          .#{$abbrev}y#{$infix}-#{$size} {
+            #{$prop}-top: $length !important;
+          }
+          .#{$abbrev}r#{$infix}-#{$size},
+          .#{$abbrev}x#{$infix}-#{$size} {
+            #{$prop}-right: $length !important;
+          }
+          .#{$abbrev}b#{$infix}-#{$size},
+          .#{$abbrev}y#{$infix}-#{$size} {
+            #{$prop}-bottom: $length !important;
+          }
+          .#{$abbrev}l#{$infix}-#{$size},
+          .#{$abbrev}x#{$infix}-#{$size} {
+            #{$prop}-left: $length !important;
+          }
+        }
+      }
+</pre>
+</div>

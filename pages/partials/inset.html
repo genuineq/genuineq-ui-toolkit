@@ -1,0 +1,80 @@
+<h2 class="page-title">Inset</h2>
+<p class="info">The inset property in CSS is a shorthand for the four inset properties, top, right, bottom and left in one declaration. Just like the four individual properties themselves, inset has no effect on non-positioned (static) elements. In other words, an element must declare an explicit position value before inset properties can take effect.</p>
+<div class="example-container display-grid place-items-center">
+	<div class="height-400px width-80p background-color-gray inset-60px">
+		<div class="height-3 width-3 background-color-info"></div>
+	</div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$inset: ();
+$inset: map-merge(
+  (
+    0: 10px 20px 30px 40px,
+    "60px": 60px,
+  ),
+  $inset
+);
+
+$inset-block: ();
+$inset-block: map-merge(
+  (
+    0: 50px,
+    "auto": auto,
+  ),
+  $inset-block
+);
+
+$inset-block-end: ();
+$inset-block-end: map-merge(
+  (
+    0: 50px,
+    "auto": auto,
+  ),
+  $inset-block-end
+);
+
+$inset-block-start: ();
+$inset-block-start: map-merge(
+  (
+    0: 50px,
+    "auto": auto,
+  ),
+  $inset-block-start
+);
+
+$inset-inline: ();
+$inset-inline: map-merge(
+  (
+    0: 50px,
+    "auto": auto,
+  ),
+  $inset-inline
+);
+
+$inset-inline-end: ();
+$inset-inline-end: map-merge(
+  (
+    "50px": 50px,
+    "auto": auto,
+  ),
+  $inset-inline-end
+);
+
+$inset-inline-start: ();
+$inset-inline-start: map-merge(
+  (
+    0: 50px,
+    "auto": auto,
+  ),
+  $inset-inline-start
+);
+</pre>
+</div>

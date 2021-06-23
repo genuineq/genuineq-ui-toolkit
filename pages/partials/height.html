@@ -1,0 +1,37 @@
+<h2 class="page-title">Height</h2>
+<p class="info">The height property in CSS defines specifies the content height of boxes and accepts any of the length values.</p>
+<div class="example-container d-flex justify-content-space-around aling-items-space-around">
+  <div class="height-1 width-1 background-color-info display-grid place-items-center">height-1</div>
+  <div class="height-2 width-1 background-color-info display-grid place-items-center">height-2</div>
+  <div class="height-3 width-1 background-color-info display-grid place-items-center">height-3</div>
+  <div class="height-4 width-1 background-color-info display-grid place-items-center">height-4</div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class="height-1 width-1 background-color-info display-grid place-items-center">height-1&lt;/div>
+&lt;div class="height-2 width-1 background-color-info display-grid place-items-center">height-2&lt;/div>
+&lt;div class="height-3 width-1 background-color-info display-grid place-items-center">height-3&lt;/div>
+&lt;div class="height-4 width-1 background-color-info display-grid place-items-center">height-4&lt;/div>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$heights: ();
+$heights: map-merge(
+  (
+    0: 50xp,
+    1: 60px,
+    2: 100px,
+    3: 150px,
+    4: 200px,
+    10: 600px,
+    100: 100%,
+    "auto": auto,
+    "20px": 20px,
+  ),
+  $heights
+);
+</pre>
+</div>

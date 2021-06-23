@@ -1,0 +1,61 @@
+<!-- Min-Height -->
+<h2 class="page-title">Min-Height</h2>
+<p class="info">The min-height property in CSS is used to set the minimum height of a specified element. The min-height property always overrides both height and max-height. Authors may use any of the length values as long as they are a positive value.</p>
+<div class="example-container d-flex justify-content-center">
+  <div class="height-1 width-4 background-color-info min-height-300px display-grid place-items-center">
+    <p>min-height: 300px;</p>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class="height-1 width-4 background-color-info min-height-300px display-grid place-items-center">
+  &lt;p>min-height: 300px;&lt;/p>
+&lt;/div>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$min-height: ();
+$min-height: map-merge(
+  (
+    "100px": 100px,
+    "300px": 300px,
+    "400px": 400px,
+  ),
+  $min-height
+);
+</pre>
+</div>
+
+<!-- Min-Width -->
+<h2 class="page-title">Min-Width</h2>
+<p class="info">The min-width property in CSS is used to set the minimum width of a specified element. The min-width property always overrides the width property whether followed before or after width in your declaration. Authors may use any of the length values as long as they are a positive value.</p>
+<div class="example-container d-flex justify-content-center">
+  <div class="height-3 width-1 background-color-info min-width-200px display-grid place-items-center">
+    <p>min-width: 200px;</p>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class="height-3 width-1 background-color-info min-width-200px display-grid place-items-center">
+  &lt;p>min-width: 200px;&lt;/p>
+&lt;/div>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$min-width: ();
+$min-width: map-merge(
+  (
+    "100px": 100px,
+    "200px": 200px,
+    "300px": 300px,
+  ),
+  $min-width
+);
+</pre>
+</div>

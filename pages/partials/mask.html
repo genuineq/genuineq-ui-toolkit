@@ -1,0 +1,121 @@
+<h2 class="page-title">Mask</h2>
+<p class="info"></p>
+<div class="example-container">
+	
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$mask-clip: ();
+$mask-clip: map-merge(
+  (
+    "border-box": border-box,
+    "content-box": content-box,
+    "fill-box": fill-box,
+    "margin-box": margin-box,
+    "padding-box": padding-box,
+    "stroke-box": stroke-box,
+    "view-box": view-box,
+    "no-clip": no-clip,
+    "initial": initial,
+    "inherit": inherit,
+    "unset": unset,
+  ),
+  $mask-clip
+);
+
+$mask-composite: ();
+$mask-composite: map-merge(
+  (
+    "add": add,
+    "substract": substract,
+    "intersect": intersect,
+    "exclude": exclude,
+    "inherit": inherit,
+    "initial": initial,
+    "unset": unset,
+  ),
+  $mask-composite
+);
+
+$mask-image: ();
+$mask-image: map-merge(
+  (
+    "poza1": url(""),
+  ),
+  $mask-image
+);
+
+$mask-mode: ();
+$mask-mode: map-merge(
+  (
+    "alpha": alpha,
+    "luminance": luminance,
+    "match-source": match-source,
+  ),
+  $mask-mode
+);
+
+$mask-origin: ();
+$mask-origin: map-merge(
+  (
+    "content-box": content-box,
+    "padding-box": padding-box,
+    "margin-box": margin-box,
+    "fill-box": fill-box,
+    "stroke-box": stroke-box,
+    "view-box": view-box,
+    "initial": initial,
+    "inherit": inherit,
+    "unset": unset,
+  ),
+  $mask-origin
+);
+
+$mask-position: ();
+$mask-position: map-merge(
+  (
+    0: 0% 0%,
+  ),
+  $mask-position
+);
+
+$mask-position: map-merge($mask-position, $positions);
+
+$mask-repeat: ();
+$mask-repeat: map-merge(
+  (
+    "repeat": repeat,
+    "repeat-x": repeat-x,
+    "repeat-y": repeat-y,
+    "no-repeat": no-repeat,
+    "space": space,
+    "round": round,
+  ),
+  $mask-repeat
+);
+
+$mask-size: ();
+$mask-size: map-merge(
+  (
+    0: 200px 100px,
+  ),
+  $mask-size
+);
+
+$mask-style: ();
+$mask-style: map-merge(
+  (
+    "alpha": alpha,
+    "luminance": luminance,
+  ),
+  $mask-style
+);
+</pre>
+</div>

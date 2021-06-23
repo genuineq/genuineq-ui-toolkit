@@ -1,0 +1,38 @@
+<h2 class="page-title">Inline-Size</h2>
+<p class="info">inline-size is a logical property that defines the width of an element when the writing-mode is horizontal, or the height of the element when the writing-mode is vertical.</p>
+<div class="example-container display-grid grid-template-columns-min-content-1fr grid-column-gap-4rem">
+	<header>
+		<p class="writing-mode-vertical-lr background-color-info inline-size-700px line-height-5 font-size-2">This is a vertical text which has inline-size: 700px;</p>
+	</header>
+	<main>
+		<p class="m-6 font-size-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque molestias et voluptatum recusandae nobis eos, tempore incidunt quidem molestiae hic similique quisquam soluta officia? Alias maiores possimus velit assumenda?</p>
+		<p class="m-6 font-size-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque molestias et voluptatum recusandae nobis eos, tempore incidunt quidem molestiae hic similique quisquam soluta officia? Alias maiores possimus velit assumenda?</p>
+		<p class="m-6 font-size-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque molestias et voluptatum recusandae nobis eos, tempore incidunt quidem molestiae hic similique quisquam soluta officia? Alias maiores possimus velit assumenda?</p>
+	</main>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;header>
+  &lt;p class="writing-mode-vertical-lr background-color-info inline-size-700px line-height-5 font-size-2">This is a vertical text which has inline-size: 700px;&lt;/p>
+&lt;/header>
+&lt;main>
+  &lt;p class="m-6 font-size-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque molestias et voluptatum recusandae nobis eos, tempore incidunt quidem molestiae hic similique quisquam soluta officia? Alias maiores possimus velit assumenda?&lt;/p>
+  &lt;p class="m-6 font-size-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque molestias et voluptatum recusandae nobis eos, tempore incidunt quidem molestiae hic similique quisquam soluta officia? Alias maiores possimus velit assumenda?&lt;/p>
+  &lt;p class="m-6 font-size-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque molestias et voluptatum recusandae nobis eos, tempore incidunt quidem molestiae hic similique quisquam soluta officia? Alias maiores possimus velit assumenda?&lt;/p>
+&lt;/main>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$inline-size: ();
+$inline-size: map-merge(
+  (
+    "700px": 700px,
+  ),
+  $inline-size
+);
+
+</pre>
+</div>

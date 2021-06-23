@@ -1,0 +1,29 @@
+<h2 class="page-title">Image-Rendering</h2>
+<p class="info">The image-rendering property defines how the browser should render an image if it is scaled up or down from its original dimensions. By default, each browser will attempt to apply aliasing to this scaled image in order to prevent distortion, but this can sometimes be a problem if we want the image to preserve its original pixelated form.</p>
+<div class="example-container d-flex justify-content-space-around flex-wrap-wrap">
+	<img class="height-3 width-auto image-rendering-pixelated mb-6" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+	<img class="height-3 width-auto image-rendering-auto mb-6" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+	<img class="height-3 width-auto image-rendering-crisp-edges" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;img class="height-3 width-auto image-rendering-pixelated mb-6" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+&lt;img class="height-3 width-auto image-rendering-auto mb-6" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+&lt;img class="height-3 width-auto image-rendering-crisp-edges" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$image-rendering: ();
+$image-rendering: map-merge(
+  (
+    "auto": auto,
+    "crisp-edges": crisp-edges,
+    "pixelated": pixelated,
+  ),
+  $image-rendering
+);
+</pre>
+</div>

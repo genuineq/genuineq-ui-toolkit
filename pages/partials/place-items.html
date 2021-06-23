@@ -1,0 +1,39 @@
+<h2 class="page-title">Place-Items</h2>
+<p class="info">The place-items property in CSS is shorthand for the align-items and justify-items properties, combining them into a single declaration.</p>
+<div class="example-container display-grid place-items-center">
+  <div class="height-3 width-3 background-color-info"></div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;display-grid place-items-center&quot;&gt;
+  &lt;div class=&quot;height-3 width-3 background-color-info&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$place-items: ();
+$place-items: map-merge(
+  (
+    "auto": auto,
+    "normal": normal,
+    "stretch": stretch,
+    "start": start,
+    "end": end,
+    "center": center,
+    "left": left,
+    "right": right,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "self-start": self-start,
+    "self-end": self-end,
+    "first": first,
+    "baseline": baseline,
+    "last": last,
+  ),
+  $place-items
+);
+</pre>
+</div>

@@ -1,0 +1,29 @@
+<h2 class="page-title">Speak</h2>
+<p class="info">The speak property in CSS is for specifying if a browser should speak the content it reads, such as through a screen reader.</p>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$speak: ();
+$speak: map-merge(
+  (
+    "auto": auto,
+    "visible": visible,
+    "never": never,
+    "always": always,
+  ),
+  $speak
+);
+
+$speak-as: ();
+$speak-as: map-merge(
+  (
+    "normal": normal,
+    "spell-out": spell-out,
+    "digits": digits,
+    "literal-punctuation": literal-punctuation,
+    "no-punctuation": no-punctuation,
+  ),
+  $speak-as
+);
+</pre>
+</div>

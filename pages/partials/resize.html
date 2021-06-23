@@ -1,0 +1,26 @@
+<h2 class="page-title">Resize</h2>
+<p class="info">The resize property controls if and how an element can be resized by the user by clicking and dragging the bottom right corner of the element.</p>
+<div class="example-container display-grid place-items-center">
+  <textarea class="max-width-780px resize-both" cols="30" rows="10"></textarea>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;textarea class=&quot;max-width-780px resize-both&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt;&lt;/textarea&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$resize: ();
+$resize: map-merge(
+  (
+    "none": none,
+    "both": both,
+    "horizontal": horizontal,
+    "verical": vertical,
+  ),
+  $resize
+);
+</pre>
+</div>

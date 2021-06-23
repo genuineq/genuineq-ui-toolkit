@@ -1,0 +1,39 @@
+<h2 class="page-title">Page-Break</h2>
+<p class="info">There isn’t an actual page-break property in CSS. It is actually a set of 3 properties: page-break-before, page-break-after and page-break-inside. These properties help define how the document is supposed to behave when printed. For example, to make a printed document more book-like.</p>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$page-break-after: ();
+$page-break-after: map-merge(
+  (
+    "auto": auto,
+    "always": always,
+    "avoid": avoid,
+    "left": left,
+    "right": right,
+  ),
+  $page-break-after
+);
+
+$page-break-before: ();
+$page-break-before: map-merge(
+  (
+    "auto": auto,
+    "always": always,
+    "avoid": avoid,
+    "left": left,
+    "right": right,
+  ),
+  $page-break-before
+);
+
+$page-break-inside: ();
+$page-break-inside: map-merge(
+  (
+    "auto": auto,
+    "avoid": avoid,
+  ),
+  $page-break-inside
+);
+</pre>
+</div>

@@ -1,0 +1,31 @@
+<h2 class="page-title">Hyphens</h2>
+<p class="info">The hyphens property controls hyphenation of text in block level elements. You can prevent hyphenation from happening at all, allow it, or only allow it when certain characters are present.</p>
+<div class="example-container text-align-justify">
+	<p class="hyphens-auto">As designers attempting to creating functional work, oftentimes we are required to make our designs look as finished as possible.</p>
+	<p class="hyphens-auto">For example, if you are designing a brand new website for someone, most times you will have to make sure the prototype looks finished by inserting text or photos or what have you. The purpose of this is so the person viewing the prototype has a chance to actually feel and understand the idea behind what you have created.</p>
+  <p class="hyphens-auto">Now in some circumstances, designers may use squares and rectangles to help you visualize what should and could be in a specific location.</p>
+  <p class="hyphens-auto">We all have our own techniques, but one of the most effective techniques is to actually put some text where text goes and some pictures where pictures go to make sure everyone can see the vision you’ve created.</p>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;p class="hyphens-auto">As designers attempting to creating functional work, oftentimes we are required to make our designs look as finished as possible.&lt;/p>
+&lt;p class="hyphens-auto">For example, if you are designing a brand new website for someone, most times you will have to make sure the prototype looks finished by inserting text or photos or what have you. The purpose of this is so the person viewing the prototype has a chance to actually feel and understand the idea behind what you have created.&lt;/p>
+&lt;p class="hyphens-auto">Now in some circumstances, designers may use squares and rectangles to help you visualize what should and could be in a specific location.&lt;/p>
+&lt;p class="hyphens-auto">We all have our own techniques, but one of the most effective techniques is to actually put some text where text goes and some pictures where pictures go to make sure everyone can see the vision you’ve created.&lt;/p>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$hyphens: ();
+$hyphens: map-merge(
+  (
+    "none": none,
+    "manual": manual,
+    "auto": auto,
+  ),
+  $hyphens
+);
+</pre>
+</div>

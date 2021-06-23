@@ -603,6 +603,14 @@
     }
   }
 
+  @each $attribute, $name in (place-content: place-content) {
+    @each $key, $value in $place-content {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
   @each $attribute, $name in (float: float) {
     @each $key, $value in $float {
       .#{$name}-#{$key} {
@@ -739,6 +747,14 @@
     }
   }
 
+  @each $attribute, $name in (grid-column-gap: grid-column-gap) {
+    @each $key, $value in $grid-column-gap {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
   @each $attribute, $name in (grid-template-rows: grid-template-rows) {
     @each $key, $value in $grid-template-rows {
       .#{$name}-#{$key} {
@@ -795,8 +811,8 @@
     }
   }
 
-  @each $attribute, $name in (initial-size: initial-size) {
-    @each $key, $value in $initial-size {
+  @each $attribute, $name in (inline-size: inline-size) {
+    @each $key, $value in $inline-size {
       .#{$name}-#{$key} {
         #{$attribute}: $value;
       }
@@ -1218,6 +1234,22 @@
     }
   }
 
+  @each $attribute, $name in (overflow-x: overflow-x) {
+    @each $key, $value in $overflow-x {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (overflow-y: overflow-y) {
+    @each $key, $value in $overflow-y {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
   @each $attribute, $name in (overflow-anchor: overflow-anchor) {
     @each $key, $value in $overflow-anchor {
       .#{$name}-#{$key} {
@@ -1345,8 +1377,8 @@
     }
   }
 
-  @each $attribute, $name in (scroll-behaviour: scroll-behaviour) {
-    @each $key, $value in $scroll-behaviour {
+  @each $attribute, $name in (scroll-behavior: scroll-behavior) {
+    @each $key, $value in $scroll-behavior {
       .#{$name}-#{$key} {
         #{$attribute}: $value;
       }
@@ -1505,7 +1537,7 @@
   }
 
   @each $attribute, $name in (stroke: stroke) {
-    @each $key, $value in $stroke {
+    @each $key, $value in $colors {
       .#{$name}-#{$key} {
         #{$attribute}: $value;
       }
@@ -1578,6 +1610,14 @@
 
   @each $attribute, $name in (text-align-last: text-align-last) {
     @each $key, $value in $text-align-last {
+      .#{$name}-#{$key} {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @each $attribute, $name in (text-anchor: text-anchor) {
+    @each $key, $value in $text-anchor {
       .#{$name}-#{$key} {
         #{$attribute}: $value;
       }

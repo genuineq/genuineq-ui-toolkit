@@ -76,6 +76,12 @@
   }
 }
 
+@keyframes move {
+  100% {
+    offset-distance: 100%;
+  }
+}
+
 .counter-example::before {
   content: counter(mega-step, upper-roman);
   padding-top: 5px;

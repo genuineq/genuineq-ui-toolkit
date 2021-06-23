@@ -1,0 +1,80 @@
+<h2 class="page-title">Stroke</h2>
+<p class="info">The stroke property in CSS is for adding a border to SVG shapes.</p>
+<div class="example-container d-flex justify-content-space-around align-items-center flex-wrap-wrap">
+  <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle class="stroke-danger stroke-width-2px stroke-linecap-butt stroke-dasharray-0" cx="60" cy="60" r="50"/>
+  </svg>
+  <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle class="stroke-info stroke-width-2px stroke-linecap-butt stroke-dasharray-0" cx="60" cy="60" r="50"/>
+  </svg>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;svg class=&quot;fill-white&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+  &lt;circle class=&quot;stroke-danger stroke-width-2px stroke-linecap-butt stroke-dasharray-0&quot; cx=&quot;60&quot; cy=&quot;60&quot; r=&quot;50&quot;/&gt;
+&lt;/svg&gt;
+&lt;svg class=&quot;fill-white&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+  &lt;circle class=&quot;stroke-info stroke-width-2px stroke-linecap-butt stroke-dasharray-0&quot; cx=&quot;60&quot; cy=&quot;60&quot; r=&quot;50&quot;/&gt;
+&lt;/svg&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+@each $attribute, $name in (stroke: stroke) {
+  @each $key, $value in $colors {
+    .#{$name}-#{$key} {
+      #{$attribute}: $value;
+    }
+  }
+}
+
+$stroke-dasharray: ();
+$stroke-dasharray: map-merge(
+  (
+    0: 0,
+    2: 2,
+    6: 6,
+  ),
+  $stroke-dasharray
+);
+
+$stroke-dashoffset: ();
+$stroke-dashoffset: map-merge(
+  (
+    100: 100,
+  ),
+  $stroke-dashoffset
+);
+
+$stroke-linecap: ();
+$stroke-linecap: map-merge(
+  (
+    "butt": butt,
+    "square": square,
+    "round": round,
+  ),
+  $stroke-linecap
+);
+
+$stroke-linejoin: ();
+$stroke-linejoin: map-merge(
+  (
+    "crop-bevel": crop bevel,
+    "round": round,
+  ),
+  $stroke-linejoin
+);
+
+$stroke-width: ();
+$stroke-width: map-merge(
+  (
+    "1px": 1px,
+    "2px": 2px,
+    "5px": 5px,
+  ),
+  $stroke-width
+);
+</pre>
+</div>

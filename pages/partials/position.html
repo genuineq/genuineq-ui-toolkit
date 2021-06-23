@@ -1,0 +1,35 @@
+<h2 class="page-title">Position</h2>
+<p class="info">The position property can help you manipulate the location of an element, for example:</p>
+<div class="example-container height-300px">
+  <div class="position-relative height-3 width-3 background-color-info top-20px left-50p d-flex flex-direction-column justify-content-center flex-wrap-wrap" style="align-items: center;">
+    <p>position: relative;</p>
+    <p>top: 20px;</p>
+    <p>left: 50%;</p>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;position-relative height-3 width-3 background-color-info top-20px left-50p d-flex flex-direction-column justify-content-center flex-wrap-wrap align-items-center&quot;&gt;
+  &lt;p&gt;position: relative;&lt;/p&gt;
+  &lt;p&gt;top: 20px;&lt;/p&gt;
+  &lt;p&gt;left: 50%;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$position: ();
+$position: map-merge(
+  (
+    "static": static,
+    "relative": relative,
+    "absolute": absolute,
+    "fixed": fixed,
+    "sticky": sticky,
+  ),
+  $position
+);
+</pre>
+</div>

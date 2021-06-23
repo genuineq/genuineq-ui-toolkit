@@ -1,0 +1,101 @@
+<!-- Max-Height -->
+<h2 class="page-title">Max-Height</h2>
+<p class="info">The max-height property in CSS is used to set the maximum height of a specified element. Authors may use any of the length values as long as they are a positive value. max-height overrides height, but min-height always overrides max-height.</p>
+<div class="example-container d-flex justify-content-center">
+  <div class="height-400px width-4 background-color-info max-height-300px display-grid place-items-center">
+    <p>max-height: 300px;</p>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class="height-400px width-4 background-color-info max-height-300px display-grid place-items-center">
+  &lt;p>max-height: 300px;&lt;/p>
+&lt;/div>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$max-height: ();
+$max-height: map-merge(
+  (
+    "100px": 100px,
+    "300px": 300px,
+  ),
+  $max-height
+);
+</pre>
+</div>
+
+<!-- Max-Inline-Size -->
+<h2 class="page-title">Max-Inline-Size</h2>
+<p class="info">max-inline-size is a logical property in CSS that defines the maximum width of an element when the writing-mode is horizontal, or the maximum height of the element when the writing-mode is vertical.</p>
+<div class="example-container writing-mode-vertical-rl max-inline-size-500px width-100">
+  <header class="background-color-info p-5">
+    <h1>This is a vertical layout</h1>
+  </header>
+  <main class="p-2">
+    <h2>Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque molestias et voluptatum recusandae nobis eos, tempore incidunt quidem molestiae hic similique quisquam soluta officia? Alias maiores possimus velit assumenda?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque molestias et voluptatum recusandae nobis eos, tempore incidunt quidem molestiae hic similique quisquam soluta officia? Alias maiores possimus velit assumenda?</p>
+  </main>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;header class="background-color-info p-5">
+  &lt;h1>This is a vertical layout&lt;/h1>
+&lt;/header>
+&lt;main class="p-2">
+  &lt;h2>Title&lt;/h2>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque molestias et voluptatum recusandae nobis eos, tempore incidunt quidem molestiae hic similique quisquam soluta officia? Alias maiores possimus velit assumenda?&lt;/p>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque molestias et voluptatum recusandae nobis eos, tempore incidunt quidem molestiae hic similique quisquam soluta officia? Alias maiores possimus velit assumenda?&lt;/p>
+&lt;/main>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$max-inline-size: ();
+$max-inline-size: map-merge(
+  (
+    "100px": 100px,
+    "300px": 300px,
+    "500px": 500px,
+  ),
+  $max-inline-size
+);
+</pre>
+</div>
+
+<!-- Max-Width -->
+<h2 class="page-title">Max-Width</h2>
+<p class="info">The max-width property in CSS is used to set the maximum width of a specified element. The max-width property overrides the width property, but min-width will always override max-width whether followed before or after width in your declaration. Authors may use any of the length values as long as they are a positive value.</p>
+<div class="example-container d-flex justify-content-center">
+  <div class="height-3 width-600px background-color-info max-width-300px display-grid place-items-center">
+    <p>max-width: 300px;</p>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class="height-3 width-600px background-color-info max-width-300px display-grid place-items-center">
+  &lt;p>max-width: 300px;&lt;/p>
+&lt;/div>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$max-width: ();
+$max-width: map-merge(
+  (
+    "100px": 100px,
+    "300px": 300px,
+    "400px": 400px,
+  ),
+  $max-width
+);
+</pre>
+</div>

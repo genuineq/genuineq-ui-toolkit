@@ -1,0 +1,192 @@
+<h2 class="page-title">Margin</h2>
+<p class="info">The margin property defines the outermost portion of the box model, creating space around an element, outside of any defined borders.</p>
+<div class="example-container">
+ <div class="height-3 width-2 background-color-info display-grid place-items-center mt-7 ml-3 mb-5 mr-1">
+  <p>
+   margin-top:30px;
+   margin-left:10px;
+   margin-bottom:15px;
+   margin-right:6px;
+  </p>
+ </div>
+ <div class="height-3 width-2 background-color-info display-grid place-items-center m-6">
+  <p>
+   margin: 20px;
+  </p>
+ </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class="height-3 width-2 background-color-info display-grid place-items-center mt-7 ml-3 mb-5 mr-1">
+ &lt;p>
+   margin-top:30px;
+   margin-left:10px;
+   margin-bottom:15px;
+   margin-right:6px;
+ &lt;/p>
+&lt;/div>
+&lt;div class="height-3 width-2 background-color-info display-grid place-items-center m-6">
+ &lt;p>
+   margin: 20px;
+ &lt;/p>
+&lt;/div>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: 6px,
+    2: 8px,
+    3: 10px,
+    4: 12px,
+    5: 15px,
+    6: 20px,
+    7: 30px,
+    8: 100px,
+    "auto": auto,
+    "40px": 40px,
+    "60px": 60px,
+    "18p": 18%,
+    "50p": 50%,
+  ),
+  $spacers
+);
+
+
+             <b> Margins and Paddding </b>
+@if $enable-spacers {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @each $prop, $abbrev in (margin: m, padding: p) {
+        @each $size, $length in $spacers {
+          .#{$abbrev}#{$infix}-#{$size} {
+            #{$prop}: $length !important;
+          }
+          .#{$abbrev}t#{$infix}-#{$size},
+          .#{$abbrev}y#{$infix}-#{$size} {
+            #{$prop}-top: $length !important;
+          }
+          .#{$abbrev}r#{$infix}-#{$size},
+          .#{$abbrev}x#{$infix}-#{$size} {
+            #{$prop}-right: $length !important;
+          }
+          .#{$abbrev}b#{$infix}-#{$size},
+          .#{$abbrev}y#{$infix}-#{$size} {
+            #{$prop}-bottom: $length !important;
+          }
+          .#{$abbrev}l#{$infix}-#{$size},
+          .#{$abbrev}x#{$infix}-#{$size} {
+            #{$prop}-left: $length !important;
+          }
+        }
+      }
+
+             <b> Negative Margins</b>
+
+      @each $size, $length in $spacers {
+        @if $size != 0 {
+          .m#{$infix}-n#{$size} {
+            margin: -$length !important;
+          }
+          .mt#{$infix}-n#{$size},
+          .my#{$infix}-n#{$size} {
+            margin-top: -$length !important;
+          }
+          .mr#{$infix}-n#{$size},
+          .mx#{$infix}-n#{$size} {
+            margin-right: -$length !important;
+          }
+          .mb#{$infix}-n#{$size},
+          .my#{$infix}-n#{$size} {
+            margin-bottom: -$length !important;
+          }
+          .ml#{$infix}-n#{$size},
+          .mx#{$infix}-n#{$size} {
+            margin-left: -$length !important;
+          }
+        }
+      }
+
+
+           <b> Special margin </b>
+
+      .m#{$infix}-auto {
+        margin: auto !important;
+      }
+      .mt#{$infix}-auto,
+      .my#{$infix}-auto {
+        margin-top: auto !important;
+      }
+      .mr#{$infix}-auto,
+      .mx#{$infix}-auto {
+        margin-right: auto !important;
+      }
+      .mb#{$infix}-auto,
+      .my#{$infix}-auto {
+        margin-bottom: auto !important;
+      }
+      .ml#{$infix}-auto,
+      .mx#{$infix}-auto {
+        margin-left: auto !important;
+      }
+    }
+  }
+}
+
+$margin-block: ();
+$margin-block: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-block
+);
+
+$margin-block-end: ();
+$margin-block-end: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-block-end
+);
+
+$margin-block-start: ();
+$margin-block-start: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-block-start
+);
+
+$margin-inline: ();
+$margin-inline: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-inline
+);
+
+$margin-inline-end: ();
+$margin-inline-end: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-inline-end
+);
+
+$margin-inline-start: ();
+$margin-inline-start: map-merge(
+  (
+    0: 30px 40px,
+  ),
+  $margin-inline-start
+);
+
+</pre>
+</div>

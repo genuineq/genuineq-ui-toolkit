@@ -1,0 +1,29 @@
+<h2 class="page-title">Overscroll-Behavior</h2>
+<p class="info">The overscroll-behavior property in CSS controls whether an element will use “scroll chaining” or not. You have likely experienced this behavior before and perhaps took it for granted that scrolling works like this on the web! If you are inside of an element that has it’s own scrolling (say it’s vertical) and you have scrolled down to the bottom of it, then by default, the next parent element up (maybe the page itself) starts to scroll in that direction. If you don’t want that default, overscroll-behavior is what controls it.</p>
+<div class="example-container overscroll-behavior-contain overflow-auto height-4 d-flex justify-content-center">
+  <div class="height-2 width-1 overflow-auto mb-200px">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;height-2 width-1 overflow-auto mb-200px&quot;&gt;
+  &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$overscroll-behavior: ();
+$overscroll-behavior: map-merge(
+  (
+    "contain": contain,
+    "none": none,
+    "auto": auto,
+  ),
+  $overscroll-behavior
+);
+</pre>
+</div>

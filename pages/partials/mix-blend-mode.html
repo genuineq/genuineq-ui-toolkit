@@ -1,0 +1,43 @@
+<h2 class="page-title">Mix-Blend-Mode</h2>
+<p class="info">The mix-blend-mode property defines how an element’s content should blend with its background. For example, the text of a &lt;h1> could blend with the background behind it in interesting ways.</p>
+<div class="example-container d-flex justify-content-center">
+  <div class="height-400px width-4 background-image-1 display-grid place-items-center">
+    <blockquote class="color-danger mix-blend-mode-multiply">“Attack design doldrums with stylistic souplesse”</blockquote>
+    <blockquote class="color-warning mix-blend-mode-color-dodge">“Fashionable figures break away from the populist peloton”</blockquote>
+    <blockquote class="color-info mix-blend-mode-color-burn">“Comprehensive characters for culturally correct creations”</blockquote>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class="height-400px width-4 background-image-1 display-grid place-items-center">
+  &lt;blockquote class="color-danger mix-blend-mode-multiply">“Attack design doldrums with stylistic souplesse”&lt;/blockquote>
+  &lt;blockquote class="color-warning mix-blend-mode-color-dodge">“Fashionable figures break away from the populist peloton”&lt;/blockquote>
+  &lt;blockquote class="color-info mix-blend-mode-color-burn">“Comprehensive characters for culturally correct creations”&lt;/blockquote>
+&lt;/div>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$mix-blend-mode: ();
+$mix-blend-mode: map-merge(
+  (
+    "normal": normal,
+    "multiply": multiply,
+    "screen": screen,
+    "lighten": lighten,
+    "color-dodge": color-dodge,
+    "color-burn": color-burn,
+    "hard-light": hard-light,
+    "soft-light": soft-light,
+    "difference": difference,
+    "exclusion": exclusion,
+    "saturation": saturation,
+    "color": color,
+    "luminosity": luminosity,
+  ),
+  $mix-blend-mode
+);
+</pre>
+</div>

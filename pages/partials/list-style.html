@@ -1,0 +1,91 @@
+<h2 class="page-title">List-Style</h2>
+<p class="info">The list-style property is a shorthand property that sets values for three different list-related properties in one declaration:</p>
+<div class="example-container d-flex justify-content-space-around flex-wrap-wrap aling-items-space-around">
+<ul class="list-style-type-upper-roman">
+	<li>Item</li>
+	<li>Item</li>
+	<li>Item</li>
+</ul>
+<ul class="list-style-type-disc">
+	<li>Item</li>
+	<li>Item</li>
+	<li>Item</li>
+</ul>
+<ul class="list-style-type-decimal">
+	<li>Item</li>
+	<li>Item</li>
+	<li>Item</li>
+</ul>
+<ul class="list-style-type-square">
+	<li>Item</li>
+	<li>Item</li>
+	<li>Item</li>
+</ul>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;ul class="list-style-type-upper-roman">
+  &lt;li>Item&lt;/li>
+  &lt;li>Item&lt;/li>
+  &lt;li>Item&lt;/li>
+&lt;/ul>
+&lt;ul class="list-style-type-upper-disc">
+  &lt;li>Item&lt;/li>
+  &lt;li>Item&lt;/li>
+  &lt;li>Item&lt;/li>
+&lt;/ul>
+&lt;ul class="list-style-type-upper-decimal">
+  &lt;li>Item&lt;/li>
+  &lt;li>Item&lt;/li>
+  &lt;li>Item&lt;/li>
+&lt;/ul>
+&lt;ul class="list-style-type-upper-square">
+  &lt;li>Item&lt;/li>
+  &lt;li>Item&lt;/li>
+  &lt;li>Item&lt;/li>
+&lt;/ul>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$list-style-type: ();
+$list-style-type: map-merge(
+  (
+    "disc": disc,
+    "circle": circle,
+    "square": square,
+    "decimal": decimal,
+    "decimal-leading-zero": decimal-leading-zero,
+    "lower-roman": lower-roman,
+    "upper-roman": upper-roman,
+    "lower-greek": lower-greek,
+    "lower-latin": lower-latin,
+    "upper-latin": upper-latin,
+    "armenian": armenian,
+    "georgian": georgian,
+    "lower-alpha": lower-alpha,
+    "upper-alpha": upper-alpha,
+    "none": none,
+  ),
+  $list-style-type
+);
+
+$list-style-position: ();
+$list-style-position: map-merge(
+  (
+    "outside": outside,
+  ),
+  $list-style-position
+);
+
+$list-style-image: ();
+$list-style-image: map-merge(
+  (
+    "none": none,
+  ),
+  $list-style-image
+);
+</pre>
+</div>

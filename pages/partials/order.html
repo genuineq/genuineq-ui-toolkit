@@ -1,0 +1,56 @@
+<h2 class="page-title">All</h2>
+<p class="info">The order property is a sub-property of the Flexible Box Layout module. Flex items are displayed in the same order as they appear in the source document by default. The order property can be used to change this ordering.</p>
+<div class="example-container d-flex justify-content-space-around flex-wrap-wrap">
+  <div class="order-3 height-2 width-1 background-color-info display-grid place-items-center m-3">
+    <p class="font-size-4 font-weight-3">1</p>
+  </div>
+  <div class="order-5 height-2 width-1 background-color-info display-grid place-items-center m-3">
+    <p class="font-size-4 font-weight-3">2</p>
+  </div>
+  <div class="order-1 height-2 width-1 background-color-info display-grid place-items-center m-3">
+    <p class="font-size-4 font-weight-3">3</p>
+  </div>
+  <div class="order-2 height-2 width-1 background-color-info display-grid place-items-center m-3">
+    <p class="font-size-4 font-weight-3">4</p>
+  </div>
+  <div class="order-4 height-2 width-1 background-color-info display-grid place-items-center m-3">
+    <p class="font-size-4 font-weight-3">5</p>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;order-3 height-2 width-1 background-color-info display-grid place-items-center m-3&quot;&gt;
+  &lt;p class=&quot;font-size-4 font-weight-3&quot;&gt;1&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;order-5 height-2 width-1 background-color-info display-grid place-items-center m-3&quot;&gt;
+  &lt;p class=&quot;font-size-4 font-weight-3&quot;&gt;2&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;order-1 height-2 width-1 background-color-info display-grid place-items-center m-3&quot;&gt;
+  &lt;p class=&quot;font-size-4 font-weight-3&quot;&gt;3&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;order-2 height-2 width-1 background-color-info display-grid place-items-center m-3&quot;&gt;
+  &lt;p class=&quot;font-size-4 font-weight-3&quot;&gt;4&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;order-4 height-2 width-1 background-color-info display-grid place-items-center m-3&quot;&gt;
+  &lt;p class=&quot;font-size-4 font-weight-3&quot;&gt;5&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$order: ();
+$order: map-merge(
+  (
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+  ),
+  $order
+);
+</pre>
+</div>

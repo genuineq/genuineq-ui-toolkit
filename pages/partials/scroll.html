@@ -1,0 +1,128 @@
+<h2 class="page-title">Scroll</h2>
+<p class="info">The scroll-behavior property in CSS allows us to define whether the scroll location of the browser jumps to a new location or smoothly animates the transition when a user clicks a link that targets an anchored position within a scrolling box.</p>
+<div class="example-container display-grid place-items-center">
+  <div class="height-4 width-4 background-color-info overflow-auto scroll-behaviour-smooth scroll-margin-top-20px scroll-margin-left-20px">
+    <section class="height-100 display-grid place-items-center">This is the first section</section>
+    <section class="height-100 display-grid place-items-center">This is the second section</section>
+    <section class="height-100 display-grid place-items-center">This is the third section</section>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;height-4 width-4 background-color-info overflow-auto scroll-behaviour-smooth scroll-margin-top-20px scroll-margin-left-20px&quot;&gt;
+  &lt;section class=&quot;height-100 display-grid place-items-center&quot;&gt;This is the first section&lt;/section&gt;
+  &lt;section class=&quot;height-100 display-grid place-items-center&quot;&gt;This is the second section&lt;/section&gt;
+  &lt;section class=&quot;height-100 display-grid place-items-center&quot;&gt;This is the third section&lt;/section&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$scroll-behaviour: ();
+$scroll-behaviour: map-merge(
+  (
+    "normal": normal,
+    "smooth": smooth,
+  ),
+  $scroll-behaviour
+);
+
+$scroll-margin-top: ();
+$scroll-margin-top: map-merge(
+  (
+    0: 50px,
+    "20px": 20px,
+  ),
+  $scroll-margin-top
+);
+
+$scroll-margin-right: ();
+$scroll-margin-right: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-margin-right
+);
+
+$scroll-margin-bottom: ();
+$scroll-margin-bottom: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-margin-bottom
+);
+
+$scroll-margin-left: ();
+$scroll-margin-left: map-merge(
+  (
+    0: 50px,
+    "20px": 20px,
+  ),
+  $scroll-margin-left
+);
+
+$scroll-padding-top: ();
+$scroll-padding-top: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-padding-top
+);
+
+$scroll-padding-right: ();
+$scroll-padding-right: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-padding-right
+);
+
+$scroll-padding-bottom: ();
+$scroll-padding-bottom: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-padding-bottom
+);
+
+$scroll-padding-left: ();
+$scroll-padding-left: map-merge(
+  (
+    0: 50px,
+  ),
+  $scroll-padding-left
+);
+
+$scroll-snap-align: ();
+$scroll-snap-align: map-merge(
+  (
+    "none": none,
+    "start": start,
+    "end": end,
+    "center": center,
+  ),
+  $scroll-snap-align
+);
+
+$scroll-snap-stop: ();
+$scroll-snap-stop: map-merge(
+  (
+    "normal": normal,
+    "always": always,
+  ),
+  $scroll-snap-stop
+);
+
+$scroll-snap-type: ();
+$scroll-snap-type: map-merge(
+  (
+    "none": none,
+    "y-mandatory": y mandatory,
+    "x-proximity": x proximity,
+  ),
+  $scroll-snap-type
+);
+</pre>
+</div>

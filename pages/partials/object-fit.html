@@ -1,0 +1,57 @@
+<h2 class="page-title">Object-Fit</h2>
+<p class="info">The object-fit property defines how an element responds to the height and width of its content box. It’s intended for images, videos and other embeddable media formats in conjunction with the object-position property. Used by itself, object-fit lets us crop an inline image by giving us fine-grained control over how it squishes and stretches inside its box.</p>
+<div class="example-container d-flex justify-content-space-around flex-wrap-wrap">
+  <div class="height-4 width-4 display-grid place-items-center m-3">
+    <img class="object-fit-contain width-4" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+    <p>object-fit: contain;</p>
+  </div>
+  <div class="height-4 width-4 display-grid place-items-center m-3">
+    <img class="object-fit-fill width-4" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+    <p>object-fit: fill;</p>
+  </div>
+  <div class="height-4 width-4 display-grid place-items-center m-3">
+    <img class="object-fit-cover width-4" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+    <p>object-fit: cover;</p>
+  </div>
+  <div class="height-4 width-4 display-grid place-items-center m-3">
+    <img class="object-fit-scale-down width-4" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+    <p>object-fit: scale-down;</p>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class="height-4 width-4 display-grid place-items-center m-3">
+  &lt;img class="object-fit-contain width-4" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+  &lt;p>object-fit: contain;&lt;/p>
+&lt;/div>
+&lt;div class="height-4 width-4 display-grid place-items-center m-3">
+  &lt;img class="object-fit-fill width-4" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+  &lt;p>object-fit: fill;&lt;/p>
+&lt;/div>
+&lt;div class="height-4 width-4 display-grid place-items-center m-3">
+  &lt;img class="object-fit-cover width-4" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+  &lt;p>object-fit: cover;&lt;/p>
+&lt;/div>
+&lt;div class="height-4 width-4 display-grid place-items-center m-3">
+  &lt;img class="object-fit-scale-down width-4" src="https://genuineq.com/wp-content/themes/genuineq/assets/images/genuineq-og-image.jpg" alt="">
+  &lt;p>object-fit: scale-down;&lt;/p>
+&lt;/div>
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$object-fit: ();
+$object-fit: map-merge(
+  (
+    "fill": fill,
+    "contain": contain,
+    "cover": cover,
+    "none": none,
+    "scale-down": scale-down,
+  ),
+  $object-fit
+);
+</pre>
+</div>

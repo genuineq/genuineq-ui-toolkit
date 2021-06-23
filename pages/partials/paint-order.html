@@ -1,0 +1,27 @@
+<h2 class="page-title">Paint-Order</h2>
+<p class="info">The CSS paint-order property sets the order that SVG shapes and text are drawn, including the fill, stroke, and any markers that might be in use. By default, those attributes are drawn in that very order: fill, stroke, and markers. This property allows us to switch it up so we have more control over the resulting appearance.</p>
+<div class="example-container overflow-auto">
+  <svg width="900" height="150" viewBox="0 0 900 150">
+    <text x="380" y="100" class="font-family-sans-serif font-size-75px stroke-linejoin-round text-anchor-middle fill-warning paint-order-stroke-fill stroke-black stroke-width-5px">*CSS-Tricks</text>
+  </svg>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;svg width=&quot;900&quot; height=&quot;150&quot; viewBox=&quot;0 0 900 150&quot;&gt;
+  &lt;text x=&quot;380&quot; y=&quot;100&quot; class=&quot;font-family-sans-serif font-size-75px stroke-linejoin-round text-anchor-middle fill-warning paint-order-stroke-fill stroke-black stroke-width-5px&quot;&gt;*CSS-Tricks&lt;/text&gt;
+&lt;/svg&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$paint-order: ();
+$paint-order: map-merge(
+  (
+    "stroke-fill": stroke fill,
+  ),
+  $paint-order
+);
+</pre>
+</div>
