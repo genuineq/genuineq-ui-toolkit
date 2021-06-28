@@ -226,50 +226,6 @@ $list-bullet-content: "";
 **************************** Tables *********************************************
 ********************************************************************************/
 
-$table-tbody-thtd-border-top: "";
-$table-tbody-thtd-border-right: "";
-$table-tbody-thtd-first-child-border-left: "";
-
-/** Selected */
-$table-tbody-selected-tr-bg-color: "";
-$table-tbody-selected-tr-odd-bg-color: "";
-$table-tbody-selected-tr-hover-bg-color: "";
-$table-tbody-selected-sorting-tr-bg-color: "";
-$table-tbody-sorting-tr-bg-color: "";
-
-/** Sorting 1 */
-$table-tbody-sorting1-odd: #f1f1f1;
-$table-tbody-sorting1-even: #fafafa;
-$table-tbody-sorting1-hover: #eaeaea;
-$table-tbody-sorting1-odd-selected: "";
-$table-tbody-sorting1-even-selected: "";
-$table-tbody-sorting1-hover-selected: "";
-
-/** Sorting 2 */
-$table-tbody-sorting2-odd: #f1f1f1;
-$table-tbody-sorting2-even: #fafafa;
-$table-tbody-sorting2-hover: #eaeaea;
-$table-tbody-sorting2-odd-selected: "";
-$table-tbody-sorting2-even-selected: "";
-$table-tbody-sorting2-hover-selected: "";
-
-/** Sorting 3 */
-$table-tbody-sorting3-odd: #f1f1f1;
-$table-tbody-sorting3-even: #fafafa;
-$table-tbody-sorting3-hover: #eaeaea;
-$table-tbody-sorting3-odd-selected: "";
-$table-tbody-sorting3-even-selected: "";
-$table-tbody-sorting3-hover-selected: "";
-
-/** Control features */
-
-/** Show x entries */
-$table-controls-entries-float: left;
-$table-controls-entries-border: 1px solid #aaa;
-$table-controls-entries-border-radius: 3px;
-$table-controls-entries-padding: 5px;
-$table-controls-entries-bg: transparent;
-
 /** Search bar */
 $table-controls-search-float: right;
 $table-controls-search-text-align: right;
@@ -342,6 +298,7 @@ $animation-name: map-merge(
     0: 0,
     "stretch": stretch,
     "example": example,
+    "skew": skew,
   ),
   $animation-name
 );
@@ -352,6 +309,7 @@ $animation-duration: map-merge(
     0: 0.3s,
     1: 1.5s,
     "4s": 4s,
+    "3s": 3s,
   ),
   $animation-duration
 );
@@ -2635,6 +2593,7 @@ $transform: map-merge(
     0: translateY(0),
     1: translateY(-100%),
     "flip": rotateY(180deg),
+    "example-1": skew(20deg),
   ),
   $transform
 );
@@ -2660,7 +2619,7 @@ $transform-style: map-merge(
 $transition: ();
 $transition: map-merge(
   (
-    0: 0.3s,
+    "example-1": background-color 2s ease-out,
   ),
   $transition
 );
@@ -2798,6 +2757,7 @@ $widths: map-merge(
     "70p": 70%,
     "80p": 80%,
     "fit-content": fit-content,
+    "1em": 1em,
   ),
   $widths
 );
@@ -2829,6 +2789,7 @@ $word-spacing: ();
 $word-spacing: map-merge(
   (
     "5px": 5px,
+    "5em": 5em,
   ),
   $word-spacing
 );
@@ -2848,6 +2809,12 @@ $writing-mode: map-merge(
 $z-index: ();
 $z-index: map-merge(
   (
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
     10000: 10000,
   ),
   $z-index
@@ -2857,7 +2824,7 @@ $z-index: map-merge(
 $zoom: ();
 $zoom: map-merge(
   (
-    "150%": 150%,
+    "150p ": 150%,
   ),
   $zoom
 );

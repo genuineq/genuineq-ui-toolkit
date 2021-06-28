@@ -1,0 +1,16 @@
+<h2 class="page-title">Will-Change</h2>
+<p class="info">The will-change property in CSS optimizes animations by letting the browser know which properties and elements are just about to be manipulated, potentially increasing the performance of that particular operation.</p>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$will-change: ();
+$will-change: map-merge(
+  (
+    "auto": auto,
+    "scroll-position": scroll-position,
+    "contents": contents,
+  ),
+  $will-change
+);
+</pre>
+</div>

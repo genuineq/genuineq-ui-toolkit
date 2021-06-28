@@ -1,0 +1,27 @@
+<h2 class="page-title">Writing-Mode</h2>
+<p class="info">The writing-mode property changes the alignment of the text so that it can be read from top to bottom or from left to right, depending on the language. For example, let’s say we want to add some text that is read from top to bottom and from right to left.</p>
+<div class="example-container">
+  <p>This is text that needs to be read from top to bottom, and from right to left:</p>
+  <p class="writing-mode-vertical-rl color-primary display-inline-block max-inline-size-300px ">This is text that needs to be read from top to bottom, and from right to left.</p>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;p&gt;This is text that needs to be read from top to bottom, and from right to left:&lt;/p&gt;
+&lt;p class=&quot;writing-mode-vertical-rl color-primary display-inline-block max-inline-size-300px &quot;&gt;This is text that needs to be read from top to bottom, and from right to left.&lt;/p&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$writing-mode: ();
+$writing-mode: map-merge(
+  (
+    "horizontal-tb": horizontal-tb,
+    "vertical-rl": vertical-rl,
+    "vertical-lr": vertical-lr,
+  ),
+  $writing-mode
+);
+</pre>
+</div>

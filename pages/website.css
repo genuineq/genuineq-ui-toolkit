@@ -82,8 +82,25 @@
   }
 }
 
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
 .counter-example::before {
   content: counter(mega-step, upper-roman);
   padding-top: 5px;
   padding-left: 5px;
+}
+
+.transition-example:hover {
+  background-color: red;
+}
+
+.visibility-example:hover {
+  visibility: visible;
 }

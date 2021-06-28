@@ -1,0 +1,23 @@
+<h2 class="page-title">Zoom</h2>
+<p class="info">The zoom property in CSS allows you to scale your content. It is non-standard, and was originally implemented only in Internet Explorer. Although several other browsers now support zoom, it isn’t recommended for production sites.</p>
+<div class="example-container display-grid place-items-center">
+  <img class="zoom-150p" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/wisconsin.svg" alt="">
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;img class=&quot;zoom-150p&quot; src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/wisconsin.svg&quot; alt=&quot;&quot;&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$zoom: ();
+$zoom: map-merge(
+  (
+    "150p ": 150%,
+  ),
+  $zoom
+);
+</pre>
+</div>

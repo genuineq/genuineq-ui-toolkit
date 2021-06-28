@@ -1,0 +1,29 @@
+<h2 class="page-title">Z-index</h2>
+<p class="info">The z-index property in CSS controls the vertical stacking order of elements that overlap. As in, which one appears as if it is physically closer to you. z-index only affects elements that have a position value other than static (the default).</p>
+<div class="example-container display-grid place-items-center">
+	<img class="z-index-1" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2011/09/basicz-index.png?w=425&ssl=1" alt="">
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+	&lt;img class=&quot;z-index-1&quot; src=&quot;https://i1.wp.com/css-tricks.com/wp-content/uploads/2011/09/basicz-index.png?w=425&amp;ssl=1&quot; alt=&quot;&quot;&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$z-index: ();
+$z-index: map-merge(
+  (
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    10000: 10000,
+  ),
+  $z-index
+);
+</pre>
+</div>

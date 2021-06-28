@@ -1,0 +1,32 @@
+<h2 class="page-title">Word-Spacing</h2>
+<p class="info">The word-spacing property is similar to letter-spacing, though naturally its use governs the amount of space between the words in a piece of text, not the individual characters.</p>
+<div class="example-container word-spacing-5em">
+  <div class="width-1 height-2 background-color-info display-inline-block"></div>
+  <div class="width-1 height-2 background-color-info display-inline-block"></div>
+  <div class="width-1 height-2 background-color-info display-inline-block"></div>
+  <div class="width-1 height-2 background-color-info display-inline-block"></div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;word-spacing-5em&quot;&gt;
+  &lt;div class=&quot;width-1 height-2 background-color-info display-inline-block&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;width-1 height-2 background-color-info display-inline-block&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;width-1 height-2 background-color-info display-inline-block&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;width-1 height-2 background-color-info display-inline-block&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$word-spacing: ();
+$word-spacing: map-merge(
+  (
+    "5px": 5px,
+    "5em": 5em,
+  ),
+  $word-spacing
+);
+</pre>
+</div>

@@ -1,0 +1,44 @@
+<h2 class="page-title">Transform</h2>
+<p class="info">The transform property allows you to visually manipulate an element by skewing, rotating, translating, or scaling:</p>
+<div class="example-container display-grid place-items-center">
+    <div class="animation-name-skew animation-duration-3s animation-iteration-count-infinite background-color-info height-2 width-1 animation-direction-alternate transform-example-1"></div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;animation-name-skew animation-duration-3s animation-iteration-count-infinite background-color-info height-2 width-1 animation-direction-alternate transform-example-1&quot;&gt;&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$transform: ();
+$transform: map-merge(
+  (
+    0: translateY(0),
+    1: translateY(-100%),
+    "flip": rotateY(180deg),
+    "example-1": skew(20deg),
+  ),
+  $transform
+);
+
+$transform-origin: ();
+$transform-origin: map-merge(
+  (
+    "top-left": top left,
+  ),
+  $transform-origin
+);
+
+$transform-style: ();
+$transform-style: map-merge(
+  (
+    "preserve-3d": preserve-3d,
+    "flat": flat,
+  ),
+  $transform-style
+);
+
+</pre>
+</div>

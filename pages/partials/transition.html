@@ -1,0 +1,54 @@
+<h2 class="page-title">Transition</h2>
+<div class="example-container d-flex justify-content-center flex-wrap-wrap">
+	<div class="height-4 width-3 background-color-info transition-example-1 transition-example"></div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;height-4 width-3 background-color-info transition-example-1 transition-example&quot;&gt;&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$transition: ();
+$transition: map-merge(
+  (
+    "example-1": background-color 2s ease-out,
+  ),
+  $transition
+);
+
+$transition-delay: ();
+$transition-delay: map-merge(
+  (
+    0.25: 0.25s,
+  ),
+  $transition-delay
+);
+
+$transition-duration: ();
+$transition-duration: map-merge(
+  (
+    3: 3s,
+  ),
+  $transition-duration
+);
+
+$transition-property: ();
+$transition-property: map-merge(
+  (
+    "color": color,
+  ),
+  $transition-property
+);
+
+$transition-timing-function: ();
+$transition-timing-function: map-merge(
+  (
+    "ease-out": ease-out,
+  ),
+  $transition-timing-function
+);
+</pre>
+</div>

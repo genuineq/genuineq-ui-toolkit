@@ -1,0 +1,41 @@
+<h2 class="page-title">User-Select</h2>
+<p class="info">The user-select property in CSS controls how the text in an element is allowed to be selected. For example, it can be used to make text unselectable.</p>
+<div class="example-container">
+  <div class="height-1 background-color-info display-grid place-items-center mb-5">
+    <p class="user-select-none">You can't copy me.</p>
+  </div>
+  <div class="height-1 background-color-info display-grid place-items-center mb-5">
+    <p>You can copy me like any other text from a website.</p>
+  </div>
+  <div class="height-1 background-color-info display-grid place-items-center">
+    <p class="user-select-all">One click selects all this.</p>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;height-1 background-color-info display-grid place-items-center mb-5&quot;&gt;
+  &lt;p class=&quot;user-select-none&quot;&gt;You can't copy me.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;height-1 background-color-info display-grid place-items-center mb-5&quot;&gt;
+  &lt;p&gt;You can copy me like any other text from a website.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;height-1 background-color-info display-grid place-items-center&quot;&gt;
+  &lt;p class=&quot;user-select-all&quot;&gt;One click selects all this.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$user-select: ();
+$user-select: map-merge(
+  (
+    "none": none,
+    "all": all,
+    "auto": auto,
+  ),
+  $user-select
+);
+</pre>
+</div>

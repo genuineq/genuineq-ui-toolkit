@@ -1,0 +1,36 @@
+<h2 class="page-title">Touch-Action</h2>
+<p class="info">The touch-action property in CSS gives you control over the effect of touchscreen interactions with an element, similar to the more widely-used pointer-events property used to control mouse interactions.</p>
+<div class="example-container display-grid place-items-center">
+  <div class="overflow-auto width-300px height-400px touch-action-auto">
+    <img src='https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+  </div>	
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;overflow-auto width-300px height-400px touch-action-auto&quot;&gt;
+  &lt;img src='https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''&gt;
+&lt;/div&gt;	
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$touch-action: ();
+$touch-action: map-merge(
+  (
+    "auto": auto,
+    "none": none,
+    "pan-x": pan-x,
+    "pan-y": pan-y,
+    "manipulation": manipulation,
+    "pan-left": pan-left,
+    "pan-right": pan-right,
+    "pan-down": pan-down,
+    "pan-up": pan-up,
+    "pinch-zoom": pinch-zoom,
+  ),
+  $touch-action
+);
+</pre>
+</div>

@@ -1,0 +1,84 @@
+<h2 class="page-title">Table-Layout</h2>
+<p class="info">The table-layout property defines what algorithm the browser should use to lay out table rows, cells, and columns.</p>
+<div class="example-container text-align-center">
+  <table class=" width-100 table-layout-fixed">
+    <thead>
+      <tr>
+        <th class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</th>
+        <th class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</th>
+        <th class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</th>
+        <th class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</th>
+			</tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">A much longer piece of content for demo purposes. More goes here.</td>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</td>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</td>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</td>
+      <tr>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</td>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</td>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</td>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</td>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</td>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</td>
+        <td class="p-2 border-width-0 border-color-black border-style-solid text-aling-center">Example text</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;table class=&quot; width-100 table-layout-fixed&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/th&gt;
+      &lt;th class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/th&gt;
+      &lt;th class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/th&gt;
+      &lt;th class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/th&gt;
+		&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;A much longer piece of content for demo purposes. More goes here.&lt;/td&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/td&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/td&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/td&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/td&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/td&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/td&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/td&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/td&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/td&gt;
+      &lt;td class=&quot;p-2 border-width-0 border-color-black border-style-solid text-aling-center&quot;&gt;Example text&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$table-layout: ();
+$table-layout: map-merge(
+  (
+    "auto": auto,
+    "fixed": fixed,
+  ),
+  $table-layout
+);
+</pre>
+</div>

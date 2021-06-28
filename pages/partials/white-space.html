@@ -1,0 +1,39 @@
+<h2 class="page-title">White-Space</h2>
+<p class="info">The white-space property controls how text is handled on the element it is applied to. Let’s say you have HTML exactly like this:</p>
+<div class="example-container">
+  <pre>
+    &lt;div>
+      A bunch of words you see.
+    &lt;/div>
+  </pre>
+</div>
+<p class="info">You’ve styled the div to have a set width of 100px. At a reasonable font size, that’s too much text to fit in 100px. Without doing anything, the default white-space value is normal, and the text will wrap. See the example below or follow along at home with the demo.</p>
+<div class="example-container">
+  <pre class="text-example">
+    You’ve styled the div to have a set width of 100px. At a reasonable font size, that’s too much text to fit in 100px. Without doing anything, the default white-space value is normal, and the text will wrap. See the example below or follow along at home with the demo.
+  </pre>
+</div>
+<div class="example-container">
+  <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2011/09/normal.png?resize=143%2C82" alt="">
+  <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2011/09/nowrap.png?resize=212%2C63" alt="">
+  <img src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2011/09/pre.png?resize=290%2C97" alt="">
+  <img src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2011/09/pre-wrap.png?resize=140%2C132" alt="">
+  <img src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2011/09/pre-line.png?resize=146%2C93" alt="">
+  <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2011/09/normal.png?resize=143%2C82" alt="">
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$whitespace: ();
+$whitespace: map-merge(
+  (
+    "normal": normal,
+    "pre": pre,
+    "nowrap": nowrap,
+    "pre-wrap": pre-wrap,
+    "pre-line": pre-line,
+  ),
+  $whitespace
+);
+</pre>
+</div>

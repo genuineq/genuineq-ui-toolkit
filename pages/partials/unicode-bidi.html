@@ -1,0 +1,16 @@
+<h2 class="page-title">Unicode-Bidi</h2>
+<p class="info">The unicode-bidi property is one of two CSS properties that handle the rendering of bi-directional text in HTML and similar markup-based languages (eg XML). The other property is direction, and the two are used together to create levels of embedded text with different text directions (right-to-left and left-to-right) in a single DOM element.</p>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$unicode-bidi: ();
+$unicode-bidi: map-merge(
+  (
+    "embed": embed,
+    "bidi-override": bidi-override,
+    "normal": normal,
+  ),
+  $unicode-bidi
+);
+</pre>
+</div>

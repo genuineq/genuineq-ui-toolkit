@@ -1,0 +1,222 @@
+<h2 class="page-title">Al Text Proprierties</h2>
+<div class="example-container d-flex justify-content-space-around flex-wrap-wrap">
+  <div class="background-color-info width-2 height-2 text-align-center m-3">text-aling: center;</div>
+  <div class="background-color-info width-2 height-2 text-decoration-line-underline display-grid place-items-center m-3">text-decoration-line: underline;</div>
+  <div class="background-color-info width-2 font-size-12 height-2 text-justify-inter-word display-grid place-items-center m-3">text-justify: inter-word; Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;background-color-info width-2 height-2 text-align-center m-3&quot;&gt;text-aling: center;&lt;/div&gt;
+&lt;div class=&quot;background-color-info width-2 height-2 text-decoration-line-underline display-grid place-items-center m-3&quot;&gt;text-decoration-line: underline;&lt;/div&gt;
+&lt;div class=&quot;background-color-info width-2 font-size-12 height-2 text-justify-inter-word display-grid place-items-center m-3&quot;&gt;text-justify: inter-word; Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$text-align: ();
+$text-align: map-merge(
+  (
+    "left": left,
+    "right": right,
+    "center": center,
+    "justify": justify,
+  ),
+  $text-align
+);
+
+$text-align-last: ();
+$text-align-last: map-merge(
+  (
+    "left": left,
+    "right": right,
+    "center": center,
+    "justify": justify,
+    "start": start,
+    "end": end,
+    "auto": auto,
+  ),
+  $text-align-last
+);
+
+$text-anchor: ();
+$text-anchor: map-merge(
+  (
+    "middle": middle,
+  ),
+  $text-anchor
+);
+
+$text-combine-upright: ();
+$text-combine-upright: map-merge(
+  (
+    "none": none,
+    "all": all,
+    "digits": digits,
+  ),
+  $text-combine-upright
+);
+
+$text-decoration: ();
+$text-decoration: map-merge(
+  (
+    "none": none,
+    "underline": underline,
+    "line-through": line-through,
+    "overline": overline,
+  ),
+  $text-decoration
+);
+
+$text-decoration-line: ();
+$text-decoration-line: map-merge(
+  (
+    "none": none,
+    "underline": underline,
+    "line-through": line-through,
+    "overline": overline,
+  ),
+  $text-decoration-line
+);
+
+$text-decoration-skip: ();
+$text-decoration-skip: map-merge(
+  (
+    "objects": objects,
+    "none": none,
+    "spaces": spaces,
+    "ink": ink,
+    "edges": edges,
+    "box-decoration": box-decoration,
+  ),
+  $text-decoration-skip
+);
+
+$text-decoration-skip-ink: ();
+$text-decoration-skip-ink: map-merge(
+  (
+    "auto": auto,
+    "none": none,
+  ),
+  $text-decoration-skip-ink
+);
+
+$text-decoration-style: ();
+$text-decoration-style: map-merge(
+  (
+    "solid": solid,
+    "double": double,
+    "dotted": dotted,
+    "dashed": dashed,
+    "wavy": wavy,
+  ),
+  $text-decoration-style
+);
+
+$text-decoration-thickness: ();
+$text-decoration-thickness: map-merge(
+  (
+    "auto": auto,
+    "from-font": from-font,
+  ),
+  $text-decoration-thickness
+);
+
+$text-indent: ();
+$text-indent: map-merge(
+  (
+    "10px": 10px,
+  ),
+  $text-indent
+);
+
+$text-justify: ();
+$text-justify: map-merge(
+  (
+    "inter-word": inter-word,
+    "inter-character": inter-character,
+    "auto": auto,
+    "none": none,
+  ),
+  $text-justify
+);
+
+$text-orientation: ();
+$text-orientation: map-merge(
+  (
+    "mixed": mixed,
+    "upright": upright,
+    "sideways": sideways,
+  ),
+  $text-orientation
+);
+
+$text-overflow: ();
+$text-overflow: map-merge(
+  (
+    "ellipsis": ellipsis,
+    "clip": clip,
+    "ellipsis-word": ellipsis-word,
+  ),
+  $text-overflow
+);
+
+$text-rendering: ();
+$text-rendering: map-merge(
+  (
+    "auto": auto,
+    "optimizeSpeed": optimizeSpeed,
+    "optimizeLegibility": optimizeLegibility,
+    "geometricPrecision": geometricPrecision,
+  ),
+  $text-rendering
+);
+
+$text-shadow: ();
+$text-shadow: map-merge(
+  (
+    0: 1px 1px 1px map-get($colors, "black"),
+  ),
+  $text-shadow
+);
+
+$text-stroke-width: ();
+$text-stroke-width: map-merge(
+  (
+    2: 2px,
+  ),
+  $text-stroke-width
+);
+
+$text-transform: ();
+$text-transform: map-merge(
+  (
+    "lowercase": lowercase,
+    "uppercase": uppercase,
+    "capitalize": capitalize,
+    "none": none,
+  ),
+  $text-transform
+);
+
+$text-underline-offset: ();
+$text-underline-offset: map-merge(
+  (
+    "auto": auto,
+  ),
+  $text-underline-offset
+);
+
+$text-underline-position: ();
+$text-underline-position: map-merge(
+  (
+    "auto": auto,
+    "under": under,
+    "left": left,
+    "right": right,
+  ),
+  $text-underline-position
+);
+</pre>
+</div>

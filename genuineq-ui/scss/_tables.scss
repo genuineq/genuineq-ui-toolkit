@@ -69,7 +69,7 @@ table.dataTable tbody tr {
   background-color: map-get($colors, "white");
 }
 table.dataTable tbody tr.selected {
-  background-color: $table-tbody-selected-tr-bg-color;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable tbody th,
 table.dataTable tbody td {
@@ -92,16 +92,16 @@ table.dataTable.display tbody tr:first-child td {
 }
 table.dataTable.cell-border tbody th,
 table.dataTable.cell-border tbody td {
-  border-top: $table-tbody-thtd-border-top;
-  border-right: $table-tbody-thtd-border-right;
+  border-top: map-get($spacers, 3);
+  border-right: map-get($spacers, 4);
 }
 table.dataTable.cell-border tbody tr th:first-child,
 table.dataTable.cell-border tbody tr td:first-child {
-  border-left: $table-tbody-thtd-first-child-border-left;
+  border-left: map-get($spacers, 5);
 }
 table.dataTable.cell-border tbody tr:first-child th,
 table.dataTable.cell-border tbody tr:first-child td {
-  border-top: none;
+  border-top: map-get($borders-styles, "none");
 }
 table.dataTable.stripe tbody tr.odd,
 table.dataTable.display tbody tr.odd {
@@ -109,7 +109,7 @@ table.dataTable.display tbody tr.odd {
 }
 table.dataTable.stripe tbody tr.odd.selected,
 table.dataTable.display tbody tr.odd.selected {
-  background-color: $table-tbody-selected-tr-odd-bg-color;
+  background-color: map-get($colors, "white");
 }
 table.dataTable.hover tbody tr:hover,
 table.dataTable.display tbody tr:hover {
@@ -117,7 +117,7 @@ table.dataTable.display tbody tr:hover {
 }
 table.dataTable.hover tbody tr:hover.selected,
 table.dataTable.display tbody tr:hover.selected {
-  background-color: $table-tbody-selected-tr-hover-bg-color;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.order-column tbody tr > .sorting_1,
 table.dataTable.order-column tbody tr > .sorting_2,
@@ -125,7 +125,7 @@ table.dataTable.order-column tbody tr > .sorting_3,
 table.dataTable.display tbody tr > .sorting_1,
 table.dataTable.display tbody tr > .sorting_2,
 table.dataTable.display tbody tr > .sorting_3 {
-  background-color: $table-tbody-sorting-tr-bg-color;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.order-column tbody tr.selected > .sorting_1,
 table.dataTable.order-column tbody tr.selected > .sorting_2,
@@ -133,82 +133,84 @@ table.dataTable.order-column tbody tr.selected > .sorting_3,
 table.dataTable.display tbody tr.selected > .sorting_1,
 table.dataTable.display tbody tr.selected > .sorting_2,
 table.dataTable.display tbody tr.selected > .sorting_3 {
-  background-color: $table-tbody-selected-sorting-tr-bg-color;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.display tbody tr.odd > .sorting_1,
 table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
-  background-color: $table-tbody-sorting1-odd;
+  background-color: map-get($colors, "white");
 }
 table.dataTable.display tbody tr.odd > .sorting_2,
 table.dataTable.order-column.stripe tbody tr.odd > .sorting_2 {
-  background-color: $table-tbody-sorting2-odd;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.display tbody tr.odd > .sorting_3,
 table.dataTable.order-column.stripe tbody tr.odd > .sorting_3 {
-  background-color: $table-tbody-sorting3-odd;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.display tbody tr.odd.selected > .sorting_1,
 table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_1 {
-  background-color: $table-tbody-sorting1-odd-selected;
+  background-color: map-get($colors, "white");
 }
 table.dataTable.display tbody tr.odd.selected > .sorting_2,
 table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_2 {
-  background-color: $table-tbody-sorting2-odd-selected;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.display tbody tr.odd.selected > .sorting_3,
 table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_3 {
-  background-color: $table-tbody-sorting3-odd-selected;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.display tbody tr.even > .sorting_1,
 table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
-  background-color: $table-tbody-sorting1-even;
+  background-color: map-get($colors, "white");
 }
 table.dataTable.display tbody tr.even > .sorting_2,
 table.dataTable.order-column.stripe tbody tr.even > .sorting_2 {
-  background-color: $table-tbody-sorting2-even;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.display tbody tr.even > .sorting_3,
 table.dataTable.order-column.stripe tbody tr.even > .sorting_3 {
-  background-color: $table-tbody-sorting3-even;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.display tbody tr.even.selected > .sorting_1,
 table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_1 {
-  background-color: $table-tbody-sorting1-even-selected;
+  background-color: map-get($colors, "f9");
 }
 table.dataTable.display tbody tr.even.selected > .sorting_2,
 table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_2 {
-  background-color: $table-tbody-sorting2-even-selected;
+  background-color: map-get($colors, "white");
 }
 table.dataTable.display tbody tr.even.selected > .sorting_3,
 table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_3 {
-  background-color: $table-tbody-sorting2-even-selected;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.display tbody tr:hover > .sorting_1,
 table.dataTable.order-column.hover tbody tr:hover > .sorting_1 {
-  background-color: $table-tbody-sorting1-hover;
+  background-color: map-get($colors, "f6");
 }
 table.dataTable.display tbody tr:hover > .sorting_2,
 table.dataTable.order-column.hover tbody tr:hover > .sorting_2 {
-  background-color: $table-tbody-sorting2-hover;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.display tbody tr:hover > .sorting_3,
 table.dataTable.order-column.hover tbody tr:hover > .sorting_3 {
-  background-color: $table-tbody-sorting3-hover;
+  background-color: map-get($colors, "white");
 }
 table.dataTable.display tbody tr:hover.selected > .sorting_1,
 table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_1 {
-  background-color: $table-tbody-sorting1-hover-selected;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.display tbody tr:hover.selected > .sorting_2,
 table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_2 {
-  background-color: $table-tbody-sorting2-hover-selected;
+  background-color: map-get($colors, "gray");
 }
 table.dataTable.display tbody tr:hover.selected > .sorting_3,
 table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_3 {
-  background-color: $table-tbody-sorting3-hover-selected;
+  background-color: map-get($colors, "white");
 }
 table.dataTable.no-footer {
-  border-bottom: 1px solid rgb(201, 15, 15);
+  border-bottom-width: map-get($borders-width, 0);
+  border-bottom-style: map-get($borders-styles, "solid");
+  border-bottom-color: map-get($colors, "warning");
 }
 table.dataTable.nowrap th,
 table.dataTable.nowrap td {
@@ -318,34 +320,33 @@ table.dataTable td {
 
 /** Show x entries */
 .dataTables_wrapper .dataTables_length {
-  float: $table-controls-entries-float;
+  float: map-get($float, "right");
 }
 .dataTables_wrapper .dataTables_length select {
-  border: $table-controls-entries-border;
-  border-radius: $table-controls-entries-border-radius;
-  padding: $table-controls-entries-padding;
-  background-color: $table-controls-entries-bg;
-  // padding: 4px; Erau 2 paddinguri aici, de ce?
+  border: "";
+  border-radius: "";
+  padding: "";
+  background-color: "";
 }
 
 /** Search bar */
 .dataTables_wrapper .dataTables_filter {
-  float: $table-controls-search-float;
-  text-align: $table-controls-search-text-align;
+  float: "";
+  text-align: "";
 }
 .dataTables_wrapper .dataTables_filter input {
-  border: $table-controls-search-border;
-  border-radius: $table-controls-search-border-radius;
-  padding: $table-controls-search-padding;
-  background-color: $table-controls-search-bg;
-  margin-left: $table-controls-search-margin-left;
+  border: "";
+  border-radius: "";
+  padding: "";
+  background-color: "";
+  margin-left: "";
 }
 
 /** Table info in bottom left */
 .dataTables_wrapper .dataTables_info {
-  clear: $table-controls-info-clear;
-  float: $table-controls-info-float;
-  padding-top: $table-controls-info-padding-top;
+  clear: "";
+  float: "";
+  padding-top: "";
 }
 
 /** Pagination in bottom right */

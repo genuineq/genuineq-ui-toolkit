@@ -1,0 +1,25 @@
+<h2 class="page-title">Unicode-Range</h2>
+<p class="info">The unicode-range property in CSS is used by the @font-face to define the characters that are supported by the font face.</p>
+<div class="example-container">
+<pre class="text-example">
+@font-face {
+  font-family: 'MyWebFont'; /* Define the custom font name */
+  src:  url('myfont.woff2') format('woff2'),
+        url('myfont.woff') format('woff'); /* Define where the font can be downloaded */
+  unicode-range: U+00-FF; /* Define the available characters */
+}
+</pre>
+</div>
+<p class="info">In other words, @font-face will refer to the property and determine whether or not it should download and use the font based on whether the characters or range of characters match those in the HTML document.</p>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$unicode-range: ();
+$unicode-range: map-merge(
+  (
+    0: 0,
+  ),
+  $unicode-range
+);
+</pre>
+</div>

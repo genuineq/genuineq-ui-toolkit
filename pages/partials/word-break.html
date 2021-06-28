@@ -1,0 +1,27 @@
+<h2 class="page-title">Word-Break</h2>
+<p class="info">The word-break property in CSS can be used to change when line breaks ought to occur. Normally, line breaks in text can only occur in certain spaces, like when there is a space or a hyphen.</p>
+<div class="example-container display-grid place-items-center">
+  <h1 class="word-break-break-all text-transform-uppercase font-weight-bold width-1em">example</h1>
+  <p class="font-size-1 text-align-center width-100 mt-4">word-break-break-all</p>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;h1 class=&quot;word-break-break-all text-transform-uppercase font-weight-bold width-1em&quot;&gt;example&lt;/h1&gt;
+&lt;p class=&quot;font-size-1 text-align-center width-100 mt-4&quot;&gt;word-break-break-all&lt;/p&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$word-break: ();
+$word-break: map-merge(
+  (
+    "break-all": break-all,
+    "normal": normal,
+    "keep-all": keep-all,
+  ),
+  $word-break
+);
+</pre>
+</div>

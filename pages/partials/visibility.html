@@ -1,0 +1,35 @@
+<h2 class="page-title">Visibility</h2>
+<p class="info">The visibility property in CSS has two different functions. It hides rows and columns of a table, and it also hides an element without changing the layout.</p>
+<div class="example-container">
+  <div class="visibility-hidden background-color-info border-style-dotted border-color-danger border-width-5 p-4 visibility-example">
+    Hi, I'm hidden. Notice that all of my styling is hidden as well, and that I still take up space, even though you can't see me.
+    <div class="visibility-visible border-width-1 border-color-black border-style-solid">
+      Howdy, my parent element is hidden, but I'm still visible. <br>Hover over me to make my parent visible.
+    </div>
+  </div>
+</div>
+<h2 class="page-title">HTML</h2>
+<div class="example-container">
+<pre class="text-example">
+&lt;div class=&quot;visibility-hidden background-color-info border-style-dotted border-color-danger border-width-5 p-4 visibility-example&quot;&gt;
+  Hi, I'm hidden. Notice that all of my styling is hidden as well, and that I still take up space, even though you can't see me.
+  &lt;div class=&quot;visibility-visible border-width-1 border-color-black border-style-solid&quot;&gt;
+    Howdy, my parent element is hidden, but I'm still visible. &lt;br&gt;Hover over me to make my parent visible.
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<h2 class="page-title">SCSS</h2>
+<div class="example-container">
+<pre class="text-example">
+$visibility: ();
+$visibility: map-merge(
+  (
+    "hidden": hidden,
+    "collapse": collapse,
+    "visible": visible,
+  ),
+  $visibility
+);
+</pre>
+</div>
